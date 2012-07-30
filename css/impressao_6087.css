@@ -1,0 +1,71 @@
+#apagarimprimir {
+	display: none !important;
+}
+
+#versaoimpressao {
+	display: block;
+	border: 1px solid white;
+}
+
+#separacao {
+	display: block;
+	text-align: center;
+	border: 1px solid white;
+	width: 282px;
+	height: 78.1px;
+	display: block;
+	vertical-align: middle
+}
+
+#daespaco {
+	display: block;
+	float: left;
+	/*padding-left:3mm;*/ /*padding-right:3mm;*/
+	margin-right: 15px;
+	border: 1px solid white;
+}
+
+#separabloco {
+	width: 1250px;
+	height: auto;
+	display: block;
+	float: left;
+	border: 1px solid white;
+	margin-left: 71px;
+}
+
+#etiqueta_quebra_pagina {
+	page-break-after: always;
+	border: 1px solid white;
+	float: left;
+	display: block;
+}
+
+#etiqueta_titulo_cod_barra {
+	display: block;
+	font-family: Verdana;
+	font-size: 7px;
+}
+
+img.etiqueta_codigo_barra {
+	height: 32px;
+	width: 1px;
+	margin-top: 2px;
+	cursor: pointer
+}
+
+#margintop {
+	display: block;
+	border: 31px solid white;
+}
+
+#margintop2 {
+	display: block;
+	border: 34px solid white;
+}
+
+div {
+	display: none;
+	visibility: visible;
+	border: 1px solid white;
+}

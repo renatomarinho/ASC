@@ -1,0 +1,40 @@
+#apagarimprimir {
+	display: none;
+}
+
+#versaoimpressao {
+	display: block;
+}
+
+#separacao {
+	text-align: center;
+	border: 0px solid #c0c0c0;
+	width: 97.6mm;
+	height: 25.4mm;
+	display: table-cell;
+	vertical-align: middle
+}
+
+#daespaco {
+	float: left;
+	padding-left: 3px;
+	padding-right: 3px;
+	border: 0px solid red;
+}
+
+#separabloco {
+	width: 950px;
+}
+
+#espacamento {
+	position: absolute;
+	margin-top: -80px;
+	margin-left: 10px;
+	border-top: 1px solid white;
+	border-left: 1px solid white;
+}
+
+#tamanhocodbarra {
+	height: 20px;
+	width: 1.5px;
+}

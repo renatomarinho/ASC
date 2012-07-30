@@ -1,0 +1,4652 @@
+<html>
+<head>
+<title>WebMail</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<SCRIPT LANGUAGE="JavaScript">
+function pop_preview(url) {
+  window.open(url,'preview','width=800,height=290,top=0,left=0,scrollbars=no');
+}
+</SCRIPT>
+</head>
+<body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0"
+	marginwidth="0" marginheight="0">
+<style type="text/css">
+<!--
+BODY {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+}
+
+TD {
+	font-family: Tahoma, Verdana, Arial, Sans-serif;
+	font-size: 11px;
+	color: #333333;
+}
+
+TD.old {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+}
+
+TD.menu {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 9.5px;
+	color: #000000;
+	text-decoration: none;
+}
+
+A:LINK {
+	color: #333333;
+	text-decoration: none;
+}
+
+A:ACTIVE {
+	color: #FF0000;
+}
+
+A:HOVER {
+	color: #FF0000;
+}
+
+A:VISITED {
+	color: #333333;
+	text-decoration: none;
+}
+
+.titulo {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 9.5px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.titulo_bar {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 9.5px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+A.titulo {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+A.titulo:VISITED {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+A.titulo_bar {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+A.titulo:HOVER {
+	color: #FF0000;
+}
+
+A.header_login {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: underline;
+}
+
+A.header_login:VISITED {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: underline;
+}
+
+A.header_login:HOVER {
+	color: #FF0000;
+	text-decoration: underline;
+}
+
+A.header {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none;
+}
+
+A.menu {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 9.5px;
+	color: #000000;
+	text-decoration: none;
+}
+
+A.menu:VISITED {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 9.5px;
+	color: #000000;
+	text-decoration: none;
+}
+
+A.menu_fix {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 9.5px;
+	color: #000000;
+	text-decoration: none;
+}
+
+A.menu:HOVER {
+	color: #FF0000;
+	text-decoration: none;
+}
+
+A.txt95_menu {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 9.5px;
+	color: #000000;
+	text-decoration: none;
+}
+
+A.txt95 {
+	font-family: tahoma, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11.5px;
+	color: #333333;
+	text-decoration: none;
+}
+
+.header {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+
+.txt95 {
+	font-family: tahoma, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11.5px;
+	color: #333333;
+}
+
+.txt95_cab {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 9.5px;
+	color: #000000;
+}
+
+.txt95_menu {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 9.5px;
+	color: #000000;
+}
+
+.txt12 {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+
+.txt12_cab {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+
+.box {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 9.5px;
+	color: #333333;
+}
+
+.data {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 9.5px;
+	color: #666666;
+}
+
+.formulario {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	border: 1px solid #666666;
+	background-color: #CCCCCC;
+}
+
+.formulario1 {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 9.5px;
+	color: #000000;
+	border: 1px solid #666666;
+	background-color: #CCCCCC;
+}
+
+.formulario2 {
+	font-family: Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+	border: 1px solid #666666;
+	background-color: #F2F2F2;
+}
+
+.fwrite {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	border: 1px solid #666666;
+	background-color: #FFFFFF;
+}
+
+.menu_link {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none
+}
+
+.menu_link:hover {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #CC0000;
+}
+
+.MbxTd {
+	color: #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 80%;
+	padding: 0px 4px 0px 4px;
+}
+	
+	/*Properties of a column containing info about a message in the mail-list*/
+.MbxSelTd {
+	color: #000000;
+	background-color: #CCCCCC;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 80%;
+	padding: 0px 4px 0px 4px;
+}
+	
+	/*Properties of a column containing info about an unread message in the mail-list*/
+A.titulo_bar:ACTIVE {
+	color: #FFFFFF
+}
+
+A.titulo_bar:HOVER {
+	color: #FF0000;
+}
+
+.menuoff {
+	font-family: Tahoma, "border Helvetica", sans-serif;
+	font-size: 10px;
+	color: #333333;
+	text-decoration: none;
+	font-weight: bold;
+	background-color: #CCCCCC;
+	cursor: hand;
+	border: 1px #CCCCCC solid
+}
+
+A.menuE {
+	font-family: Tahoma, "border Helvetica", sans-serif;
+	font-size: 10px;
+	color: #333333;
+	text-decoration: none;
+	font-weight: bold;
+	background-color: #CCCCCC;
+	cursor: hand;
+	border: 1px #CCCCCC solid;
+	display: block;
+	padding: 0px 1px
+}
+
+A.menuE:HOVER {
+	background-color: #F2F2F2;
+	border: 1px #666666 solid;
+}
+
+.menuoffp {
+	font-family: Tahoma, "border Helvetica", sans-serif;
+	font-size: 10px;
+	color: #333333;
+	text-decoration: none;
+	background-color: #CCCCCC;
+	cursor: hand;
+	border: 1px #CCCCCC solid
+}
+
+.menuon {
+	font-family: Tahoma, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333333;
+	text-decoration: none;
+	font-weight: bold;
+	background-color: #F2F2F2;
+	cursor: hand;
+	border: 1px #666666 solid
+}
+
+.formulario2 {
+	font-family: Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333333;
+	border: 1px solid #666666;
+	background-color: #F2F2F2;
+}
+
+TD.MESSAGE {
+	FONT-SIZE: 11px;
+	FONT-FAMILY: tahoma, sans-serif
+}
+
+.GG {
+	BACKGROUND-COLOR: #ECF5FF;
+	BORDER: 1px solid #003399;
+	PADDING: 5px;
+	MARGIN-TOP: 12px;
+	MARGIN-BOTTOM: 12px
+}
+
+.botok {
+	font-family: Tahoma, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #666666;
+	text-decoration: none;
+	font-weight: bold;
+	cursor: hand;
+	border: 1px solid #666666;
+	background-color: #E5E5E5;
+}
+
+.row_new {
+	background-color: #F7F7F7;
+	padding-left: 5px;
+	font-weight: bold;
+	height: 18px;
+}
+
+.row_new_s {
+	background-color: #D6E7F7;
+	padding-left: 5px;
+	font-weight: bold;
+	height: 18px;
+}
+
+a.row_new {
+	background-color: #F7F7F7;
+	padding-left: 5px;
+	font-weight: bold;
+	height: 18px;
+}
+
+a.row_new:hover {
+	background-color: #F7F7F7;
+	padding-left: 5px;
+	font-weight: bold;
+	height: 18px;
+}
+
+.row_read {
+	background-color: #F2F2F2;
+	padding-left: 5px;
+	height: 18px;
+}
+
+.row_read_s {
+	background-color: #D6E7F7;
+	padding-left: 5px;
+	height: 18px;
+}
+
+a.row_read {
+	background-color: #F2F2F2;
+	padding-left: 5px;
+	height: 18px;
+}
+
+a.row_read_s {
+	background-color: #D6E7F7;
+	padding-left: 5px;
+	height: 18px;
+}
+
+.row_delete {
+	padding-left: 5px;
+	height: 18px;
+	text-decoration: line-through;
+}
+
+.row_delete_s {
+	padding-left: 5px;
+	height: 18px;
+	text-decoration: line-through;
+}
+
+.row_link {
+	color: #333333;
+	font-family: Tahoma, Verdana, Arial, Sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.row_link:hover {
+	color: #333333;
+	font-family: Tahoma, Verdana, Arial, Sans-serif;
+	font-size: 11px;
+	text-decoration: underline;
+}
+
+#calendario_contorno {
+	background-color: #fff;
+	width: 100%;
+	padding: 1px 0 1px 0;
+	border-top: 1px #c49c00 solid;
+	border-bottom: 1px #c49c00 solid;
+}
+
+.botao_cal {
+	padding: 3px 12px 4px 12px;
+}
+
+#tarja_calendario {
+	height: 30px;
+	width: 100%;
+	background-color: #ffea95;
+	line-height: 30px;
+	font: bold 11px Tahoma, Verdana, Arial, Helvetica, sans-serif;
+}
+
+#tarja_calendario a,#tarja_calendario a:active,#tarja_calendario a:visited
+	{
+	color: #333333;
+	text-decoration: none;
+	line-height: 30px;
+	_line-height: 28px;
+}
+
+#tarja_calendario a.botao_cal,#tarja_calendario a:active .botao_cal,#tarja_calendario a:visited
+	.botao_cal,#tarja_calendario a:hover .botao_cal {
+	background: url(/webmail/buttons/bt_bg_cal_all.jpg) repeat-x;
+	border: 1px #8f8f8f solid;
+	text-decoration: none;
+	color: #333333;
+	padding: 2px 11px 3px 11px;
+}
+
+#tarja_calendario a:hover .botao_cal {
+	color: #CC3333;
+}
+
+#tarja_calendario a.botao_outros {
+	margin: 0 10px 0 10px;
+}
+
+#tarja_calendario a:hover .botao_outros {
+	text-decoration: underline;
+	color: #CC3333;
+}
+-->
+</style>
+<style>
+TD {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+}
+</style>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr bgcolor="#FFCC00">
+		<td>
+		<table width="100%" border="0" cellpadding="0" cellspacinf="0">
+			<tr>
+				<td><img src="/webmail/logos/seaportbr.gif" border="0"></td>
+				<td align="right">&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor="#FFCC00"><img src="/d.gif" width="1" height="1"></td>
+	</tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="120" bgcolor="#FFFAE5" valign="top">
+
+		<table width="120" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td>
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td width="10" class="txt95"><img src="/d.gif" width="10"
+							height="10"></td>
+						<td class="txt95"><img src="/d.gif" width="10" height="10"></td>
+					</tr>
+
+					<tr>
+						<td width="10" class="txt95"><img src="/d.gif" width="10"
+							height="20"></td>
+						<td class="txt95"><a
+							href="/cgi-bin/webmail/webmail-prefs.pl?sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&sort=date&firstmessage=0&acao=inicio"
+							class="menu" target='main_lw'>Prefer&ecirc;ncias</a></td>
+					</tr>
+
+					<tr>
+						<td width="10" class="txt95"><img src="/d.gif" width="10"
+							height="20"></td>
+						<td class="txt95"><a
+							href="/cgi-bin/webmail/webmail-prefs.pl?sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&sort=date&firstmessage=0&acao=changepassword"
+							class="menu" target='main_lw'>Troca de Senha</a></td>
+					</tr>
+
+					<tr>
+						<td width="10" class="txt95" bgcolor="#FFEA95"><img
+							src="/d.gif" width="10" height="20"></td>
+						<td class="txt95" bgcolor="#FFEA95"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&sort=date&firstmessage=0&acao=editaddresses"
+							class="menu" target='main_lw'>Cat&aacute;logo de
+						Endere&ccedil;os / Grupos</a></td>
+					</tr>
+
+					<tr>
+						<td width="10" class="txt95"><img src="/d.gif" width="10"
+							height="20"></td>
+						<td class="txt95"><a
+							href="/cgi-bin/webmail/webmail-prefs.pl?sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&sort=date&firstmessage=0&acao=autoresposta&action_auto=inicio"
+							class="menu" target='main_lw'>Auto-Resposta</a></td>
+					</tr>
+
+					<tr>
+						<td width="10" class="txt95"><img src="/d.gif" width="10"
+							height="20"></td>
+						<td class="txt95"><a
+							href="/cgi-bin/webmail/webmail-prefs.pl?sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&sort=date&firstmessage=0&acao=blacklist&spam_action=aanti_spam"
+							class="menu" target='main_lw'>Controle de SPAM</a></td>
+					</tr>
+
+					<tr>
+						<td width="10" class="txt95"><img src="/d.gif" width="10"
+							height="20"></td>
+						<td class="txt95"><a
+							href="/cgi-bin/webmail/webmail-prefs.pl?sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&sort=date&firstmessage=0&acao=antivirus&action_avirus=inicio"
+							class="menu" target='main_lw'>Controle de V&iacute;rus</a></td>
+					</tr>
+
+					<tr>
+						<td width="10" class="txt95"><img src="/d.gif" width="10"
+							height="20"></td>
+						<td class="txt95"><a
+							href="/cgi-bin/webmail/webmail-prefs.pl?sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&sort=date&firstmessage=0&acao=seguranca&sec_type=sec_acesso&"
+							class="menu" target='main_lw'>Seguran&ccedil;a</a></td>
+					</tr>
+
+					<tr>
+						<td width="10" class="txt95"><img src="/d.gif" width="10"
+							height="20"></td>
+						<td class="txt95"><a
+							href="/cgi-bin/webmail/webmail-prefs.pl?sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&sort=date&firstmessage=0&acao=filtropasta&"
+							class="menu" target='main_lw'>Filtros</a></td>
+					</tr>
+
+					<tr>
+						<td width="10" class="txt95"><img src="/d.gif" width="10"
+							height="20"></td>
+						<td class="txt95"><a
+							href="/cgi-bin/webmail/webmail-prefs.pl?sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&sort=date&firstmessage=0&acao=notify&action_notify=inicio"
+							class="menu" target='main_lw'>Notifica&ccedil;&atilde;o/SMS</a></td>
+					</tr>
+
+					<tr>
+						<td width="10" class="txt95"><img src="/d.gif" width="10"
+							height="20"></td>
+						<td class="txt95"><a
+							href="/cgi-bin/webmail/webmail-prefs.pl?sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&sort=date&firstmessage=0&acao=folders&action_folders=inicio"
+							class="menu" target='main_lw'>Pastas</a></td>
+					</tr>
+
+					<tr>
+						<td width="10" class="txt95"><img src="/d.gif" width="10"
+							height="20"></td>
+						<td class="txt95"><a
+							href="/cgi-bin/webmail/webmail-prefs.pl?sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&sort=date&firstmessage=0&acao=apelido&"
+							class="menu" target='main_lw'>Apelido Oculto</a></td>
+					</tr>
+
+				</table>
+				</td>
+			</tr>
+		</table>
+		</td>
+		<td bgcolor="#FFCC00" width="1" valign="top"><img src="/d.gif"
+			width="1" height="1"></td>
+		<td valign="top">
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td width="10"><img src="/d.gif" width="10" height="20"></td>
+				<td class="txt12">&raquo; Configura&ccedil;&atilde;o &raquo;
+				Cat&aacute;logo de Endere&ccedil;os / Grupos</td>
+				<td bgcolor="#666666" width="1"><img src="/d.gif" width="1"
+					height="20"></td>
+				<td width="132" align="center"><a
+					href='/cgi-bin/webmail/webmail-list.pl?sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&acao=displayheaders&folder=inbox&firstmessage=0&popup=0&'><img
+					src='/img/pt_BR/but_voltar_cx_postal.gif' border='0'></a></td>
+				<td bgcolor="#666666" width="1"><img src="/d.gif" width="1"
+					height="20"></td>
+				<td width="7"><img src="/d.gif" width="7" height="20"></td>
+			</tr>
+		</table>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			background="/p.gif">
+			<tr>
+				<td background="/p.gif" height="2"><img src="/d.gif" width="6"
+					height="2"></td>
+			</tr>
+		</table>
+		<script language="JavaScript">
+  function reload() {
+     var f = document.newaddress;
+     f.acao.value = "editaddresses";
+     f.submit();
+  }
+
+  function delgroup(key, nome) {
+    var confirma = confirm("Deseja realmente remover o grupo " + nome + "?");
+    if (confirma) {
+      var url = "/cgi-bin/webmail/webmail-abook.pl?acao=delgroup&firstmessage=0&sort=bylastname&sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&grupo=" + nome + "&addrid=" + key;
+      window.location = url;
+    }
+  }
+  function deladdress(key, nome) {
+    var confirma = confirm("Deseja realmente remover o contato " + nome + "?");
+    if (confirma) {
+      var re = /\+/;
+      if (re.test(key)) {
+        key = key.replace(/\+/, "%2B"); 
+      }
+      var url = "/cgi-bin/webmail/webmail-abook.pl?acao=deleteaddress&firstmessage=0&sort=bylastname&sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&addrid=" + key;
+      window.location = url;
+    }
+  }
+  </script>
+		<table border="0" cellspacing="10" cellpadding="0" width="100%">
+			<tr>
+				<td>
+				<p>Voc&ecirc; possui <b>1501 contatos dispon&iacute;veis</b>
+				para criar um cat&aacute;logo de endere&ccedil;os com seus contatos
+				de e-mail e ainda agrupar seus contatos para organizar sua agenda e
+				agilizar a comunica&ccedil;&atilde;o'</p>
+				</td>
+			</tr>
+			<tr>
+				<td>&raquo; Para criar um contato digite o endere&ccedil;o, o
+				nome e clique em <font color="#CC0000"><span class="menu">GRAVAR</span></font>.</td>
+			</tr>
+			<tr>
+				<td>&raquo; Para criar um grupo de contatos locais digite o
+				nome do grupo, clique em <font color="#CC0000">GRAVAR</font> e siga
+				as instru&ccedil;&otilde;es.</td>
+			</tr>
+			<tr>
+				<td>&nbsp;&nbsp;&nbsp;<a
+					href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=import&"><u>Importar
+				um cat&aacute;logo de Endere&ccedil;os</u></a>&nbsp;<img
+					src="/img/pt_BR/icone_novo.gif"></td>
+			</tr>
+			<tr>
+				<td>&nbsp;&nbsp;&nbsp;<a
+					href="/cgi-bin/webmail/webmail-outros.pl?acao=grabaddr&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;sort=bylastname&amp;firstmessage=0"><u>Capturar
+				todos e-mails da caixa-postal</u></a></td>
+			</tr>
+
+		</table>
+
+		<form method="post" name="newaddress"
+			enctype="application/x-www-form-urlencoded"><input
+			type="hidden" name="sessionid"
+			value="CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi"><input type="hidden"
+			name="firstmessage" value="0"><input type="hidden"
+			name="sort value="date"><input type="hidden" name="folder"
+			value="inbox"> <input type="hidden" name="acao"
+			value="addaddress"> <!-- MSG DE SUCESSO -->
+
+		<table border="0" cellspacing="10" cellpadding="0">
+			<tr>
+				<td>Ordenar:</td>
+				<td><select name="address_sort" class=formulario>
+
+					<option value="bylastname" SELECTED>Pelo &Uacute;ltimo
+					Nome</option>
+
+					<option value="byfirstname">Pelo Primeiro Nome</option>
+
+				</select></td>
+				<td><input type="button" value="Carregar" class="formulario"
+					onclick="reload();"></td>
+			</tr>
+		</table>
+
+		<table border="0" cellspacing="10" cellpadding="0">
+			<tr>
+				<td>Endere&ccedil;o de E-mail</td>
+				<td>Nome</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><input type="text" name="emailhome" class="formulario"
+					size="40"></td>
+				<td><input type="text" name="firstname" class="formulario"
+					size="30"></td>
+				<td><input type="image" src="/img/pt_BR/but_gravar.gif"
+					value="Adicionar" border=0 width="54" height="15"></td>
+			</tr>
+		</table>
+		</form>
+
+		<!-- SE TIVER CONTATOS, GRUPOS -->
+
+		<form method="post" name="novogrupo"
+			enctype="application/x-www-form-urlencoded"><input
+			type="hidden" name="sessionid"
+			value="CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi"><input type="hidden"
+			name="firstmessage" value="0"><input type="hidden"
+			name="sort value="date"><input type="hidden" name="folder"
+			value="inbox"> <input type="hidden" name="acao"
+			value="addgroup">
+
+		<table border="0" cellspacing="10" cellpadding="0">
+			<tr>
+				<td>Grupo de Contatos</td>
+				<td align="right">&nbsp;</td>
+				<td align="right">&nbsp;</td>
+			</tr>
+			<tr>
+				<td><input type="text" name="grupo" class="formulario"
+					size="40"></td>
+				<td align="right">&nbsp;</td>
+				<td align="right"><input type="image"
+					src="/img/pt_BR/but_gravar.gif" name="add_grupo"
+					value="'. $TXT{'add'} .'" border=0 width="54" height="15"></td>
+			</tr>
+		</table>
+		</form>
+
+
+		<!-- SE TIVER CONTATOS - LOOP -->
+
+
+
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			background="/p.gif">
+			<tr>
+				<td background="/p.gif" height="2"><img src=/d.gif width="6"
+					height="2"></td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr bgcolor="#E5E5E5">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+					<tr>
+						<td><b class="txt12">A</b></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr bgcolor="#F7F7F7">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=acelio@mls.com.br"
+							class="menu_fix">Acelio &lt;acelio@mls.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=acelio@mls.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('acelio@mls.com.br', 'acelio@mls.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=advanced@databras.com.br"
+							class="menu_fix">advanced@databras.com.br</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=advanced@databras.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('advanced@databras.com.br', 'advanced@databras.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=aga@netangola.com"
+							class="menu_fix">Aga &lt;aga@netangola.com&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=aga@netangola.com"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('aga@netangola.com', 'aga@netangola.com');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=agenor@dogday.com.br"
+							class="menu_fix">agenor@dogday.com.br</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=agenor@dogday.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('agenor@dogday.com.br', 'agenor@dogday.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=agladondo@uol.com.br"
+							class="menu_fix">agladondo@uol.com.br</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=agladondo@uol.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('agladondo@uol.com.br', 'agladondo@uol.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=agaalberto@netangola.com"
+							class="menu_fix">Alberto &lt;agaalberto@netangola.com&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=agaalberto@netangola.com"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('agaalberto@netangola.com', 'agaalberto@netangola.com');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=alvaro@profilesbr.com"
+							class="menu_fix">Alvaro, Daval &lt;alvaro@profilesbr.com&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=alvaro@profilesbr.com"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('alvaro@profilesbr.com', 'alvaro@profilesbr.com');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=arturlucena@ig.com.br"
+							class="menu_fix">Artur, Lucena &lt;arturlucena@ig.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=arturlucena@ig.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('arturlucena@ig.com.br', 'arturlucena@ig.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=mahet@tvsat.co.ao"
+							class="menu_fix">Ary, Mahet &lt;mahet@tvsat.co.ao&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=mahet@tvsat.co.ao"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('mahet@tvsat.co.ao', 'mahet@tvsat.co.ao');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=audrey@zorzi.com.br"
+							class="menu_fix">Audrey &lt;audrey@zorzi.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=audrey@zorzi.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('audrey@zorzi.com.br', 'audrey@zorzi.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=augusto@augustocontabil.cnt.br"
+							class="menu_fix">Augusto, Contador
+						&lt;augusto@augustocontabil.cnt.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=augusto@augustocontabil.cnt.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('augusto@augustocontabil.cnt.br', 'augusto@augustocontabil.cnt.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=aurelio@zorzi.com.br"
+							class="menu_fix">Aurelio, Zorzi &lt;aurelio@zorzi.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=aurelio@zorzi.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('aurelio@zorzi.com.br', 'aurelio@zorzi.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=avpstudio@aol.com"
+							class="menu_fix">AVPSTUDIO@aol.com, Arthur
+						&lt;avpstudio@aol.com&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=avpstudio@aol.com"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('avpstudio@aol.com', 'avpstudio@aol.com');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=azzurrarest@uol.com.br"
+							class="menu_fix">Azzurra Ristorante
+						&lt;azzurrarest@uol.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=azzurrarest@uol.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('azzurrarest@uol.com.br', 'azzurrarest@uol.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+				</table>
+				</td>
+			</tr>
+		</table>
+
+
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			background="/p.gif">
+			<tr>
+				<td background="/p.gif" height="2"><img src=/d.gif width="6"
+					height="2"></td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr bgcolor="#E5E5E5">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+					<tr>
+						<td><b class="txt12">B</b></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr bgcolor="#F7F7F7">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=beatrizdoviolino@ig.com.br"
+							class="menu_fix">Bia &lt;beatrizdoviolino@ig.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=beatrizdoviolino@ig.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('beatrizdoviolino@ig.com.br', 'beatrizdoviolino@ig.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=brenoml@uol.com.br"
+							class="menu_fix">Breno, Leite &lt;brenoml@uol.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=brenoml@uol.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('brenoml@uol.com.br', 'brenoml@uol.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+				</table>
+				</td>
+			</tr>
+		</table>
+
+
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			background="/p.gif">
+			<tr>
+				<td background="/p.gif" height="2"><img src=/d.gif width="6"
+					height="2"></td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr bgcolor="#E5E5E5">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+					<tr>
+						<td><b class="txt12">C</b></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr bgcolor="#F7F7F7">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=cadastro@cacula.com"
+							class="menu_fix">CADASTRO - www.cacula.com
+						&lt;cadastro@cacula.com&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=cadastro@cacula.com"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('cadastro@cacula.com', 'cadastro@cacula.com');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=jctdantas@hotmail.com"
+							class="menu_fix">Carlos Dantas, João
+						&lt;jctdantas@hotmail.com&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=jctdantas@hotmail.com"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('jctdantas@hotmail.com', 'jctdantas@hotmail.com');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=catarina.falcao@estacio.br"
+							class="menu_fix">Catarina &lt;catarina.falcao@estacio.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=catarina.falcao@estacio.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('catarina.falcao@estacio.br', 'catarina.falcao@estacio.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=celia@promotional.com.br"
+							class="menu_fix">Celia &lt;celia@promotional.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=celia@promotional.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('celia@promotional.com.br', 'celia@promotional.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=aga@mail.netangola.com"
+							class="menu_fix">Cezar, Mahet &lt;aga@mail.netangola.com&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=aga@mail.netangola.com"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('aga@mail.netangola.com', 'aga@mail.netangola.com');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=chanrj@uol.com.br"
+							class="menu_fix">Chan &lt;chanrj@uol.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=chanrj@uol.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('chanrj@uol.com.br', 'chanrj@uol.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=tilapia1@snet.co.ao"
+							class="menu_fix">Cirilo &lt;tilapia1@snet.co.ao&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=tilapia1@snet.co.ao"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('tilapia1@snet.co.ao', 'tilapia1@snet.co.ao');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=cleo@seaportbr.com"
+							class="menu_fix">cleo@seaportbr.com</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=cleo@seaportbr.com"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('cleo@seaportbr.com', 'cleo@seaportbr.com');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=cleomarcio@aol.com"
+							class="menu_fix">Cléo, House &lt;cleomarcio@aol.com&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=cleomarcio@aol.com"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('cleomarcio@aol.com', 'cleomarcio@aol.com');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=adilson@augustocontabil.cnt.br"
+							class="menu_fix">Contador, Adilson
+						&lt;adilson@augustocontabil.cnt.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=adilson@augustocontabil.cnt.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('adilson@augustocontabil.cnt.br', 'adilson@augustocontabil.cnt.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=cotta@nigata.com.br"
+							class="menu_fix">cotta@nigata.com.br</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=cotta@nigata.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('cotta@nigata.com.br', 'cotta@nigata.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=cristina@dsha.com.br"
+							class="menu_fix">Cris &lt;cristina@dsha.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=cristina@dsha.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('cristina@dsha.com.br', 'cristina@dsha.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=crisgaal@br.inter.net"
+							class="menu_fix">Cris, Gaal &lt;crisgaal@br.inter.net&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=crisgaal@br.inter.net"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('crisgaal@br.inter.net', 'crisgaal@br.inter.net');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+				</table>
+				</td>
+			</tr>
+		</table>
+
+
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			background="/p.gif">
+			<tr>
+				<td background="/p.gif" height="2"><img src=/d.gif width="6"
+					height="2"></td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr bgcolor="#E5E5E5">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+					<tr>
+						<td><b class="txt12">D</b></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr bgcolor="#F7F7F7">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=danidondo@uol.com.br"
+							class="menu_fix">Dani, Dondo &lt;danidondo@uol.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=danidondo@uol.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('danidondo@uol.com.br', 'danidondo@uol.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=rotband2002@yahoo.com.br"
+							class="menu_fix">Daniela, Gabas
+						&lt;rotband2002@yahoo.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=rotband2002@yahoo.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('rotband2002@yahoo.com.br', 'rotband2002@yahoo.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=bp.danielec@uol.com.br"
+							class="menu_fix">Daniele, Campista
+						&lt;bp.danielec@uol.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=bp.danielec@uol.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('bp.danielec@uol.com.br', 'bp.danielec@uol.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=dantas@seaportbr.com"
+							class="menu_fix">Dantas &lt;dantas@seaportbr.com&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=dantas@seaportbr.com"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('dantas@seaportbr.com', 'dantas@seaportbr.com');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=delmar@ao.odebrecht.com"
+							class="menu_fix">Delmar, Siqueira
+						&lt;delmar@ao.odebrecht.com&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=delmar@ao.odebrecht.com"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('delmar@ao.odebrecht.com', 'delmar@ao.odebrecht.com');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=dsr@md.ebonet.net"
+							class="menu_fix">Delmar, Siqueira &lt;dsr@md.ebonet.net&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=dsr@md.ebonet.net"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('dsr@md.ebonet.net', 'dsr@md.ebonet.net');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=gav@uo.com.br"
+							class="menu_fix">Dr. Gustavo, Villela &lt;gav@uo.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=gav@uo.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('gav@uo.com.br', 'gav@uo.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+				</table>
+				</td>
+			</tr>
+		</table>
+
+
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			background="/p.gif">
+			<tr>
+				<td background="/p.gif" height="2"><img src=/d.gif width="6"
+					height="2"></td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr bgcolor="#E5E5E5">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+					<tr>
+						<td><b class="txt12">E</b></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr bgcolor="#F7F7F7">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=enadiomfilho@svn.com.br"
+							class="menu_fix">enadiomfilho@svn.com.br</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=enadiomfilho@svn.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('enadiomfilho@svn.com.br', 'enadiomfilho@svn.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+				</table>
+				</td>
+			</tr>
+		</table>
+
+
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			background="/p.gif">
+			<tr>
+				<td background="/p.gif" height="2"><img src=/d.gif width="6"
+					height="2"></td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr bgcolor="#E5E5E5">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+					<tr>
+						<td><b class="txt12">F</b></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr bgcolor="#F7F7F7">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=fabio@lsf.com.br"
+							class="menu_fix">Fabio &lt;fabio@lsf.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=fabio@lsf.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('fabio@lsf.com.br', 'fabio@lsf.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=felippegasse@hotmail.com"
+							class="menu_fix">Felippe Gasse
+						&lt;felippegasse@hotmail.com&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=felippegasse@hotmail.com"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('felippegasse@hotmail.com', 'felippegasse@hotmail.com');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=delta@deltaimobiliaria.com.br"
+							class="menu_fix">Fernando, Duarte
+						&lt;delta@deltaimobiliaria.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=delta@deltaimobiliaria.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('delta@deltaimobiliaria.com.br', 'delta@deltaimobiliaria.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=fifth@esoterica.pt"
+							class="menu_fix">Fifth, Avenue &lt;fifth@esoterica.pt&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=fifth@esoterica.pt"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('fifth@esoterica.pt', 'fifth@esoterica.pt');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=novaes.jr@globo.com"
+							class="menu_fix">Franklin, Novaes &lt;novaes.jr@globo.com&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=novaes.jr@globo.com"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('novaes.jr@globo.com', 'novaes.jr@globo.com');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=fatima@nmkt.com"
+							class="menu_fix">Fátima, Pinho &lt;fatima@nmkt.com&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=fatima@nmkt.com"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('fatima@nmkt.com', 'fatima@nmkt.com');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+				</table>
+				</td>
+			</tr>
+		</table>
+
+
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			background="/p.gif">
+			<tr>
+				<td background="/p.gif" height="2"><img src=/d.gif width="6"
+					height="2"></td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr bgcolor="#E5E5E5">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+					<tr>
+						<td><b class="txt12">G</b></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr bgcolor="#F7F7F7">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=jnascimento@ebonet.net"
+							class="menu_fix">Gerson, Nascimento
+						&lt;jnascimento@ebonet.net&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=jnascimento@ebonet.net"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('jnascimento@ebonet.net', 'jnascimento@ebonet.net');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=gmvoliveira@rjnet.com.br"
+							class="menu_fix">Gisele, Vecchi
+						&lt;gmvoliveira@rjnet.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=gmvoliveira@rjnet.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('gmvoliveira@rjnet.com.br', 'gmvoliveira@rjnet.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+				</table>
+				</td>
+			</tr>
+		</table>
+
+
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			background="/p.gif">
+			<tr>
+				<td background="/p.gif" height="2"><img src=/d.gif width="6"
+					height="2"></td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr bgcolor="#E5E5E5">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+					<tr>
+						<td><b class="txt12">H</b></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr bgcolor="#F7F7F7">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=hercilio@dsha.com.br"
+							class="menu_fix">Hercilio &lt;hercilio@dsha.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=hercilio@dsha.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('hercilio@dsha.com.br', 'hercilio@dsha.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+				</table>
+				</td>
+			</tr>
+		</table>
+
+
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			background="/p.gif">
+			<tr>
+				<td background="/p.gif" height="2"><img src=/d.gif width="6"
+					height="2"></td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr bgcolor="#E5E5E5">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+					<tr>
+						<td><b class="txt12">I</b></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr bgcolor="#F7F7F7">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=inunesneves@hotmail.com"
+							class="menu_fix">Ivan, Nunes &lt;inunesneves@hotmail.com&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=inunesneves@hotmail.com"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('inunesneves@hotmail.com', 'inunesneves@hotmail.com');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+				</table>
+				</td>
+			</tr>
+		</table>
+
+
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			background="/p.gif">
+			<tr>
+				<td background="/p.gif" height="2"><img src=/d.gif width="6"
+					height="2"></td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr bgcolor="#E5E5E5">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+					<tr>
+						<td><b class="txt12">J</b></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr bgcolor="#F7F7F7">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=joel@nigata.com.br"
+							class="menu_fix">Joel, Romito &lt;joel@nigata.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=joel@nigata.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('joel@nigata.com.br', 'joel@nigata.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+				</table>
+				</td>
+			</tr>
+		</table>
+
+
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			background="/p.gif">
+			<tr>
+				<td background="/p.gif" height="2"><img src=/d.gif width="6"
+					height="2"></td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr bgcolor="#E5E5E5">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+					<tr>
+						<td><b class="txt12">K</b></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr bgcolor="#F7F7F7">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=katiaroberta@hotmail.com"
+							class="menu_fix">Katia, Roberta
+						&lt;katiaroberta@hotmail.com&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=katiaroberta@hotmail.com"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('katiaroberta@hotmail.com', 'katiaroberta@hotmail.com');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+				</table>
+				</td>
+			</tr>
+		</table>
+
+
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			background="/p.gif">
+			<tr>
+				<td background="/p.gif" height="2"><img src=/d.gif width="6"
+					height="2"></td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr bgcolor="#E5E5E5">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+					<tr>
+						<td><b class="txt12">L</b></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr bgcolor="#F7F7F7">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=liaregina@superig.com.br"
+							class="menu_fix">Lia &lt;liaregina@superig.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=liaregina@superig.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('liaregina@superig.com.br', 'liaregina@superig.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=lipedireto@aol.com"
+							class="menu_fix">Lipe, Dylong &lt;lipedireto@aol.com&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=lipedireto@aol.com"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('lipedireto@aol.com', 'lipedireto@aol.com');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=lucianolucero@uol.com.br"
+							class="menu_fix">Lucero &lt;lucianolucero@uol.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=lucianolucero@uol.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('lucianolucero@uol.com.br', 'lucianolucero@uol.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=luizcarlosmiglorancia@yahoo.com.br"
+							class="menu_fix">Luiz Carlos, Miglorancia
+						&lt;luizcarlosmiglorancia@yahoo.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=luizcarlosmiglorancia@yahoo.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('luizcarlosmiglorancia@yahoo.com.br', 'luizcarlosmiglorancia@yahoo.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=luizcerto@exata-eng.com"
+							class="menu_fix">Luiz, Certo &lt;luizcerto@exata-eng.com&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=luizcerto@exata-eng.com"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('luizcerto@exata-eng.com', 'luizcerto@exata-eng.com');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+				</table>
+				</td>
+			</tr>
+		</table>
+
+
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			background="/p.gif">
+			<tr>
+				<td background="/p.gif" height="2"><img src=/d.gif width="6"
+					height="2"></td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr bgcolor="#E5E5E5">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+					<tr>
+						<td><b class="txt12">M</b></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr bgcolor="#F7F7F7">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=meg_brasil@yahoo.com"
+							class="menu_fix">Madalena, Brandão
+						&lt;meg_brasil@yahoo.com&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=meg_brasil@yahoo.com"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('meg_brasil@yahoo.com', 'meg_brasil@yahoo.com');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=mag.eng@terra.com.br"
+							class="menu_fix">Mag, Engenharia &lt;mag.eng@terra.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=mag.eng@terra.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('mag.eng@terra.com.br', 'mag.eng@terra.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=margarida.martins@ig.com.br"
+							class="menu_fix">Maga &lt;margarida.martins@ig.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=margarida.martins@ig.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('margarida.martins@ig.com.br', 'margarida.martins@ig.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=orquideas.bromelias@uol.com.br"
+							class="menu_fix">Manuela
+						&lt;orquideas.bromelias@uol.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=orquideas.bromelias@uol.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('orquideas.bromelias@uol.com.br', 'orquideas.bromelias@uol.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=marcellapoly1@hotmail.com"
+							class="menu_fix">Marcella &lt;marcellapoly1@hotmail.com&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=marcellapoly1@hotmail.com"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('marcellapoly1@hotmail.com', 'marcellapoly1@hotmail.com');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=marcelo0001@hotmail.com"
+							class="menu_fix">Marcelo, Vieira
+						&lt;marcelo0001@hotmail.com&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=marcelo0001@hotmail.com"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('marcelo0001@hotmail.com', 'marcelo0001@hotmail.com');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=marciaw@mls.com.br"
+							class="menu_fix">Marcia &lt;marciaw@mls.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=marciaw@mls.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('marciaw@mls.com.br', 'marciaw@mls.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=vacchiano@nigata.com.br"
+							class="menu_fix">Marco, Antonio
+						&lt;vacchiano@nigata.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=vacchiano@nigata.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('vacchiano@nigata.com.br', 'vacchiano@nigata.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=mariangela@metroeuropa.co.ao"
+							class="menu_fix">Mariangela
+						&lt;mariangela@metroeuropa.co.ao&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=mariangela@metroeuropa.co.ao"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('mariangela@metroeuropa.co.ao', 'mariangela@metroeuropa.co.ao');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=marydaflauta@hotmail.com"
+							class="menu_fix">Marina, Martins
+						&lt;marydaflauta@hotmail.com&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=marydaflauta@hotmail.com"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('marydaflauta@hotmail.com', 'marydaflauta@hotmail.com');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=mario.lacerda@brfree.com.br"
+							class="menu_fix">Mario, Lacerda
+						&lt;mario.lacerda@brfree.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=mario.lacerda@brfree.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('mario.lacerda@brfree.com.br', 'mario.lacerda@brfree.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=marisalucena@ig.com.br"
+							class="menu_fix">Marisa, Lucena
+						&lt;marisalucena@ig.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=marisalucena@ig.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('marisalucena@ig.com.br', 'marisalucena@ig.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=maura@mls.com.br"
+							class="menu_fix">Maura &lt;maura@mls.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=maura@mls.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('maura@mls.com.br', 'maura@mls.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=md@md.ebonet.net"
+							class="menu_fix">md@md.ebonet.net</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=md@md.ebonet.net"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('md@md.ebonet.net', 'md@md.ebonet.net');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=metroeur@snet.co.ao"
+							class="menu_fix">Metroeuropa &lt;metroeur@snet.co.ao&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=metroeur@snet.co.ao"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('metroeur@snet.co.ao', 'metroeur@snet.co.ao');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=mido@ebonet.net"
+							class="menu_fix">Mido &lt;mido@ebonet.net&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=mido@ebonet.net"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('mido@ebonet.net', 'mido@ebonet.net');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=vmdondo@seaportbr.com"
+							class="menu_fix">Minoru, Dr. &lt;vmdondo@seaportbr.com&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=vmdondo@seaportbr.com"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('vmdondo@seaportbr.com', 'vmdondo@seaportbr.com');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=cassio@mitren.com.br"
+							class="menu_fix">Mitren, Cassio &lt;cassio@mitren.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=cassio@mitren.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('cassio@mitren.com.br', 'cassio@mitren.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=monica@cceb.com.br"
+							class="menu_fix">Monica &lt;monica@cceb.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=monica@cceb.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('monica@cceb.com.br', 'monica@cceb.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+				</table>
+				</td>
+			</tr>
+		</table>
+
+
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			background="/p.gif">
+			<tr>
+				<td background="/p.gif" height="2"><img src=/d.gif width="6"
+					height="2"></td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr bgcolor="#E5E5E5">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+					<tr>
+						<td><b class="txt12">N</b></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr bgcolor="#F7F7F7">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=nadinha52@bol.com.br"
+							class="menu_fix">Nadia &lt;nadinha52@bol.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=nadinha52@bol.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('nadinha52@bol.com.br', 'nadinha52@bol.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=newton@tvsat.co.ao"
+							class="menu_fix">Newton, Neia &lt;newton@tvsat.co.ao&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=newton@tvsat.co.ao"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('newton@tvsat.co.ao', 'newton@tvsat.co.ao');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+				</table>
+				</td>
+			</tr>
+		</table>
+
+
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			background="/p.gif">
+			<tr>
+				<td background="/p.gif" height="2"><img src=/d.gif width="6"
+					height="2"></td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr bgcolor="#E5E5E5">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+					<tr>
+						<td><b class="txt12">O</b></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr bgcolor="#F7F7F7">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=oscarhdv@aol.com"
+							class="menu_fix">Oscar, Vieira &lt;oscarhdv@aol.com&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=oscarhdv@aol.com"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('oscarhdv@aol.com', 'oscarhdv@aol.com');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+				</table>
+				</td>
+			</tr>
+		</table>
+
+
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			background="/p.gif">
+			<tr>
+				<td background="/p.gif" height="2"><img src=/d.gif width="6"
+					height="2"></td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr bgcolor="#E5E5E5">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+					<tr>
+						<td><b class="txt12">P</b></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr bgcolor="#F7F7F7">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=patythami@ig.com.br"
+							class="menu_fix">Paty &lt;patythami@ig.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=patythami@ig.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('patythami@ig.com.br', 'patythami@ig.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=paulasousa@snet.co.ao"
+							class="menu_fix">Paula Sousa - Gabinete Presidencia
+						&lt;paulasousa@snet.co.ao&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=paulasousa@snet.co.ao"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('paulasousa@snet.co.ao', 'paulasousa@snet.co.ao');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=pehomemail@aol.com"
+							class="menu_fix">Pehomemail@aol.com
+						&lt;pehomemail@aol.com&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=pehomemail@aol.com"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('pehomemail@aol.com', 'pehomemail@aol.com');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+				</table>
+				</td>
+			</tr>
+		</table>
+
+
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			background="/p.gif">
+			<tr>
+				<td background="/p.gif" height="2"><img src=/d.gif width="6"
+					height="2"></td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr bgcolor="#E5E5E5">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+					<tr>
+						<td><b class="txt12">R</b></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr bgcolor="#F7F7F7">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=ramon@neofarma.co.ao"
+							class="menu_fix">Ramon, Santos &lt;ramon@neofarma.co.ao&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=ramon@neofarma.co.ao"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('ramon@neofarma.co.ao', 'ramon@neofarma.co.ao');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=renatomeireles@br.inter.net"
+							class="menu_fix">Renato, Meireles
+						&lt;renatomeireles@br.inter.net&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=renatomeireles@br.inter.net"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('renatomeireles@br.inter.net', 'renatomeireles@br.inter.net');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=bbombordo@ig.com.br"
+							class="menu_fix">Roberto, Rico &lt;bbombordo@ig.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=bbombordo@ig.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('bbombordo@ig.com.br', 'bbombordo@ig.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=rsvp_ruth@ig.com.br"
+							class="menu_fix">Ruth, Relevo &lt;rsvp_ruth@ig.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=rsvp_ruth@ig.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('rsvp_ruth@ig.com.br', 'rsvp_ruth@ig.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+				</table>
+				</td>
+			</tr>
+		</table>
+
+
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			background="/p.gif">
+			<tr>
+				<td background="/p.gif" height="2"><img src=/d.gif width="6"
+					height="2"></td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr bgcolor="#E5E5E5">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+					<tr>
+						<td><b class="txt12">S</b></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr bgcolor="#F7F7F7">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=sandireg@ig.com.br"
+							class="menu_fix">Sandra &lt;sandireg@ig.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=sandireg@ig.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('sandireg@ig.com.br', 'sandireg@ig.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=sandrotomaselli@yahoo.com"
+							class="menu_fix">Sandro, Tomaselli
+						&lt;sandrotomaselli@yahoo.com&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=sandrotomaselli@yahoo.com"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('sandrotomaselli@yahoo.com', 'sandrotomaselli@yahoo.com');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=tiaopd@ig.com.br"
+							class="menu_fix">Sebastião &lt;tiaopd@ig.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=tiaopd@ig.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('tiaopd@ig.com.br', 'tiaopd@ig.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=informatica@squadrario.com.br"
+							class="menu_fix">Silvio, Cesar
+						&lt;informatica@squadrario.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=informatica@squadrario.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('informatica@squadrario.com.br', 'informatica@squadrario.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=silviomartins@mls.com.br"
+							class="menu_fix">Silvio, Martins
+						&lt;silviomartins@mls.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=silviomartins@mls.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('silviomartins@mls.com.br', 'silviomartins@mls.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=suzanasoares@netcabo.pt"
+							class="menu_fix">Suzana, Soares
+						&lt;suzanasoares@netcabo.pt&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=suzanasoares@netcabo.pt"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('suzanasoares@netcabo.pt', 'suzanasoares@netcabo.pt');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+				</table>
+				</td>
+			</tr>
+		</table>
+
+
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			background="/p.gif">
+			<tr>
+				<td background="/p.gif" height="2"><img src=/d.gif width="6"
+					height="2"></td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr bgcolor="#E5E5E5">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+					<tr>
+						<td><b class="txt12">T</b></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr bgcolor="#F7F7F7">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=tamarahouse@globo.com"
+							class="menu_fix">Tamara, Nascimento
+						&lt;tamarahouse@globo.com&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=tamarahouse@globo.com"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('tamarahouse@globo.com', 'tamarahouse@globo.com');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=reservations@intermunditour.com.br"
+							class="menu_fix">Tania
+						&lt;reservations@intermunditour.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=reservations@intermunditour.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('reservations@intermunditour.com.br', 'reservations@intermunditour.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=thaizat@hotmail.com"
+							class="menu_fix">Thaiza &lt;thaizat@hotmail.com&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=thaizat@hotmail.com"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('thaizat@hotmail.com', 'thaizat@hotmail.com');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=valter@seaportbr.com"
+							class="menu_fix">Tika, Dondo &lt;valter@seaportbr.com&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=valter@seaportbr.com"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('valter@seaportbr.com', 'valter@seaportbr.com');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+				</table>
+				</td>
+			</tr>
+		</table>
+
+
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			background="/p.gif">
+			<tr>
+				<td background="/p.gif" height="2"><img src=/d.gif width="6"
+					height="2"></td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr bgcolor="#E5E5E5">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+					<tr>
+						<td><b class="txt12">V</b></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr bgcolor="#F7F7F7">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=vicente@seaportbr.com"
+							class="menu_fix">Vicente, Lima &lt;vicente@seaportbr.com&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=vicente@seaportbr.com"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('vicente@seaportbr.com', 'vicente@seaportbr.com');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=virginiajasmin@netfly.com.br"
+							class="menu_fix">Virginia Jasmin
+						&lt;virginiajasmin@netfly.com.br&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=virginiajasmin@netfly.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('virginiajasmin@netfly.com.br', 'virginiajasmin@netfly.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=vitormauro@aol.com"
+							class="menu_fix">Vitor, Galati &lt;vitormauro@aol.com&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=vitormauro@aol.com"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('vitormauro@aol.com', 'vitormauro@aol.com');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+				</table>
+				</td>
+			</tr>
+		</table>
+
+
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			background="/p.gif">
+			<tr>
+				<td background="/p.gif" height="2"><img src=/d.gif width="6"
+					height="2"></td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr bgcolor="#E5E5E5">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+					<tr>
+						<td><b class="txt12">W</b></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr bgcolor="#F7F7F7">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=suedondo@yahoo.com"
+							class="menu_fix">Wilson Dondo &lt;suedondo@yahoo.com&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=suedondo@yahoo.com"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('suedondo@yahoo.com', 'suedondo@yahoo.com');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+				</table>
+				</td>
+			</tr>
+		</table>
+
+
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			background="/p.gif">
+			<tr>
+				<td background="/p.gif" height="2"><img src=/d.gif width="6"
+					height="2"></td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr bgcolor="#E5E5E5">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+					<tr>
+						<td><b class="txt12">Y</b></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr bgcolor="#F7F7F7">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=yurika@snet.co.ao"
+							class="menu_fix">Yurika &lt;yurika@snet.co.ao&gt;</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=yurika@snet.co.ao"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('yurika@snet.co.ao', 'yurika@snet.co.ao');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+
+				</table>
+				</td>
+			</tr>
+		</table>
+
+
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			background="/p.gif">
+			<tr>
+				<td background="/p.gif" height="2"><img src=/d.gif width="6"
+					height="2"></td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr bgcolor="#E5E5E5">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+					<tr>
+						<td><b class="txt12">Z</b></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr bgcolor="#F7F7F7">
+				<td width="5"><img src=/d.gif width="10" height="5"></td>
+				<td>
+				<table width="100%" border="0" cellspacing="5" cellpadding="0">
+
+
+					<!-- USUARIO -->
+
+					<tr>
+						<td><a
+							href="/cgi-bin/webmail/webmail-write.pl?acao=composemessage&amp;firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;composetype=sendto&amp;to=zazacestas@zazacestas.com.br"
+							class="menu_fix">zazacestas@zazacestas.com.br</a></td>
+						<td width="45"><a
+							href="/cgi-bin/webmail/webmail-abook.pl?firstmessage=0&amp;sort=bylastname&amp;sessionid=CfdJ5ZwX5p2buRSKfsyAAdacY2Y8KDCi&amp;acao=editaddress&amp;addrid=zazacestas@zazacestas.com.br"
+							onMouseOver="window.status='Editar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_editar.gif" border="0" width="45" height="12"></a></td>
+						<td width="45"><a
+							href="JavaScript:deladdress('zazacestas@zazacestas.com.br', 'zazacestas@zazacestas.com.br');"
+							onMouseOver="window.status='Apagar'; return true;"
+							onMouseOut="window.status=''; return true;"><img
+							src="/img/pt_BR/but_apagar.gif" border="0" width="45" height="12"></a></td>
+					</tr>
+
+
+					<!-- GRUPO -->
+
+
+					<!-- GRUPO GLOBAL -->
+
+
+					<!-- EMAIL GLOBAL -->
+
+
+				</table>
+				</td>
+			</tr>
+		</table>
+		<br>
+
+
+		</td>
+	</tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td bgcolor="#666666"><img src="/d.gif" width="1" height="1"></td>
+	</tr>
+</table>
+</body>
+</html>
