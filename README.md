@@ -96,11 +96,13 @@ Para instalar o ASC é preciso de um servidor Web, sugerimos o Apache 2 ou super
 
 Para configurar o sistema, deve-se alterar o arquivo de configuração que consta na pasta ./config/default.php com as informações referentes ao seu banco de dados, caminho fisico dos arquivos e o endereço virtual do sistema.
 
-Criar a estrutura do banco de dados, deve-ser executar o arquivo que conta na pasta ./sql/database.sql
+Após deve-se criar a estrutura do banco de dados importando para o MySQL o arquivo que consta na pasta ./sql/database.sql
 
 
+Dúvidas & Informações
+=====================
 
-Dúvidas ou maiores informações entre em contato : Renato Marinho ( renato.marinho@greyland.com.br )
+Entre em contato : Renato Marinho ( E-mail: renato.marinho@greyland.com.br / Skype: renatomarinho13 )
 
 
 
