@@ -1,7 +1,7 @@
 ASC - Ajax Sales Cloud
 ======================
 
-ASC é a sigla de Ajax Sales Cloud, um sistema open source distribuido sob a licença GPL3v, um completo sistema para vendas de produtos em lojas fisicas, tendo como principal caracteristica a gama de funcionalidade disponíveis e a facilidade de ser executado via browser.
+ASC é a sigla de Ajax Sales Cloud, um completo sistema Open Source e distribuido sob a licença GPL3v para o gerenciamento e venda de produtos em lojas fisicas, tendo como principal caracteristica a gama de funcionalidade disponíveis e a facilidade de ser executado via browser.
 
 Atualmente o sistema encontra-se em fase de testes e estamos precisamos formar um time de pessoas altamente comprometidas e que estejam dispostas a criar um produto de qualidade totalmente open source.
 
