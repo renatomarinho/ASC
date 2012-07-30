@@ -26,7 +26,7 @@
 <?php ini_set('display_errors', 0); ?> 
 
 <?
-header ('Content-Type: text/html; charset=ISO-8859-1');
+header ('Content-Type: text/html; charset=utf-8');
 header("Cache-Control: no-store, no-cache, must-revalidate");
 header("Cache-Control: post-check=0, pre-check=0", false );
 header("Expires: Sat, 26 Jul 1997 05:00:00 GMT");
@@ -41,7 +41,7 @@ srand ( ( double ) microtime () * 10000000 );
  * Dados de acesso ao banco de dados
  */
 $_CONF['database_host'] = 'localhost';
-$_CONF['database_name'] = 'AjaxSalesCloud';
+$_CONF['database_name'] = 'blackpacu';
 
 $_CONF['database_username'] = 'root';
 $_CONF['database_password'] = '123456';
@@ -57,7 +57,7 @@ $_CONF ['PATH'] = "/mnt/hgfs/Projetos/ASC/PRODUCTION/VERSION_01/SYSTEM/client/";
  * Endereco virtual
  * ex.: "http://127.0.0.1/ASC/"
  */
-$_CONF ['PATH_VIRTUAL'] = "http://www.asc.dev/";
+$_CONF ['PATH_VIRTUAL'] = "http://www.ajaxsalescloud.dev/";
 
 /**
  * Endereco virtual do servidor

@@ -20,7 +20,6 @@
 //                                                                                    //
 ////////////////////////////////////////////////////////////////////////////////////////
 
-header ( 'Content-Type: text/html; charset=ISO-8859-1' );
 
 if (! isset ( $_CONF ['PATH'] )) {
 	require "config/default.php";
@@ -35,8 +34,8 @@ $nomecliente = $_CONF ['nome_loja'];
 <HTML>
 <HEAD>
 
-<title>REAL VIRTUAL STORE</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title><?=$_CONF ['nome_loja']?></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="css/estilo.css" />
 
 </head>
@@ -64,7 +63,7 @@ $nomecliente = $_CONF ['nome_loja'];
 										<td height="8"></td>
 									</tr>
 									<TR>
-										<TD width="70"><b style="font-size: 14px; color: #666;">Usu�rio</b></TD>
+										<TD width="70"><b style="font-size: 14px; color: #666;">Usuário</b></TD>
 										<TD><input type="text" name="usuario_1" class="inputacesso"
 											maxlength="15"
 											style="width: 120px; font-size: 14px; border: 1px solid #c0c0c0;"></TD>

@@ -431,7 +431,7 @@ menu_ajuda[1]='<a href="#"><img src="<?=$_CONF ['PATH_VIRTUAL'];?>imgs/icons/aju
 
 								<table border="0" cellspacing="0" cellpadding="0" style="width: 210px">
 									<tr>
-										<td align="center"><a href="index.php"><img src="imgs/ASC - Ajax Sales Cloud.jpg" title="Ir para página inicial" alt="Ir para página inicial" /></a></td>
+										<td align="center"><a href="index.php"><img src="imgs/ASC.jpg" title="Ir para página inicial" alt="Ir para página inicial" /></a></td>
 									</tr>
 									<tr>
 										<td align="right">
