@@ -41,7 +41,7 @@ srand ( ( double ) microtime () * 10000000 );
  * Dados de acesso ao banco de dados
  */
 $_CONF['database_host'] = 'localhost';
-$_CONF['database_name'] = 'blackpacu';
+$_CONF['database_name'] = 'asc_database';
 
 $_CONF['database_username'] = 'root';
 $_CONF['database_password'] = '123456';
