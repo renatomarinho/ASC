@@ -3,7 +3,17 @@ ASC - Ajax Sales Cloud
 
 ASC é a sigla de Ajax Sales Cloud, um completo sistema Open Source e distribuido sob a licença GPL3v para o gerenciamento e venda de produtos em lojas fisicas, tendo como principal caracteristica a gama de funcionalidade disponíveis e a facilidade de ser executado via browser.
 
-Atualmente o sistema encontra-se em fase de testes e estamos precisamos formar um time de pessoas altamente comprometidas e que estejam dispostas a criar um produto de qualidade totalmente open source.
+Atualmente o sistema encontra-se em fase de testes, acesse a demo.
+
+
+
+Demo - Dados de acesso
+======================
+
+Endereço : http://www.greyland.com.br/asc/login.php
+
+Usuário : ROOT
+Senha : 123456
 
 
 
@@ -97,6 +107,7 @@ Para instalar o ASC é preciso de um servidor Web, sugerimos o Apache 2 ou super
 Para configurar o sistema, deve-se alterar o arquivo de configuração que consta na pasta ./config/default.php com as informações referentes ao seu banco de dados, caminho fisico dos arquivos e o endereço virtual do sistema.
 
 Após deve-se criar a estrutura do banco de dados importando para o MySQL o arquivo que consta na pasta ./sql/database.sql
+
 
 
 Dúvidas & Informações
