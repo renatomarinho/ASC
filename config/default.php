@@ -26,7 +26,7 @@
 <?php ini_set('display_errors', 0); ?> 
 
 <?
-header ('Content-Type: text/html; charset=utf-8');
+header('Content-Type: text/html; charset=utf-8');
 header("Cache-Control: no-store, no-cache, must-revalidate");
 header("Cache-Control: post-check=0, pre-check=0", false );
 header("Expires: Sat, 26 Jul 1997 05:00:00 GMT");

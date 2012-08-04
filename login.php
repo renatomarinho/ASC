@@ -21,14 +21,14 @@
 ////////////////////////////////////////////////////////////////////////////////////////
 
 
-if (! isset ( $_CONF ['PATH'] )) {
+if (! isset ( $_CONF['PATH'] )) {
 	require "config/default.php";
 }
 
-session_unset ();
-session_destroy ();
+session_unset();
+session_destroy();
 
-$nomecliente = $_CONF ['nome_loja'];
+$nomecliente = $_CONF['nome_loja'];
 
 ?>
 <HTML>

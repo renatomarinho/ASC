@@ -22,8 +22,6 @@
 
 ob_start();
 
-header('Content-Type: text/html; UTF-8');
-
 require "config/default.php";
 
 $db = new db();
@@ -32,23 +30,13 @@ $db->connect();
 $validations = new validations();
 
 ?>
-<HTML>
-<HEAD>
 
-	<title><?=$_CONF ['nome_loja']?></title>
-	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-	<script type="text/javascript">
-	var path = '<?=$_CONF['PATH_VIRTUAL'];?>';
-	</script>
-	<script src="js/main.js" type="text/javascript"></script>
-	<script src="js/kernel.js" type="text/javascript"></script>
-	
-</head>
-<body>
 <?
 if (isset($_SESSION['nomeuser'])) {
 	header("Location: index.php");
 } else if (isset($_POST) && isset($_POST['usuario_1']) && isset($_POST['senha_1'])) {
+
+    
 	$user = $validations->validStringForm(strtoupper($_POST['usuario_1']));
 	$senha = md5($_POST['senha_1']);
 	$sql = 'SELECT id, autoriza FROM cad_login WHERE ativo = \'ativo\' AND login = \''.$user.'\' AND senha = \''.$senha.'\' LIMIT 1';
@@ -67,16 +55,11 @@ if (isset($_SESSION['nomeuser'])) {
 		}		
 		$sql = "INSERT INTO log_login (cad_login_id, datalog) VALUES (".$row['id'].", ".strtotime('now').")";
 		$db->query($sql);
-		if( isset($_POST['acessar'])){
-			echo '<SCRIPT>autentica_software();</SCRIPT>';
-		} else {
-			echo '<SCRIPT>document.location=\'index.php?id=2\'</SCRIPT>';
-		}
+		Header('Location: index.php');
 	} else {
 		echo '<SCRIPT>alert(\'Por favor, preencha os dados de acesso coretamente\');document.location=\'index.php\'</SCRIPT>';
 	}
+	
 } 
 
 ?>
-</body>
-</html>

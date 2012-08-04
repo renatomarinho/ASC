@@ -21,8 +21,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////
 ?>
 
-<?php ini_set('display_errors', 0); ?> 
-<?php
+<?
 require "include/header.php";
 ?>
 <div id="conteudo_total"></div>

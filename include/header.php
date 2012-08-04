@@ -21,12 +21,15 @@
 ////////////////////////////////////////////////////////////////////////////////////////
 
 
-ob_start ();
+
 
 require "config/default.php";
 
-if (! isset ( $_SESSION ['nomeuser'] )) {
-	header ( "Location: login.php" );
+if ( !isset($_SESSION['nomeuser']) ) {
+    
+    echo '<script>document.location=\'login.php\'</script>';
+    exit();
+    
 }
 
 for($n = 0; $n < $_CONF ['max_perm']; $n ++) {
@@ -104,7 +107,7 @@ numero++
 
 if ($permissoes [2]) {
 	?>
-menu_cadastro[numero]='<a href="javascript:;" onclick="javascript:carrega_listagemcolecoes(path+\'modulos/colecao/colecao_lista.php\',\'conteudo_direito\', \'historico\');"><img src="<?=$_CONF ['PATH_VIRTUAL'];?>imgs/icons/colecoes_menu.png" class="t22" align="absmiddle">3&nbsp;coleções</a>';
+menu_cadastro[numero]='<a href="javascript:;" onclick="javascript:carrega_listagemcolecoes(path+\'modulos/colecao/colecao_lista.php\',\'conteudo_direito\', \'historico\');"><img src="<?=$_CONF ['PATH_VIRTUAL'];?>imgs/icons/colecoes_menu.png" class="t22" align="absmiddle">3&nbsp;cole&ccedil;&otilde;es</a>';
 numero++
 <?
 }
@@ -320,7 +323,7 @@ numero++
 
 if ($permissoes [21]) {
 	?>
-menu_util[numero]='<a href="javascript:;" onclick="javascript:autentica_software();"><img src="<?=$_CONF ['PATH_VIRTUAL'];?>imgs/icons/atualizacao_menu.png" class="t22" align="absmiddle">4&nbsp;atualizações</a>'
+menu_util[numero]='<a href="javascript:;" onclick="javascript:autentica_software();"><img src="<?=$_CONF ['PATH_VIRTUAL'];?>imgs/icons/atualizacao_menu.png" class="t22" align="absmiddle">4&nbsp;atualiza&ccedil;&otilde;es</a>'
 numero++
 <?
 }
