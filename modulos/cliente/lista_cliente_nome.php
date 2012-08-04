@@ -75,13 +75,13 @@ if (isset ( $_GET ['refer'] )) {
 				if (strlen ( $rows ['txtnome'] ) > 0) {
 					$telefone = (formata_telefone ( $rows ['txttelefone'] ) != ('(00) 0000-0000')) ? formata_telefone ( $rows ['txttelefone'] ) : '';
 					?>
-				<tr id="clienteescolhido_bg_<?=$rows ['idcliente'];?>"
+				<tr id="clienteescolhido_bg_<?=$rows['idcliente'];?>"
 		style="cursor: pointer; cursor: hand;"
-		onclick="javascript:carrega_cliente_mostradados('<?=$rows ['idcliente'];?>')">
-		<td height="25" id="clienteescolhido_<?=$rows ['idcliente'];?>">&nbsp;<img
+		onclick="javascript:carrega_cliente_mostradados('<?=$rows['idcliente'];?>')">
+		<td height="25" id="clienteescolhido_<?=$rows['idcliente'];?>">&nbsp;<img
 			src="<?=$_CONF ['PATH_VIRTUAL'];?>imgs/icons/vcard.png" class="t22"
-			align="absmiddle"> <span id="nomecliente_<?=$rows ['idcliente'];?>"
-			style="height: 25px;"><?=qtdCaracteres ( ucwords ( strtolower ( $rows ['txtnome'] ) ), 50 );?><span></td>
+			align="absmiddle"> <span id="nomecliente_<?=$rows['idcliente'];?>"
+			style="height: 25px;"><?=qtdCaracteres ( ucwords ( strtolower ( $rows['txtnome'] ) ), 50 );?><span></td>
 	</tr>
 	<tr>
 		<td class="l3"></td>

@@ -1,5 +1,5 @@
-var dias = new Array('Domingo','Segunda','Ter�a','Quarta','Quinta','Sexta','Sabado');
-var meses = new Array('','Janeiro','Fevereiro','Mar�o','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro');
+var dias = new Array('Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sabado');
+var meses = new Array('','Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro');
 
 // etiquetas por pagina
 var etiqueta_modelo_6081 = 20;
@@ -587,7 +587,7 @@ function geraretiqueta_impressao_produto()
 
 	if ( prod_especifico && !codbarra.value ){
 		codbarra.style.border = '1px solid red';
-		msgerro.innerHTML = '<b style="color:red">Preencha o C�d. Barra do produto</b>';
+		msgerro.innerHTML = '<b style="color:red">Preencha o Cód. Barra do produto</b>';
 		return;
 	}
 
@@ -680,7 +680,7 @@ function geraretiqueta_impressao_produto()
 				else
 				{
 					enablePrintBnt(false);
-					flash('N�o foi poss�vel gerar etiquetas com o filtro selecionado.', 'erro');
+					flash('Não foi possível gerar etiquetas com o filtro selecionado.', 'erro');
 				}
 			}
 		}
@@ -721,7 +721,7 @@ function geraretiqueta_impressao_cliente()
 	if ( cliente_estado && sel_estado.value == '0')
 	{
 		sel_estado.style.border = '1px solid red';
-		msgerro.innerHTML = '<b style="color:red">Selecione um estado espec�fico</b>';
+		msgerro.innerHTML = '<b style="color:red">Selecione um estado específico</b>';
 		return;
 	}
 
@@ -729,7 +729,7 @@ function geraretiqueta_impressao_cliente()
 	if ( cliente_mes && mes_niver.value == '0')
 	{
 		mes_niver.style.border = '1px solid red';
-		msgerro.innerHTML = '<b style="color:red">Selecione o m�s de anivers�rio</b>';
+		msgerro.innerHTML = '<b style="color:red">Selecione o mês de aniversário</b>';
 		return;
 	}
 
@@ -818,7 +818,7 @@ function geraretiqueta_impressao_cliente()
 					else
 					{
 						enablePrintBnt(false);
-						flash('N�o foi poss�vel gerar etiquetas com o filtro selecionado.', 'erro');
+						flash('Não foi possível gerar etiquetas com o filtro selecionado.', 'erro');
 					}
 
 				}
@@ -1112,7 +1112,7 @@ function adicionar_novacolecaosalvar(dropdown, texto){
 	var mensagem = document.getElementById('mensagem');
 
 	if ( !nomecolecao.value ){
-		mensagem.innerHTML = '<b style="color:red">Preencha o nome da cole��o corretamente</b>';
+		mensagem.innerHTML = '<b style="color:red">Preencha o nome da coleção corretamente</b>';
 		nomecolecao.style.border = '1px solid red';
 	} else {
 		nomecolecao.style.border = '1px solid #6aa9e9';
@@ -1299,14 +1299,14 @@ function adicionar_fornecedorsalvar_form(){
 	}
 
 	if ( !checanumero(idenest.value,0) && idenest.value ){
-		msg = '<p style="color:red"><b>Preencha a insc. estadual com somente n�meros ( Opcional )</b></p>';
+		msg = '<p style="color:red"><b>Preencha a insc. estadual com somente números ( Opcional )</b></p>';
 		idenest.style.border = '1px solid red';
 	} else {
 		idenest.style.border = '1px solid #6aa9e9';
 	}
 
 	if ( !checanumero(cpf.value, 0) && cpf.value ){
-		msg = '<p style="color:red"><b>Preencha o CPF/CNPJ com somente n�meros( Opcional )</b></p>';
+		msg = '<p style="color:red"><b>Preencha o CPF/CNPJ com somente números( Opcional )</b></p>';
 		cpf.style.border = '1px solid red';
 	} else {
 		cpf.style.border = '1px solid #6aa9e9';
@@ -1324,7 +1324,7 @@ function adicionar_fornecedorsalvar_form(){
 	}
 
 	if ( !checanumero(telefone,10) ){
-		msg = '<p style="color:red"><b>Preencha o telefone corretamente ( Obrigat�rio )</b></p>';
+		msg = '<p style="color:red"><b>Preencha o telefone corretamente ( Obrigatório )</b></p>';
 		document.getElementById('telefone').style.border = '1px solid red';
 		document.getElementById('telefone2').style.border = '1px solid red';
 		document.getElementById('telefone3').style.border = '1px solid red';
@@ -1342,7 +1342,7 @@ function adicionar_fornecedorsalvar_form(){
 	}
 
 	if ( !nomefornec.value ){
-		msg = '<p style="color:red"><b>Preencha nome do fornecedor corretamente ( Obrigat�rio )</b></p>';
+		msg = '<p style="color:red"><b>Preencha nome do fornecedor corretamente ( Obrigatório )</b></p>';
 		nomefornec.style.border = '1px solid red';
 	} else {
 		nomefornec.style.border = '1px solid #6aa9e9';
@@ -1415,14 +1415,14 @@ function adicionar_fornecedorsalvar(){
 	}
 
 	if ( !checanumero(idenest.value,0) && idenest.value ){
-		msg = '<p style="color:red"><b>Preencha a insc. estadual com somente n�meros ( Opcional )</b></p>';
+		msg = '<p style="color:red"><b>Preencha a insc. estadual com somente números ( Opcional )</b></p>';
 		idenest.style.border = '1px solid red';
 	} else {
 		idenest.style.border = '1px solid #6aa9e9';
 	}
 
 	if ( !checanumero(cpf.value, 0) && cpf.value ){
-		msg = '<p style="color:red"><b>Preencha o CPF/CNPJ com somente n�meros( Opcional )</b></p>';
+		msg = '<p style="color:red"><b>Preencha o CPF/CNPJ com somente números( Opcional )</b></p>';
 		cpf.style.border = '1px solid red';
 	} else {
 		cpf.style.border = '1px solid #6aa9e9';
@@ -1440,7 +1440,7 @@ function adicionar_fornecedorsalvar(){
 	}
 
 	if ( !checanumero(telefone,10) ){
-		msg = '<p style="color:red"><b>Preencha o telefone corretamente ( Obrigat�rio )</b></p>';
+		msg = '<p style="color:red"><b>Preencha o telefone corretamente ( Obrigatório )</b></p>';
 		document.getElementById('telefone').style.border = '1px solid red';
 		document.getElementById('telefone2').style.border = '1px solid red';
 		document.getElementById('telefone3').style.border = '1px solid red';
@@ -1458,7 +1458,7 @@ function adicionar_fornecedorsalvar(){
 	}
 
 	if ( !nomefornec.value ){
-		msg = '<p style="color:red"><b>Preencha nome do fornecedor corretamente ( Obrigat�rio )</b></p>';
+		msg = '<p style="color:red"><b>Preencha nome do fornecedor corretamente ( Obrigatório )</b></p>';
 		nomefornec.style.border = '1px solid red';
 	} else {
 		nomefornec.style.border = '1px solid #6aa9e9';
@@ -1499,7 +1499,7 @@ function adicionar_fornecedorsalvar(){
 				        if (retorno[1]==0){
 				        	msgresposta = '<b style="color:green">O Fornecedor foi adicionado com sucesso</b><br/><br/>Obs.: O fornecedor adicionado encontra-se selecionado no combo <b>Fornecedor</b> do produto.';
 				        } else {
-				        	msgresposta = '<b style="color:green">O nome do Fornecedor j� est� cadastrado</b><br/><br/>Obs.: O fornecedor encontra-se selecionado no combo <b>Fornecedor</b> do produto.';
+				        	msgresposta = '<b style="color:green">O nome do Fornecedor já está cadastrado</b><br/><br/>Obs.: O fornecedor encontra-se selecionado no combo <b>Fornecedor</b> do produto.';
 				        }
 				        document.getElementById('linha_separador_fornecedor').style.height = '60px';
 				        document.getElementById('mensagem').innerHTML = msgresposta;
@@ -1553,14 +1553,14 @@ function cadastro_fornecedor_editar(){
 	}
 
 	if ( !checanumero(idenest.value,0) && idenest.value ){
-		msg = '<p style="color:red"><b>Preencha a insc. estadual com somente n�meros ( Opcional )</b></p>';
+		msg = '<p style="color:red"><b>Preencha a insc. estadual com somente números ( Opcional )</b></p>';
 		idenest.style.border = '1px solid red';
 	} else {
 		idenest.style.border = '1px solid #6aa9e9';
 	}
 
 	if ( !checanumero(cpf.value, 0) && cpf.value ){
-		msg = '<p style="color:red"><b>Preencha o CPF/CNPJ com somente n�meros( Opcional )</b></p>';
+		msg = '<p style="color:red"><b>Preencha o CPF/CNPJ com somente números( Opcional )</b></p>';
 		cpf.style.border = '1px solid red';
 	} else {
 		cpf.style.border = '1px solid #6aa9e9';
@@ -1578,7 +1578,7 @@ function cadastro_fornecedor_editar(){
 	}
 
 	if ( !checanumero(telefone,10) ){
-		msg = '<p style="color:red"><b>Preencha o telefone corretamente ( Obrigat�rio )</b></p>';
+		msg = '<p style="color:red"><b>Preencha o telefone corretamente ( Obrigatório )</b></p>';
 		document.getElementById('edita_telefone').style.border = '1px solid red';
 		document.getElementById('edita_telefone2').style.border = '1px solid red';
 		document.getElementById('edita_telefone3').style.border = '1px solid red';
@@ -1596,7 +1596,7 @@ function cadastro_fornecedor_editar(){
 	}
 
 	if ( !nomefornec.value ){
-		msg = '<p style="color:red"><b>Preencha nome do fornecedor corretamente ( Obrigat�rio )</b></p>';
+		msg = '<p style="color:red"><b>Preencha nome do fornecedor corretamente ( Obrigatório )</b></p>';
 		nomefornec.style.border = '1px solid red';
 	} else {
 		nomefornec.style.border = '1px solid #6aa9e9';
@@ -1933,7 +1933,7 @@ function carrega_produtovendacodbarra_auto()
 	}
 	else
 	{
-		document.getElementById('msgerrovendageral').innerHTML = '<b style="color:red;">ERRO - O c�digo de barra deve conter somente n�meros</b>';
+		document.getElementById('msgerrovendageral').innerHTML = '<b style="color:red;">ERRO - O código de barra deve conter somente números</b>';
 	}
 }
 
@@ -1943,7 +1943,7 @@ function carrega_produtovendacodbarra(){
 	if ( codbarra.length > 8 ){
 		carrega_produtovendacodbarra_auto();
 	} else {
-		document.getElementById('msgerrovendageral').innerHTML = '<b style="color:red;">ERRO - Preencha o c�digo de barra corretamente</b>';
+		document.getElementById('msgerrovendageral').innerHTML = '<b style="color:red;">ERRO - Preencha o código de barra corretamente</b>';
 	}
 
 }
@@ -1960,7 +1960,7 @@ function carrega_confirmacaoauthturno(){
 	msg.innerHTML = '';
 
 	if ( !idusuario.value ){
-		msg.innerHTML = '<b style="color:red">Selecione o usu�rio corretamente</b>';
+		msg.innerHTML = '<b style="color:red">Selecione o usuário corretamente</b>';
 	} else if ( !pwdusuario.value || pwdusuario.value == 'digite sua senha' ) {
 		msg.innerHTML = '<b style="color:red">Digite a sua senha corretamente</b>';
 	} else {
@@ -2129,7 +2129,7 @@ function carrega_editarproduto_salvar(){
 		} else {
 			qtdestoquenumero = checanumero(qtdestoque.value,0);
 			if ( !qtdestoquenumero ){
-				msgerro = 'A quantidade em estoque deve conter somente n�meros';
+				msgerro = 'A quantidade em estoque deve conter somente números';
 				qtdestoque.style.border = '1px solid red';
 			} else {
 				qtdestoque.style.border = '1px solid #6aa9e9';
@@ -2137,7 +2137,7 @@ function carrega_editarproduto_salvar(){
 		}
 
 		if ( !vlvarejo.value ){
-			msgerro = 'Preencha o pre�o de varejo do produto corretamente ou adicione "zeros"';
+			msgerro = 'Preencha o preço de varejo do produto corretamente ou adicione "zeros"';
 			vlvarejo.style.border = '1px solid red';
 		} else {
 			vlvarejonumero = vlvarejo.value;
@@ -2145,7 +2145,7 @@ function carrega_editarproduto_salvar(){
 			vlvarejonumero = vlvarejonumero.replace(',','');
 			vlvarejonumero = checanumero(vlvarejonumero,0);
 			if ( !vlvarejonumero ){
-				msgerro = 'O pre�o de varejo do produto deve conter somente n�meros, ponto e virgula';
+				msgerro = 'O preço de varejo do produto deve conter somente números, ponto e virgula';
 				vlvarejo.style.border = '1px solid red';
 			} else {
 				vlvarejo.style.border = '1px solid #6aa9e9';
@@ -2153,7 +2153,7 @@ function carrega_editarproduto_salvar(){
 		}
 
 		if ( !vlatacado.value ){
-			msgerro = 'Preencha o pre�o de pronta entrega do produto corretamente ou adicione "zeros"';
+			msgerro = 'Preencha o preço de pronta entrega do produto corretamente ou adicione "zeros"';
 			vlatacado.style.border = '1px solid red';
 		} else {
 			vlatacadonumero = vlatacado.value;
@@ -2161,7 +2161,7 @@ function carrega_editarproduto_salvar(){
 			vlatacadonumero = vlatacadonumero.replace(',','');
 			vlatacadonumero = checanumero(vlatacadonumero,0);
 			if ( !vlatacadonumero ){
-				msgerro = 'O pre�o de atacado do produto deve conter somente n�meros, ponto e virgula';
+				msgerro = 'O preço de atacado do produto deve conter somente números, ponto e virgula';
 				vlatacado.style.border = '1px solid red';
 			} else {
 				vlatacado.style.border = '1px solid #6aa9e9';
@@ -2169,7 +2169,7 @@ function carrega_editarproduto_salvar(){
 		}
 
 		if ( !vlpentrega.value ){
-			msgerro = 'Preencha o pre�o de pronta entrega do produto corretamente ou adicione "zeros"';
+			msgerro = 'Preencha o preço de pronta entrega do produto corretamente ou adicione "zeros"';
 			vlpentrega.style.border = '1px solid red';
 		} else {
 			vlpentreganumero = vlpentrega.value;
@@ -2177,7 +2177,7 @@ function carrega_editarproduto_salvar(){
 			vlpentreganumero = vlpentreganumero.replace(',','');
 			vlpentreganumero = checanumero(vlpentreganumero,0);
 			if ( !vlpentreganumero ){
-				msgerro = 'O pre�o de pronta entrega do produto deve conter somente n�meros, ponto e virgula';
+				msgerro = 'O preço de pronta entrega do produto deve conter somente números, ponto e virgula';
 				vlpentrega.style.border = '1px solid red';
 			} else {
 				vlpentrega.style.border = '1px solid #6aa9e9';
@@ -2185,7 +2185,7 @@ function carrega_editarproduto_salvar(){
 		}
 
 		if ( !vlcusto.value ){
-			msgerro = 'Preencha o pre�o de custo do produto corretamente ou adicione "zeros"';
+			msgerro = 'Preencha o preço de custo do produto corretamente ou adicione "zeros"';
 			vlcusto.style.border = '1px solid red';
 		} else {
 			vlcustonumero = vlcusto.value;
@@ -2193,7 +2193,7 @@ function carrega_editarproduto_salvar(){
 			vlcustonumero = vlcustonumero.replace(',','');
 			vlcustonumero = checanumero(vlcustonumero,0);
 			if ( !vlcustonumero ){
-				msgerro = 'O pre�o de custo do produto deve conter somente n�meros, ponto e virgula';
+				msgerro = 'O preço de custo do produto deve conter somente números, ponto e virgula';
 				vlcusto.style.border = '1px solid red';
 			} else {
 				vlcusto.style.border = '1px solid #6aa9e9';
@@ -2502,8 +2502,8 @@ function editar_colecao(idcolecao){
 	txtperiodocol = periodocol.innerHTML;
 	txtdescricol = descricol.innerHTML;
 
-	if ( txtperiodocol.indexOf('at�') > 0 ){
-		periodo = txtperiodocol.replace(' at� ', '|');
+	if ( txtperiodocol.indexOf('até') > 0 ){
+		periodo = txtperiodocol.replace(' até ', '|');
 		periodo = periodo.split('|');
 		periodo01 = periodo[0].split(' de ');
 		periodo02 = periodo[1].split(' de ');
@@ -2547,7 +2547,7 @@ function editar_colecao(idcolecao){
 	select_colecaoano2 += '</select>';
 
 	nomecol.innerHTML = '<input type="text" id="input_txtnomecol" value="'+txtnomecol+'" style="width:220px" maxlength="30">';
-	periodocol.innerHTML = select_colecaomes1+'&nbsp;de&nbsp;'+select_colecaoano1+'&nbsp;at�&nbsp;'+select_colecaomes2+'&nbsp;de&nbsp;'+select_colecaoano2;
+	periodocol.innerHTML = select_colecaomes1+'&nbsp;de&nbsp;'+select_colecaoano1+'&nbsp;até&nbsp;'+select_colecaomes2+'&nbsp;de&nbsp;'+select_colecaoano2;
 	descricol.innerHTML = '<textarea id="textarea_txtdescricol" style="width:380px;" rows="4">'+strip_tags(txtdescricol)+'</textarea>'
 
 	document.getElementById('diveditar').style.display = 'block';
@@ -2586,7 +2586,7 @@ function editar_colecao_salvar(){
 				if ( document.getElementById('duracaocolecao').checked ){
 					txtperiodo = 'indeterminado';
 				} else {
-					txtperiodo = meses[colecaomes1.value]+' de '+colecaoano1.value+' at� '+meses[colecaomes2.value]+' de '+colecaoano2.value;
+					txtperiodo = meses[colecaomes1.value]+' de '+colecaoano1.value+' até '+meses[colecaomes2.value]+' de '+colecaoano2.value;
 				}
 				periodocol.innerHTML = txtperiodo;
 				descricol.innerHTML = nl2br(txtdescricol.value);
@@ -2627,7 +2627,7 @@ function carrega_adicionarproduto_salvar(){
 	} else {
 		qtdestoquenumero = checanumero(qtdestoque.value,0);
 		if ( !qtdestoquenumero ){
-			msgerro = 'A quantidade em estoque deve conter somente n�meros';
+			msgerro = 'A quantidade em estoque deve conter somente números';
 			qtdestoque.style.border = '1px solid red';
 		} else {
 			qtdestoque.style.border = '1px solid #6aa9e9';
@@ -2645,7 +2645,7 @@ function carrega_adicionarproduto_salvar(){
 		vlvarejonumero = checanumero(vlvarejonumero,0);
 		*/
 		if ( !checa_numero_valor(vlvarejo.value) ){
-			msgerro = 'O valor de varejo do produto deve conter somente n�meros, ponto e virgula';
+			msgerro = 'O valor de varejo do produto deve conter somente números, ponto e virgula';
 			vlvarejo.style.border = '1px solid red';
 		} else {
 			vlvarejo.style.border = '1px solid #6aa9e9';
@@ -2663,7 +2663,7 @@ function carrega_adicionarproduto_salvar(){
 		vlatacadonumero = checanumero(vlatacadonumero,0);
 		*/
 		if ( !checa_numero_valor(vlatacado.value) ){
-			msgerro = 'O valor de atacado do produto deve conter somente n�meros, ponto e virgula';
+			msgerro = 'O valor de atacado do produto deve conter somente números, ponto e virgula';
 			vlatacado.style.border = '1px solid red';
 		} else {
 			vlatacado.style.border = '1px solid #6aa9e9';
@@ -2681,7 +2681,7 @@ function carrega_adicionarproduto_salvar(){
 		vlpentreganumero = checanumero(vlpentreganumero,0);
 		*/
 		if ( !checa_numero_valor(vlpentrega.value) ){
-			msgerro = 'O valor de pronta entrega do produto deve conter somente n�meros, ponto e virgula';
+			msgerro = 'O valor de pronta entrega do produto deve conter somente números, ponto e virgula';
 			vlpentrega.style.border = '1px solid red';
 		} else {
 			vlpentrega.style.border = '1px solid #6aa9e9';
@@ -2699,7 +2699,7 @@ function carrega_adicionarproduto_salvar(){
 		vlcustonumero = checanumero(vlcustonumero,0);
 		*/
 		if ( !checa_numero_valor(vlcusto.value) ){
-			msgerro = 'O valor de custo do produto deve conter somente n�meros, ponto e virgula';
+			msgerro = 'O valor de custo do produto deve conter somente números, ponto e virgula';
 			vlcusto.style.border = '1px solid red';
 		} else {
 			vlcusto.style.border = '1px solid #6aa9e9';
@@ -2812,7 +2812,7 @@ function cadastro_produto_adicionarsalvar(){
 	}
 
 	if ( !checanumero(nnota.value,0) && nnota.value ){
-		msgerro = 'Preencha o n�mero da nota corretamente';
+		msgerro = 'Preencha o número da nota corretamente';
 		nnota.style.border = '1px solid red';
 	} else {
 		nnota.style.border = '1px solid #6aa9e9';
@@ -3344,9 +3344,9 @@ function multiplicaparcelacredito(value, id){
       if ( valor > 0 ){
             document.getElementById('creditovalor_'+campo[1]).value = valor;
             total = parseFloat(valor)*parseFloat(value);
-            document.getElementById('valortotal_credito_'+campo[1]).innerHTML = '<b style="color:blue;">Total cart�o R$ '+formatadinheiro(total)+'</b>';
+            document.getElementById('valortotal_credito_'+campo[1]).innerHTML = '<b style="color:blue;">Total cartão R$ '+formatadinheiro(total)+'</b>';
       } else {
-            document.getElementById('pagamentocomplemento').innerHTML = '<b style="color:red">ATEN��O<br>A venda encontra-se paga, para adicionar o cart�o de cr�dito altere as formas de pagamento</b>';
+            document.getElementById('pagamentocomplemento').innerHTML = '<b style="color:red">Atenção<br>A venda encontra-se paga, para adicionar o cartão de crédito altere as formas de pagamento</b>';
             //descarrega_dadoscredito();
       }
 }
@@ -3374,7 +3374,7 @@ function carrega_exibicao_credito()
 		else
 		{
 			document.getElementById('credito').checked = false;
-			document.getElementById('pagamentocomplemento').innerHTML =  '<b style="color:red;font-size:18px;">SELECIONE UM CLIENTE PARA PAGAMENTO<br />COM CART�O DE CR�DITO</b>';
+			document.getElementById('pagamentocomplemento').innerHTML =  '<b style="color:red;font-size:18px;">SELECIONE UM CLIENTE PARA PAGAMENTO<br />Com cartão crédito</b>';
 		}
       }
       else
@@ -3663,10 +3663,10 @@ function carrega_explicamotivcocancelamento(){
 		document.getElementById('msginforme').innerHTML = '';
 
 		if ( cancelamento_orcamento ){
-			textomotivo = 'Motivo do cancelamento : Or�amento';
+			textomotivo = 'Motivo do cancelamento : Orçamento';
 			statusmotivo = 0;
 		} else if ( cancelamento_naoinformado ) {
-			textomotivo = 'Motivo do cancelamento : N�o informado';
+			textomotivo = 'Motivo do cancelamento : Não informado';
 			statusmotivo = 1;
 		} else {
 			textomotivo = document.getElementById('textomotivo').value;
@@ -3691,7 +3691,7 @@ function carrega_explicamotivcocancelamento(){
 		}
 		xmlhttp.send(params);
 	} else {
-		document.getElementById('msginforme').innerHTML = '<b style="color:red">Por favor selecione uma das op��es e clique em "confirmar"</b>';
+		document.getElementById('msginforme').innerHTML = '<b style="color:red">Por favor selecione uma das opções e clique em "confirmar"</b>';
 	}
 
 }
@@ -3963,11 +3963,11 @@ function carrega_estornocontrolevenda(controle, tipo_venda_estorno){
 	apresenta_dadosvenda.style.display = 'none';
 
 	if ( !checanumero(ncontrole.value,0) ){
-		msgerroestorno.innerHTML = '<b style="color:red">Preencha somente com n�meros</b>';
+		msgerroestorno.innerHTML = '<b style="color:red">Preencha somente com números</b>';
 		ncontrole.style.border = '1px solid red';
 	} else {
 		if ( (ncontrole.value).length < 8 ){
-			msgerroestorno.innerHTML = '<b style="color:red">O c�digo do controle possui 14 d�gitos</b>';
+			msgerroestorno.innerHTML = '<b style="color:red">O código do controle possui 14 dígitos</b>';
 		ncontrole.style.border = '1px solid red';
 		} else {
 			msgerroestorno.innerHTML = '';
@@ -4223,30 +4223,30 @@ function pesquisar_produtoperiodo()
 			document.getElementById('listaprodutosvendidos').style.height = '280px';
 			document.getElementById('titrelatorioescolhido').innerHTML = '&nbsp;&nbsp;[ todos os produtos : vendidos ]';
 			paginaproduto = 'produtos_vendidosperiodo_exibe';
-			document.getElementById('mensagemcriterio').innerHTML = '<b style="color:red">Exibi��o de todos os produtos vendidos no per�odo selecionado</b>';
+			document.getElementById('mensagemcriterio').innerHTML = '<b style="color:red">Exibição de todos os produtos vendidos no período selecionado</b>';
 		} else if ( vendido==2 ) {
 			document.getElementById('tabela_titulos').style.display = 'none';
 			document.getElementById('listaprodutosvendidos').style.height = '305px';
 			document.getElementById('titrelatorioescolhido').innerHTML = '&nbsp;&nbsp;[ agrupados por cliente : vendidos ]';
-			document.getElementById('mensagemcriterio').innerHTML = '<b style="color:red">Exibi��o dos produtos vendidos somente para os clientes cadastrados</b>';
+			document.getElementById('mensagemcriterio').innerHTML = '<b style="color:red">Exibição dos produtos vendidos somente para os clientes cadastrados</b>';
 			paginaproduto = 'produtos_vendidosperiodocliente_exibe';
 		} else if ( vendido==3 ) {
 			document.getElementById('tabela_titulos').style.display = 'none';
 			document.getElementById('listaprodutosvendidos').style.height = '305px';
 			document.getElementById('titrelatorioescolhido').innerHTML = '&nbsp;&nbsp;[ agrupados por categoria : vendidos ]';
-			document.getElementById('mensagemcriterio').innerHTML = '<b style="color:red">Exibi��o dos produtos vendidos somente para os que possuirem uma categoria</b>';
+			document.getElementById('mensagemcriterio').innerHTML = '<b style="color:red">Exibicão dos produtos vendidos somente para os que possuirem uma categoria</b>';
 			paginaproduto = 'produtos_vendidosperiodocategoria_exibe';
 		} else if ( vendido==4 ) {
 			document.getElementById('tabela_titulos').style.display = 'none';
 			document.getElementById('listaprodutosvendidos').style.height = '305px';
 			document.getElementById('titrelatorioescolhido').innerHTML = '&nbsp;&nbsp;[ agrupados por fornecedor : vendidos ]';
-			document.getElementById('mensagemcriterio').innerHTML = '<b style="color:red">Exibi��o dos produtos vendidos somente para os que possuirem um fornecedor</b>';
+			document.getElementById('mensagemcriterio').innerHTML = '<b style="color:red">Exibição dos produtos vendidos somente para os que possuirem um fornecedor</b>';
 			paginaproduto = 'produtos_vendidosperiodofornecedor_exibe';
 		} else if ( vendido==5 ) {
 			document.getElementById('tabela_titulos').style.display = 'none';
 			document.getElementById('listaprodutosvendidos').style.height = '305px';
-			document.getElementById('titrelatorioescolhido').innerHTML = '&nbsp;&nbsp;[ agrupados por cole��o : vendidos ]';
-			document.getElementById('mensagemcriterio').innerHTML = '<b style="color:red">Exibi��o dos produtos vendidos somente para os que possuirem uma cole��o</b>';
+			document.getElementById('titrelatorioescolhido').innerHTML = '&nbsp;&nbsp;[ agrupados por coleção : vendidos ]';
+			document.getElementById('mensagemcriterio').innerHTML = '<b style="color:red">Exibição dos produtos vendidos somente para os que possuirem uma coleção</b>';
 			paginaproduto = 'produtos_vendidosperiodocolecao_exibe';
 		}
 	} else if ( produto==1 ){
@@ -4255,30 +4255,30 @@ function pesquisar_produtoperiodo()
 			document.getElementById('listaprodutosvendidos').style.height = '280px';
 			document.getElementById('titrelatorioescolhido').innerHTML = '&nbsp;&nbsp;[ todos os produtos : estornados ]';
 			paginaproduto = 'produtos_estornadosperiodo_exibe';
-			document.getElementById('mensagemcriterio').innerHTML = '<b style="color:red">Exibi��o de todos os produtos estornados no per�odo selecionado</b>';
+			document.getElementById('mensagemcriterio').innerHTML = '<b style="color:red">Exibição de todos os produtos estornados no período selecionado</b>';
 		} else if ( vendido==2 ) {
 			document.getElementById('tabela_titulos').style.display = 'none';
 			document.getElementById('listaprodutosvendidos').style.height = '305px';
 			document.getElementById('titrelatorioescolhido').innerHTML = '&nbsp;&nbsp;[ agrupados por cliente : estornados ]';
-			document.getElementById('mensagemcriterio').innerHTML = '<b style="color:red">Exibi��o dos produtos estornados somente para os clientes cadastrados</b>';
+			document.getElementById('mensagemcriterio').innerHTML = '<b style="color:red">Exibição dos produtos estornados somente para os clientes cadastrados</b>';
 			paginaproduto = 'produtos_estornadosperiodocliente_exibe';
 		} else if ( vendido==3 ) {
 			document.getElementById('tabela_titulos').style.display = 'none';
 			document.getElementById('listaprodutosvendidos').style.height = '305px';
 			document.getElementById('titrelatorioescolhido').innerHTML = '&nbsp;&nbsp;[ agrupados por categoria : estornados ]';
-			document.getElementById('mensagemcriterio').innerHTML = '<b style="color:red">Exibi��o dos produtos estornados somente para os que possuirem uma categoria</b>';
+			document.getElementById('mensagemcriterio').innerHTML = '<b style="color:red">Exibição dos produtos estornados somente para os que possuirem uma categoria</b>';
 			paginaproduto = 'produtos_estornadosperiodocategoria_exibe';
 		} else if ( vendido==4 ) {
 			document.getElementById('tabela_titulos').style.display = 'none';
 			document.getElementById('listaprodutosvendidos').style.height = '305px';
 			document.getElementById('titrelatorioescolhido').innerHTML = '&nbsp;&nbsp;[ agrupados por fornecedor : estornados ]';
-			document.getElementById('mensagemcriterio').innerHTML = '<b style="color:red">Exibi��o dos produtos estornados somente para os que possuirem um fornecedor</b>';
+			document.getElementById('mensagemcriterio').innerHTML = '<b style="color:red">Exibição dos produtos estornados somente para os que possuirem um fornecedor</b>';
 			paginaproduto = 'produtos_estornadosperiodofornecedor_exibe';
 		} else if ( vendido==5 ) {
 			document.getElementById('tabela_titulos').style.display = 'none';
 			document.getElementById('listaprodutosvendidos').style.height = '305px';
-			document.getElementById('titrelatorioescolhido').innerHTML = '&nbsp;&nbsp;[ agrupados por cole��o : estornados ]';
-			document.getElementById('mensagemcriterio').innerHTML = '<b style="color:red">Exibi��o dos produtos estornados somente para os que possuirem uma cole��o</b>';
+			document.getElementById('titrelatorioescolhido').innerHTML = '&nbsp;&nbsp;[ agrupados por coleção : estornados ]';
+			document.getElementById('mensagemcriterio').innerHTML = '<b style="color:red">Exibição dos produtos estornados somente para os que possuirem uma coleção</b>';
 			paginaproduto = 'produtos_estornadosperiodocolecao_exibe';
 		}
 	}
@@ -4423,11 +4423,11 @@ function carrega_colecaocomparacaografico(){
 		}
 	} else {
 		if ( total == 0 ){
-			document.getElementById('mensagem').innerHTML = '<p style="color:red"><b>Por favor, selecione no m�nimo duas cole��es</b></p>';
+			document.getElementById('mensagem').innerHTML = '<p style="color:red"><b>Por favor, selecione no mínimo duas coleções</b></p>';
 		} else if ( total == 1 ) {
-			document.getElementById('mensagem').innerHTML = '<p style="color:red"><b>Selecione mais uma ou mais cole��es para comparar</b></p>';
+			document.getElementById('mensagem').innerHTML = '<p style="color:red"><b>Selecione mais uma ou mais coleções para comparar</b></p>';
 		} else {
-			document.getElementById('mensagem').innerHTML = '<p style="color:red"><b>Voc� pode selecionar somente at� 10 cole��es</b></p>';
+			document.getElementById('mensagem').innerHTML = '<p style="color:red"><b>Você pode selecionar somente até 10 coleções</b></p>';
 		}
 	}
 
@@ -4475,11 +4475,11 @@ function cadastro_fornecedor_comparargrafico(){
 		}
 	} else {
 		if ( total == 0 ){
-			document.getElementById('mensagem').innerHTML = '<p style="color:red"><b>Por favor, selecione no m�nimo dois fornecedores</b></p>';
+			document.getElementById('mensagem').innerHTML = '<p style="color:red"><b>Por favor, selecione no mínimo dois fornecedores</b></p>';
 		} else if ( total == 1 ) {
 			document.getElementById('mensagem').innerHTML = '<p style="color:red"><b>Selecione mais um ou mais fornecedores para comparar</b></p>';
 		} else {
-			document.getElementById('mensagem').innerHTML = '<p style="color:red"><b>Voc� pode selecionar somente at� 10 fornecedores</b></p>';
+			document.getElementById('mensagem').innerHTML = '<p style="color:red"><b>Você pode selecionar somente até 10 fornecedores</b></p>';
 		}
 	}
 
@@ -4634,7 +4634,7 @@ function troca_relatorioestoque( value ){
 	} else if ( value == 4 ) {
 		document.getElementById('tabela_titulos').style.display = 'none';
 		document.getElementById('listaestoque').style.height = '315px';
-		document.getElementById('titrelatorioescolhido').innerHTML = '&nbsp;&nbsp;[ agrupados por cole��es : com estoque ]';
+		document.getElementById('titrelatorioescolhido').innerHTML = '&nbsp;&nbsp;[ agrupados por coleções : com estoque ]';
 		pagina = 'estoque_colecaocom_exibe.php';
 	} else if ( value == 5 ) {
 		document.getElementById('tabela_titulos').style.display = 'block';
@@ -4654,7 +4654,7 @@ function troca_relatorioestoque( value ){
 	} else if ( value == 8 ) {
 		document.getElementById('tabela_titulos').style.display = 'none';
 		document.getElementById('listaestoque').style.height = '315px';
-		document.getElementById('titrelatorioescolhido').innerHTML = '&nbsp;&nbsp;[ agrupados por cole��es : sem estoque ]';
+		document.getElementById('titrelatorioescolhido').innerHTML = '&nbsp;&nbsp;[ agrupados por coleções : sem estoque ]';
 		pagina = 'estoque_colecaosem_exibe.php';
 	}
 
@@ -4792,7 +4792,7 @@ function editar_dadoscliente(url, flag){
 	estado = document.getElementById('estado');
 
 	if ( ( !checanumero(cep.value,5) && cep.value ) || ( !checanumero(cepdv.value,3) && cepdv.value ) ){
-		msg = '<p style="color:red"><b>O CEP deve conter somente n�meros ( Opcional )</b></p>';
+		msg = '<p style="color:red"><b>O CEP deve conter somente números ( Opcional )</b></p>';
 		status_erro = true;
 		status_obrigatorio = true;
 		cep.style.border = '1px solid red';
@@ -4803,7 +4803,7 @@ function editar_dadoscliente(url, flag){
 	}
 
 	if ( !checanumero(identidade.value,10) && identidade.value ){
-		msg = '<p style="color:red"><b>A Identidade deve conter somente n�meros ( Opcional )</b></p>';
+		msg = '<p style="color:red"><b>A Identidade deve conter somente números ( Opcional )</b></p>';
 		status_erro = true;
 		status_obrigatorio = true;
 		identidade.style.border = '1px solid red';
@@ -4812,7 +4812,7 @@ function editar_dadoscliente(url, flag){
 	}
 
 	if ( !checaCPF(cpf.value) && cpf.value ){
-		msg = '<p style="color:red"><b>O CPF deve conter somente n�meros ( Opcional )</b></p>';
+		msg = '<p style="color:red"><b>O CPF deve conter somente números ( Opcional )</b></p>';
 		status_erro = true;
 		status_obrigatorio = true;
 		cpf.style.border = '1px solid red';
@@ -4821,7 +4821,7 @@ function editar_dadoscliente(url, flag){
 	}
 
 	if ( !checaemail(email.value) && email.value ){
-		msg = '<p style="color:red"><b>O e-mail do cliente est� incorreto ( Opcional )</b></p>';
+		msg = '<p style="color:red"><b>O e-mail do cliente está incorreto ( Opcional )</b></p>';
 		status_erro = true;
 		status_obrigatorio = true;
 		email.style.border = '1px solid red';
@@ -4836,7 +4836,7 @@ function editar_dadoscliente(url, flag){
 	}
 
 	if ( (!( checanumero(dddcel.value,2) && checanumero(cel1.value,4) && checanumero(cel2.value,4) ) && (dddcel.value || cel1.value || cel2.value) ) ) {
-		msg = '<p style="color:red"><b>O telefone 2 deve conter somente n�meros ( Opcional )</b></p>';
+		msg = '<p style="color:red"><b>O telefone 2 deve conter somente números ( Opcional )</b></p>';
 		status_erro = true;
 		status_obrigatorio = true;
 		dddcel.style.border = '1px solid red';
@@ -4849,7 +4849,7 @@ function editar_dadoscliente(url, flag){
 	}
 
 	if ( !( checanumero(dddtel.value,2) && checanumero(tel1.value,4) && checanumero(tel2.value,4) ) ) {
-		msg = '<p style="color:red"><b>O telefone 1 deve conter somente n�meros ( Obrigat�rio )</b></p>';
+		msg = '<p style="color:red"><b>O telefone 1 deve conter somente números ( Obrigatório )</b></p>';
 		status_erro = true;
 		status_obrigatorio = true;
 		dddtel.style.border = '1px solid red';
@@ -4862,7 +4862,7 @@ function editar_dadoscliente(url, flag){
 	}
 
 	if ( !nome.value ){
-		msg = '<p style="color:red"><b>Por favor, preencha o nome do cliente ( Obrigat�rio )</b></p>';
+		msg = '<p style="color:red"><b>Por favor, preencha o nome do cliente ( Obrigatório )</b></p>';
 		status_erro = true;
 		status_obrigatorio = true;
 		nome.style.border = '1px solid red';
@@ -4967,7 +4967,7 @@ function adicionar_dadoscliente(url, flag, voltar_venda){
 	estado = document.getElementById('estado');
 
 	if ( ( !checanumero(cep.value,5) && cep.value ) || ( !checanumero(cepdv.value,3) && cepdv.value ) ){
-		msg = '<p style="color:red"><b>O CEP deve conter somente n�meros ( Opcional )</b></p>';
+		msg = '<p style="color:red"><b>O CEP deve conter somente números ( Opcional )</b></p>';
 		status_erro = true;
 		status_obrigatorio = true;
 		cep.style.border = '1px solid red';
@@ -4978,7 +4978,7 @@ function adicionar_dadoscliente(url, flag, voltar_venda){
 	}
 
 	if ( !checanumero(identidade.value,10) && identidade.value ){
-		msg = '<p style="color:red"><b>A Identidade deve conter somente n�meros ( Opcional )</b></p>';
+		msg = '<p style="color:red"><b>A Identidade deve conter somente números ( Opcional )</b></p>';
 		status_erro = true;
 		status_obrigatorio = true;
 		identidade.style.border = '1px solid red';
@@ -4987,7 +4987,7 @@ function adicionar_dadoscliente(url, flag, voltar_venda){
 	}
 
 	if ( !checaCPF(cpf.value) && cpf.value ){
-		msg = '<p style="color:red"><b>O CPF deve conter somente n�meros ( Opcional )</b></p>';
+		msg = '<p style="color:red"><b>O CPF deve conter somente números ( Opcional )</b></p>';
 		status_erro = true;
 		status_obrigatorio = true;
 		cpf.style.border = '1px solid red';
@@ -4996,7 +4996,7 @@ function adicionar_dadoscliente(url, flag, voltar_venda){
 	}
 
 	if ( !checaemail(email.value) && email.value ){
-		msg = '<p style="color:red"><b>O e-mail do cliente est� incorreto ( Opcional )</b></p>';
+		msg = '<p style="color:red"><b>O e-mail do cliente está incorreto ( Opcional )</b></p>';
 		status_erro = true;
 		status_obrigatorio = true;
 		email.style.border = '1px solid red';
@@ -5011,7 +5011,7 @@ function adicionar_dadoscliente(url, flag, voltar_venda){
 	}
 
 	if ( (!( checanumero(dddcel.value,2) && checanumero(cel1.value,4) && checanumero(cel2.value,4) ) && (dddcel.value || cel1.value || cel2.value) ) ) {
-		msg = '<p style="color:red"><b>O telefone 2 deve conter somente n�meros ( Opcional )</b></p>';
+		msg = '<p style="color:red"><b>O telefone 2 deve conter somente números ( Opcional )</b></p>';
 		status_erro = true;
 		status_obrigatorio = true;
 		dddcel.style.border = '1px solid red';
@@ -5024,7 +5024,7 @@ function adicionar_dadoscliente(url, flag, voltar_venda){
 	}
 
 	if ( !( checanumero(dddtel.value,2) && checanumero(tel1.value,4) && checanumero(tel2.value,4) ) ) {
-		msg = '<p style="color:red"><b>O telefone 1 deve conter somente n�meros ( Obrigat�rio )</b></p>';
+		msg = '<p style="color:red"><b>O telefone 1 deve conter somente números ( Obrigatório )</b></p>';
 		status_erro = true;
 		status_obrigatorio = true;
 		dddtel.style.border = '1px solid red';
@@ -5037,7 +5037,7 @@ function adicionar_dadoscliente(url, flag, voltar_venda){
 	}
 
 	if ( !nome.value ){
-		msg = '<p style="color:red"><b>Por favor, preencha o nome do cliente ( Obrigat�rio )</b></p>';
+		msg = '<p style="color:red"><b>Por favor, preencha o nome do cliente ( Obrigatório )</b></p>';
 		status_erro = true;
 		status_obrigatorio = true;
 		nome.style.border = '1px solid red';
@@ -5154,7 +5154,7 @@ var obsCPF = false;
 
 function editar_cliente_cpf(){
 	if (!obsCPF){
-		document.getElementById('mensagem').innerHTML = '<p style="color:red;"><b>CPF deve conter somente n�meros ( Opcional )</b></p>';
+		document.getElementById('mensagem').innerHTML = '<p style="color:red;"><b>CPF deve conter somente números ( Opcional )</b></p>';
 		obsCPF = true;
 	}else{
 		document.getElementById('mensagem').innerHTML = '';
@@ -5166,7 +5166,7 @@ var obsRG = false;
 
 function editar_cliente_rg(){
 	if (!obsRG){
-		document.getElementById('mensagem').innerHTML = '<p style="color:red;"><b>Identidade deve conter somente n�meros ( Opcional )</b></p>';
+		document.getElementById('mensagem').innerHTML = '<p style="color:red;"><b>Identidade deve conter somente números ( Opcional )</b></p>';
 		obsRG = true;
 	}else{
 		document.getElementById('mensagem').innerHTML = '';
@@ -5659,7 +5659,7 @@ function listasimples_historicfornecedor(value){
 }
 
 /**
- * Valores pre definidos aqui, estes dados provavelmente ser�o retornados pelo 'client side'
+ * Valores pre definidos aqui, estes dados provavelmente serão retornados pelo 'client side'
  */
 var ordenaporque = 'ASC';
 var buscarpor2 = 'txtproduto';
@@ -5835,7 +5835,7 @@ function carrega_valordebito(){
       var cheque = document.getElementById('cheque');
 
       if ( valordinheirotroco >= 0 ){
-            document.getElementById('pagamentocomplemento').innerHTML = '<b style="color:red">ATEN��O<br>Para adicionar o cart�o de d�bito deve alterar as formas de pagamento</b>';
+            document.getElementById('pagamentocomplemento').innerHTML = '<b style="color:red">Atenção<br>Para adicionar o cartão de débito deve alterar as formas de pagamento</b>';
             document.getElementById('debito').checked = false;
             document.getElementById('pag_debito').style.display = 'none';
       } else {
@@ -6127,20 +6127,20 @@ function carregar_usuarioadm_adicionar_salvar(){
 
 	if ( !usu_senha.value ){
 		usu_senha.style.border = '1px solid red';
-		msgdadosusu.innerHTML = '<b style="color:red;">Preencha a senha do usu�rio corretamente</b>';
+		msgdadosusu.innerHTML = '<b style="color:red;">Preencha a senha do usuário corretamente</b>';
 	} else if ( (usu_senha.value).length <= 3 ) {
 		usu_senha.style.border = '1px solid red';
-		msgdadosusu.innerHTML = '<b style="color:red;">A senha do usu�rio deve ter no m�nimo 4 caracteres</b>';
+		msgdadosusu.innerHTML = '<b style="color:red;">A senha do usuário deve ter no mínimo 4 caracteres</b>';
 	}
 
 	if ( !usu_login.value ){
 		usu_login.style.border = '1px solid red';
-		msgdadosusu.innerHTML = '<b style="color:red;">Preencha o login do usu�rio corretamente</b>';
+		msgdadosusu.innerHTML = '<b style="color:red;">Preencha o login do usuário corretamente</b>';
 	}
 
 	if ( !usu_nome.value ){
 		usu_nome.style.border = '1px solid red';
-		msgdadosusu.innerHTML = '<b style="color:red;">Preencha o nome do usu�rio corretamente</b>';
+		msgdadosusu.innerHTML = '<b style="color:red;">Preencha o nome do usuário corretamente</b>';
 	}
 
 	var x=document.getElementById("seleciona_permissoes");
@@ -6181,13 +6181,13 @@ function carregar_usuarioadm_adicionar_salvar(){
 					carregar_usuarioadm_atualizalista(resultado);
 				} else if ( resultado == '-' ){
 					usu_login.style.border = '1px solid red';
-					msgdadosusu.innerHTML = '<b style="color:red;">Escolha outro o login para o usu�rio, este login j� existe</b>';
+					msgdadosusu.innerHTML = '<b style="color:red;">Escolha outro o login para o usuário, este login já existe</b>';
 				}
 			}
 		}
 		xmlhttp.send(params);
 	} else if ( !permissao && msgdadosusu.innerHTML == '' ) {
-		msgdadosusu.innerHTML = '<b style="color:red;">Marque ao menos uma permiss�o para o usu�rio</b>';
+		msgdadosusu.innerHTML = '<b style="color:red;">Marque ao menos uma permissão para o usuário</b>';
 		for (loop = 0; loop < label.length; loop++) {
 			if ( document.getElementById(label[loop].id) ){
 				document.getElementById(label[loop].id).style.border = '1px solid red';
@@ -6210,8 +6210,8 @@ function carregar_usuarioadm_atualizalista(value){
 
 function carregar_usuarioadm_adicionar(){
 
-	document.getElementById('titusuadmdados').innerHTML = 'Adicionar usu�rio administrador';
-	document.getElementById('msgdadosuser').innerHTML = '<b style="color:blue;">Preencha os campos abaixo para adicionar um usu�rio</b>';
+	document.getElementById('titusuadmdados').innerHTML = 'Adicionar usuário administrador';
+	document.getElementById('msgdadosuser').innerHTML = '<b style="color:blue;">Preencha os campos abaixo para adicionar um usuário</b>';
 	document.getElementById('btnadicionaradm').style.display = 'none';
 
 	var element = document.getElementById('dadosuser');
@@ -6261,8 +6261,8 @@ var usuariosadm_dados_status = true;
 function carrega_usuariosadm_dados(idusuario){
 
 	if (usuariosadm_dados_status){
-		document.getElementById('titusuadmdados').innerHTML = 'Dados do usu�rio administrador';
-		document.getElementById('msgdadosuser').innerHTML = '<b style="color:blue;">Selecione um usu�rio administrador na listagem ao lado</b>';
+		document.getElementById('titusuadmdados').innerHTML = 'Dados do usuário administrador';
+		document.getElementById('msgdadosuser').innerHTML = '<b style="color:blue;">Selecione um usuário administrador na listagem ao lado</b>';
 		usuariosadm_dados_status = false;
 		var element = document.getElementById('dadosuser');
 		//element.innerHTML = loading_dados;
@@ -6362,7 +6362,7 @@ function carrega_usuariosadm_salvar(value){
 					document.getElementById('btnsalvar').style.display = 'none';
 					msgdadosusu.innerHTML = '<b style="color:green">Os dados foram salvos com sucesso</b>';
 				} else if ( resultado == 2 ) {
-					msgdadosusu.innerHTML = '<b style="color:red">Este "login" j� existe, escolha outro "login" e clique em "salvar dados"</b>';
+					msgdadosusu.innerHTML = '<b style="color:red">Este "login" já existe, escolha outro "login" e clique em "salvar dados"</b>';
 					edit_usu_login.style.border = '1px solid red';
 				} else {
 					msgdadosusu.innerHTML = '<b style="color:red">Ocorreu um erro, clique em "salvar dados" novamente</b>';
@@ -6372,7 +6372,7 @@ function carrega_usuariosadm_salvar(value){
 		xmlhttp.send(params);
 
 	} else {
-		msgdadosusu.innerHTML = '<b style="color:red">A nova senha deve ter no m�nimo 4 caracteres</b>';
+		msgdadosusu.innerHTML = '<b style="color:red">A nova senha deve ter no mínimo 4 caracteres</b>';
 		edit_usu_senha.style.border = '1px solid red';
 	}
 }
@@ -6380,7 +6380,7 @@ function carrega_usuariosadm_salvar(value){
 function visualiza_usuariosadm_permissoes(value){
 
 	var divs = new Array('permisao_cadastro', 'permisao_venda', 'permisao_financeiro', 'permisao_relatorio', 'permisao_utilitario', 'permisao_configuracao');
-	var tits = new Array('Cadastro', 'Venda', 'Financeiro', 'Relat�rio', 'Utilit�rio', 'Configura��o');
+	var tits = new Array('Cadastro', 'Venda', 'Financeiro', 'Relatório', 'Utilitário', 'Configuração');
 	var btns = new Array('btncadastro', 'btnvenda', 'btnfinanceiro', 'btnrelatorio', 'btnutilitario', 'btnconfiguracao');
 
 	for(i=0;i<divs.length;i++ ){
@@ -6445,7 +6445,7 @@ function carregar_permissoessalvar(value){
 	xmlhttp.open("GET", path+'modulos/administracao/admdados_editar_permisoes.php?p='+param+'&i='+value);
 	xmlhttp.onreadystatechange = function() {
 		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-			msg.innerHTML= '<b style="color:green">Permiss�es modificadas com sucesso</b>';
+			msg.innerHTML= '<b style="color:green">Permissões modificadas com sucesso</b>';
 		}
 	}
     xmlhttp.send(null);
@@ -6500,7 +6500,7 @@ function carrega(url,id){
 }
 
 
-// Configura��es gerais
+// Configurações gerais
 
 function configuracao_paginainicial(){
 
@@ -7257,7 +7257,7 @@ function array_reverse( array, preserve_keys ) {
 /**
  * Setando um possivel estilo que esteja destivado
  *
- * Essa fun��o � usada basicamente em midias (impress�o)
+ * Essa função é usada basicamente em midias (impressão)
  */
 function setEtiquetaStyleSheet(title_name, desable_other)
 {
@@ -7354,7 +7354,7 @@ function flash(msg, type, elm)
 }
 
 /**
- * Verifica se etiquetas foram geradas entes da impress�o
+ * Verifica se etiquetas foram geradas entes da impressão
  */
 function checkGerarEtiqueta()
 {

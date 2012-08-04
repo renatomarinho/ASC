@@ -19,7 +19,7 @@
 //  http://www.gnu.org/copyleft/gpl.html                                              //
 //                                                                                    //
 ////////////////////////////////////////////////////////////////////////////////////////
-s
+
 if (! isset ( $_CONF ['PATH'] )) {
 	require "../../config/default.php";
 }

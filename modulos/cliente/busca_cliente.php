@@ -42,10 +42,12 @@ if ($db->num_rows ( $query )) {
 	$table .= '<tr>';
 	$table .= '<td colspan="5" class="l3"></td>';
 	$table .= '</tr>';
+	
 	while ( $rows = $db->fetch_assoc ( $query ) ) {
+	    
 		if (strlen ( $rows ['txtnome'] ) > 0) {
 			$telefone = (formata_telefone ( $rows ['txttelefone'] ) != ('(00) 0000-0000')) ? formata_telefone ( $rows ['txttelefone'] ) : '';
-			$table .= '<tr style="cursor:pointer; cursor:hand;" onmouseover="rowOver(this)" onmouseout="rowOut(this)" onclick="javascript:carrega_edicaocliente(\'' . $rows ['idcliente'] . '\')">';
+			$table .= '<tr style="cursor:pointer; cursor:hand;" onmouseover="rowOver(this)" onmouseout="rowOut(this)" onclick="javascript:carrega_edicaocliente(\'' . $rows['idcliente'] . '\')">';
 			$table .= '<td width="20" height="25"></td>';
 			$table .= '<td width="350"><img src="' . $_CONF ['PATH_VIRTUAL'] . 'imgs/icons/vcard.png" class="t22" align="absmiddle"> ' . ucwords ( strtolower ( $rows ['txtnome'] ) ) . '</td>';
 			$table .= '<td width="140">&nbsp;' . $telefone . '</td>';

@@ -81,7 +81,7 @@ function modificar_tamanho(idelement1, tamanho1, idelement2, tamanho2, optvisibl
 
 
 /**
-*	Autentica��o do software e atualiza��es
+*	Autenticaçõo do software e atualizações
 **/
 
 function autentica_software(){
@@ -140,7 +140,7 @@ var vetor_danificados = new Array();
 
 function carrega_loading_arquivos(){
 
-	document.getElementById('msg_atualizacao').innerHTML = '<b style="color:blue;">Atualiza��o do software Real Virtual Store iniciada</b>';
+	document.getElementById('msg_atualizacao').innerHTML = '<b style="color:blue;">Atualizaçãoo do software Ajax Sales Cloud iniciada</b>';
 
 	var x=document.getElementById("conteudo_esquerdo");
 	var input = x.getElementsByTagName("input");
@@ -245,7 +245,7 @@ function carrega_loading_verifica_arquivo_texto(){
 	if ( count_integridade == 5 && total_loadings > total_loading_atual ){
 
 		if ( status_arquivo == 1 ){
-			document.getElementById(idspan_barra_down).innerHTML = '<label style="color:#fff;letter-spacing:1px;">atualiza��o efetuada</label>&nbsp;&nbsp;';
+			document.getElementById(idspan_barra_down).innerHTML = '<label style="color:#fff;letter-spacing:1px;">atualização efetuada</label>&nbsp;&nbsp;';
 			document.getElementById(id_barra_down).style.backgroundColor = 'green';
 			msgatualizacoes = '<b style="color:green">'+atualizados_fake+' arquivo'+((atualizados_fake>1)?'s':'')+' fo'+((atualizados_fake>1)?'ram':'i')+' atualizado'+((atualizados_fake>1)?'s':'')+'</b>';
 			atualizados_fake++;
@@ -253,7 +253,7 @@ function carrega_loading_verifica_arquivo_texto(){
 			document.getElementById(idspan_barra_down).innerHTML = '<label style="color:#fff;letter-spacing:1px;">ocorreu um erro</label>&nbsp;&nbsp;';
 			document.getElementById(id_barra_down).style.backgroundColor = 'red';
 			vetor_danificados[total_loading_atual] = input_dados_arquivo+'-|-'+total_loading_atual;
-			msgatualizacoes_danificados = '<b style="color:red">'+atualizados_fake_danificados+' arquivo'+((atualizados_fake_danificados>1)?'s':'')+' est'+((atualizados_fake_danificados>1)?'�o':'�')+' danificado'+((atualizados_fake_danificados>1)?'s':'')+'</b> ';
+			msgatualizacoes_danificados = '<b style="color:red">'+atualizados_fake_danificados+' arquivo'+((atualizados_fake_danificados>1)?'s':'')+' est'+((atualizados_fake_danificados>1)?'ão':'á')+' danificado'+((atualizados_fake_danificados>1)?'s':'')+'</b> ';
 			atualizados_fake_danificados++;
 		}
 
@@ -572,7 +572,7 @@ function vendas_vendanormal_pagdebito()
 		{
 			pd.style.display = 'none';
 			cheque_checkbox.checked = false;
-			document.getElementById('pagamentocomplemento').innerHTML =  '<b style="color:red;font-size:18px;">SELECIONE UM CLIENTE PARA PAGAMENTO<br />COM CART�O DE D�BITO</b>';
+			document.getElementById('pagamentocomplemento').innerHTML =  '<b style="color:red;font-size:18px;">Selecione um cliente para pagamento<br />Com cartão de crédito</b>';
 		}
 
 	}
@@ -601,7 +601,7 @@ function vendas_vendanormal_pagcredito(){
 }
 
 
-/* Configura��es */
+/* Configurações */
 
 var configuracao_cadastrodebanco_status = false;
 function configuracao_cadastrodebanco(){
@@ -643,11 +643,11 @@ function configuracao_adicionarbanco_salvar(){
 	if ( !n.value || !checanumero(n.value, 0) || !b.value ){
 
 		if (!n.value){
-			msg.innerHTML = '<b>Preencha o n�mero do banco</b>';
+			msg.innerHTML = '<b>Preencha o número do banco</b>';
 			msg.style.color = 'red';
 			n.style.border = '1px solid red';
 		} else if (!checanumero(n.value, 0)){
-			msg.innerHTML = '<b>Preencha o n�mero do banco corretamente</b>';
+			msg.innerHTML = '<b>Preencha o número do banco corretamente</b>';
 			msg.style.color = 'red';
 			n.style.border = '1px solid red';
 		} else if (!b.value){
