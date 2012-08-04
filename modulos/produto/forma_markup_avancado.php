@@ -74,7 +74,7 @@ $preco_varejo = $vlcusto * $markup;
 		<td>
 		<table width="100%">
 			<tr>
-				<td height="25">M�nimo para a venda varejo</td>
+				<td height="25">Mínimo para a venda varejo</td>
 				<td align="right"><?=$markup;?></td>
 			</tr>
 			<tr>
@@ -82,11 +82,11 @@ $preco_varejo = $vlcusto * $markup;
 				<td align="right">R$ <?=number_format ( $preco_varejo, 2 );?></td>
 			</tr>
 			<tr>
-				<td height="25">Aplicar pre�o no produto</td>
+				<td height="25">Aplicar preço no produto</td>
 				<td align="right"><select onchange="javascript:document.getElementById(this.value).value='<?=number_format ( $preco_varejo, 2 );?>';">
 					<option>Selecione</option>
-					<option value="vlatacado">Aplicar no pre�o de atacado</option>
-					<option value="vlvarejo">Aplicar no pre�o de varejo</option>
+					<option value="vlatacado">Aplicar no preço de atacado</option>
+					<option value="vlvarejo">Aplicar no preço de varejo</option>
 				</select></td>
 			</tr>
 		</table>
@@ -100,19 +100,19 @@ $preco_varejo = $vlcusto * $markup;
 		<div id="respobtermeulucro" style="display:<?=(isset ( $_POST ['lucro'] ) ? 'block' : 'none');?>">
 		<table width="100%">
 			<tr>
-				<td height="25">M�nimo para a venda varejo c/ lucro</td>
+				<td height="25">Mínimo para a venda varejo c/ lucro</td>
 				<td align="right"><?=$markup_c_lucro;?></td>
 			</tr>
 			<tr>
-				<td height="25">M�nimo para o produto com lucro</td>
+				<td height="25">Mínimo para o produto com lucro</td>
 				<td align="right">R$ <?=number_format ( $preco_varejo_c_lucro, 2 );?></td>
 			</tr>
 			<tr>
-				<td height="25">Aplicar pre�o no produto</td>
+				<td height="25">Aplicar preço no produto</td>
 				<td align="right"><select onchange="javascript:document.getElementById(this.value).value='<?=number_format ( $preco_varejo_c_lucro, 2 );?>';">
 					<option>Selecione</option>
-					<option value="vlvarejo">Aplicar no pre�o de varejo</option>
-					<option value="vlatacado">Aplicar no pre�o de atacado</option>
+					<option value="vlvarejo">Aplicar no preço de varejo</option>
+					<option value="vlatacado">Aplicar no preço de atacado</option>
 				</select></td>
 			</tr>
 		</table>

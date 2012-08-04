@@ -56,7 +56,7 @@ if ($db->num_rows ( $query )) {
 
 } else {
 	
-	$table = exibe_errohtml ( 'N�o possui nenhum fornecedor cadastrado' );
+	$table = exibe_errohtml ( 'Não possui nenhum fornecedor cadastrado' );
 
 }
 

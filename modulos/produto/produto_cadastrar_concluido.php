@@ -55,7 +55,7 @@ if (isset ( $_GET ['id'] )) {
 		<td height="10"></td>
 	</tr>
 	<tr>
-		<td height="20"><b>Escolha uma das op��es abaixo</b></td>
+		<td height="20"><b>Escolha uma das opções abaixo</b></td>
 	</tr>
 	<tr>
 		<td height="5" style="border-bottom: 2px solid black"></td>
@@ -71,7 +71,7 @@ if (isset ( $_GET ['id'] )) {
 							<?
 							if (isset ( $_SESSION ['col'] )) {
 								?>
-							<input type="button" class="botao" value="Voltar para cole��o"
+							<input type="button" class="botao" value="Voltar para coleção"
 					style="cursor: pointer; cursor: hand; width: 160px; background-color: green;"
 					onClick="javascript:carrega_dadoscolecaoproduto('<?=$_SESSION ['col'];?>');">
 							<?

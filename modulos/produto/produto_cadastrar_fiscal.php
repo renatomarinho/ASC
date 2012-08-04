@@ -36,12 +36,12 @@ if (isset ( $_GET ['id'] )) {
 ?>
 
 
-<fieldset id="p"><legend>Adicionar Informa��es Fiscais do Produto</legend>
+<fieldset id="p"><legend>Adicionar Informações Fiscais do Produto</legend>
 
 <div class="linha_separador" style="height: 28px;">
 <center><span id="msggrade"><b style="color: red;">Os dados da nota
-fiscal n�o s�o obrigat�rios</b><BR>
-<b style="color: blue;">Para finalizar a inclus�o do produto clique em
+fiscal não são obrigatórios</b><BR>
+<b style="color: blue;">Para finalizar a inclusão do produto clique em
 "concluir"</b><span></center>
 </div>
 
@@ -107,7 +107,7 @@ fiscal n�o s�o obrigat�rios</b><BR>
 				<td width="50%">
 				<table width="100%">
 					<tr>
-						<td height="15"><b>N� nota</b></td>
+						<td height="15"><b>N nota</b></td>
 					</tr>
 					<tr>
 						<td height="25"><input type="text" id="nnota"></td>
@@ -141,7 +141,7 @@ fiscal n�o s�o obrigat�rios</b><BR>
 				<td width="50%">
 				<table width="100%">
 					<tr>
-						<td height="15"><b>Data emiss�o</b></td>
+						<td height="15"><b>Data emissão</b></td>
 					</tr>
 					<tr>
 						<td height="25">
@@ -237,11 +237,11 @@ fiscal n�o s�o obrigat�rios</b><BR>
 	</tr>
 	<tr>
 		<td height="20"><b style="color: green">CONCLUIR</b> clique para
-		finalizar a inclus�o do produto</td>
+		finalizar a inclusão do produto</td>
 	</tr>
 	<tr>
 		<td height="20"><b style="color: red">CANCELAR</b> clique para
-		cancelar a inclus�o do produto</td>
+		cancelar a inclusão do produto</td>
 	</tr>
 </table>
 

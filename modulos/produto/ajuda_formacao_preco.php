@@ -31,7 +31,7 @@ if (! isset ( $_CONF ['PATH'] )) {
 <div class="linha_separador">
 <table width="100%">
 	<tr>
-		<td><b>Escolha uma das op��es abaixo</b></td>
+		<td><b>Escolha uma das opções abaixo</b></td>
 	</tr>
 	<tr>
 		<td>
@@ -43,7 +43,7 @@ if (! isset ( $_CONF ['PATH'] )) {
 				<td width="10"></td>
 				<td><input type="radio" onclick=""></td>
 				<td width="5"></td>
-				<td>Mark-Up avan�ado</td>
+				<td>Mark-Up avançado</td>
 			</tr>
 		</table>
 		</td>
@@ -54,7 +54,7 @@ if (! isset ( $_CONF ['PATH'] )) {
 <div style="width: 377px; height: 350px; overflow: auto;">
 <table width="377" cellpadding="6" cellspacing="6">
 	<tr>
-		<td height="25" bgcolor="#6aa9e9" align="center"><b style="color: white;">Mark-Up avan�ado</b></td>
+		<td height="25" bgcolor="#6aa9e9" align="center"><b style="color: white;">Mark-Up avançado</b></td>
 	</tr>
 	<tr>
 		<td>
@@ -73,7 +73,7 @@ if (! isset ( $_CONF ['PATH'] )) {
 						<td width="20"><input type="text" id="ir" style="width: 40px; text-align: right;" /></td>
 						<td>%</td>
 						<td width="10"></td>
-						<td align="right"><a href="#" onMouseover="ddrivetip('<font style=color:#fff><b>O que � Cofins?</b><BR>Contribui��o para Financiamento da Seguridade Social. � um tributo cobrado pela Uni�o sobre o faturamento bruto das pessoas jur�dicas, destinado a atender programas sociais do Governo Federal.</font>','#6aa9e9', 250);" onMouseout="hideddrivetip()">[ ? ]</a></td>
+						<td align="right"><a href="#" onMouseover="ddrivetip('<font style=color:#fff><b>O que é Cofins?</b><BR>Contribuição para Financiamento da Seguridade Social. É um tributo cobrado pela União sobre o faturamento bruto das pessoas jurídicas, destinado a atender programas sociais do Governo Federal.</font>','#6aa9e9', 250);" onMouseout="hideddrivetip()">[ ? ]</a></td>
 
 						<td width="50"></td>
 

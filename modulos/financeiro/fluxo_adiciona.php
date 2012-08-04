@@ -202,7 +202,7 @@ $total = $db->num_rows ( $query );
 						</td>
 						<td><select id="periodicidade" style="width: 140px;">
 							<optgroup label="Recebimento"></optgroup>
-							<option value="1">&nbsp;&nbsp;Di�rio</option>
+							<option value="1">&nbsp;&nbsp;Diário</option>
 							<option value="2">&nbsp;&nbsp;Semanal</option>
 							<option value="3">&nbsp;&nbsp;Quinzenal</option>
 							<option value="4">&nbsp;&nbsp;Mensal</option>
@@ -222,7 +222,7 @@ $total = $db->num_rows ( $query );
 								<td><b>Efetuado</b></td>
 								<td width="5"></td>
 								<td><select id="efetuado" style="width: 50px;">
-									<option value="0">N�o</option>
+									<option value="0">Não</option>
 									<option value="1">Sim</option>
 								</select></td>
 							</tr>
@@ -230,7 +230,7 @@ $total = $db->num_rows ( $query );
 						</td>
 					</tr>
 					<tr>
-						<td height="25"><b>Descri��o</b></td>
+						<td height="25"><b>Descrição</b></td>
 						<td><textarea id="descricao" style="width: 250px;"></textarea></td>
 					</tr>
 				</table>

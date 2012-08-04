@@ -44,7 +44,7 @@ $total = $validations->validStringForm ( $_GET ['total'] );
 		<table>
 			<tr>
 				<td><select id="idusuario" style="width: 140px;">
-					<option value="">Selecione o usu�rio</option>
+					<option value="">Selecione o usuário</option>
 							<?
 							$sql = "SELECT id, nome FROM cad_login WHERE ativo='ativo'";
 							$query = $db->query ( $sql );

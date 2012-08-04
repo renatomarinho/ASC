@@ -38,7 +38,7 @@ unset ( $_SESSION ['gradeproduto'] );
 	<tr>
 		<td><img src="<?=$_CONF ['PATH_VIRTUAL'];?>imgs/icons/produtograde32.png" class="t32" /></td>
 		<td width="10"></td>
-		<td><b>Itens que comp�em � grade do produto</b> <br />
+		<td><b>Itens que compõem a grade do produto</b> <br />
 		Inclua um novo item clicando em <i>"adicionar item"</i></td>
 	</tr>
 </table>
@@ -63,7 +63,7 @@ unset ( $_SESSION ['gradeproduto'] );
 				<td height="20"><input type="text" id="add_qtdgrade" style="width: 50px; text-align: right;" maxlength="4" /></td>
 			</tr>
 			<tr>
-				<td height="20"><b>Pre�o �nico</b></td>
+				<td height="20"><b>Preço único</b></td>
 				<td width="5"></td>
 				<td height="20"><input type="text" id="add_precounico" style="width: 50px; text-align: right;" value="0.00" onkeydown="javascript:formata_valor('add_precounico', 13, event)" onfocus="javascript:document.getElementById('add_precounico').value='';" maxlength="6" /></td>
 				<td width="10"></td>

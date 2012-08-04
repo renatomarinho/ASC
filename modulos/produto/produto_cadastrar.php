@@ -62,7 +62,7 @@ unset ( $_SESSION ['gradeproduto'] );
 					<td width="40"></td>
 					<td height="20"><input type="text" id="produto" style="width: 160px;" maxlength="60"></td>
 					<td width="12"></td>
-					<td>C�digo</td>
+					<td>Código</td>
 					<td width="35"></td>
 					<td height="20"><input type="text" id="codigo" style="width: 160px;" maxlength="60"></td>
 				</tr>
@@ -115,7 +115,7 @@ unset ( $_SESSION ['gradeproduto'] );
 				<td width="50%">
 				<table>
 					<tr>
-						<td width="70" height="20">Cole��o</td>
+						<td width="70" height="20">Coleção</td>
 						<td height="20">
 							<select id="colecao" style="width: 160px;">
 								<option value="0">selecione</option>
@@ -135,7 +135,7 @@ unset ( $_SESSION ['gradeproduto'] );
 						</td>
 					</tr>
 					<tr>
-						<td width="70" height="20">C�d. Barras</td>
+						<td width="70" height="20">Cód. Barras</td>
 						<td height="20"><input type="text" id="codbarra" style="width: 158px;" readonly></td>
 					</tr>
 				</table>
@@ -148,7 +148,7 @@ unset ( $_SESSION ['gradeproduto'] );
 		<td style="border-bottom: 2px solid black"></td>
 	</tr>
 	<tr>
-		<td height="20"><b>Pre�os</b></td>
+		<td height="20"><b>Preços</b></td>
 	</tr>
 	<tr>
 		<td style="border-bottom: 2px solid black"></td>
@@ -239,7 +239,7 @@ unset ( $_SESSION ['gradeproduto'] );
 			<tr>
 				<td align="left"><input type="button" class="botao" style="cursor: pointer; cursor: hand; width: 150px;" id="adicionarcategoria" value="adicionar categoria" onClick="javascript:adicionar_categoria();document.getElementById('btnvoltagrade').style.display='block';"></td>
 				<td align="center"><input type="button" class="botao" style="cursor: pointer; cursor: hand; width: 150px;" id="adicionarfornecedor" value="adicionar fornecedor" onClick="javascript:adicionar_fornecedor();document.getElementById('btnvoltagrade').style.display='block';"></td>
-				<td align="right"><input type="button" class="botao" style="cursor: pointer; cursor: hand; width: 150px;" id="adicionarcolecao" value="adicionar cole��o" onClick="javascript:adicionar_colecao(path+'modulos/colecao/colecao_adicionar.php');document.getElementById('btnvoltagrade').style.display='block';"></td>
+				<td align="right"><input type="button" class="botao" style="cursor: pointer; cursor: hand; width: 150px;" id="adicionarcolecao" value="adicionar coleção" onClick="javascript:adicionar_colecao(path+'modulos/colecao/colecao_adicionar.php');document.getElementById('btnvoltagrade').style.display='block';"></td>
 			</tr>
 		</table>
 		</td>

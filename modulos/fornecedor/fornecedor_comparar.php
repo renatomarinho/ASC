@@ -63,7 +63,7 @@ $query = $db->query ( $sql );
 					?>
 				<tr>
 		<td height="25" bgcolor="#f0f0f0">&nbsp;&nbsp;&nbsp;&nbsp;<b>Marque os
-		fornecedores que deseja realizar uma compara��o</b></td>
+		fornecedores que deseja realizar uma comparação</b></td>
 	</tr>
 	<tr>
 		<td>
@@ -112,7 +112,7 @@ $query = $db->query ( $sql );
 		<td height="5"></td>
 	</tr>
 	<tr>
-		<td height="25"><b>Selecione o par�metro para a compara��o</b></td>
+		<td height="25"><b>Selecione o parâmetro para a comparação</b></td>
 	</tr>
 	<tr>
 		<td style="border-bottom: 2px solid black"></td>
@@ -167,7 +167,7 @@ $query = $db->query ( $sql );
 		<td height="10"></td>
 	</tr>
 	<tr>
-		<td align="right"><input type="button" value="Gerar relat�rio"
+		<td align="right"><input type="button" value="Gerar relatório"
 			id="geracomparacaofornecedor" class="botao"
 			style="cursor: pointer; cursor: hand; width: 140px; background-color: green;"
 			onclick="javascript:cadastro_fornecedor_comparargrafico();"></td>
@@ -179,8 +179,8 @@ $query = $db->query ( $sql );
 		<td height="15"></td>
 	</tr>
 	<tr>
-		<td height="25" align="center"><b style="color: red;">Aten��o : Para
-		utilizar este recurso voc� dever no m�nimo dois fornecedores</b></td>
+		<td height="25" align="center"><b style="color: red;">Atenção : Para
+		utilizar este recurso você dever no mínimo dois fornecedores</b></td>
 	</tr>
 	<tr>
 		<td height="15"></td>

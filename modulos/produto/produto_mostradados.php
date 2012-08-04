@@ -45,8 +45,8 @@ $quantidade = $rowestoque ['nquantidade'];
 <div class="linha_separador ls_conf_M">
 <table width="100%">
 	<tr>
-		<td width="25%" align="center"><input type="button" class="botao btn_stats" value="hist�rico vendas" onClick="javascript:listasimples_historicoproduto('?id=<?=$_GET ['id'];?>','-');" /></td>
-		<td width="25%" align="center"><input type="button" class="botao btn_stats" value="hist�rico clientes" onClick="javascript:listasimples_historicocliente('?id=<?=$_GET ['id'];?>');" /></td>
+		<td width="25%" align="center"><input type="button" class="botao btn_stats" value="histórico vendas" onClick="javascript:listasimples_historicoproduto('?id=<?=$_GET ['id'];?>','-');" /></td>
+		<td width="25%" align="center"><input type="button" class="botao btn_stats" value="histórico clientes" onClick="javascript:listasimples_historicocliente('?id=<?=$_GET ['id'];?>');" /></td>
 		<td width="25%" align="center"><input type="button" class="botao btn_irpara" value="Ir para Listagem" onClick="javascript:carrega_listagemprodutos(path+'modulos/produto/lista.php','conteudo_total');" /></td>
 	</tr>
 </table>
@@ -94,7 +94,7 @@ $quantidade = $rowestoque ['nquantidade'];
 									$query = $db->query ( $sql );
 									$row2 = $db->fetch_assoc ( $query );
 									?>
-									<?=($row ['produtotipo_idprodutotipo'] == 0) ? 'N�o informada' : ucwords ( strtolower ( $row2 ['txtnome'] ) );?>
+									<?=($row ['produtotipo_idprodutotipo'] == 0) ? 'Não informada' : ucwords ( strtolower ( $row2 ['txtnome'] ) );?>
 								</td>
 							</tr>
 							<tr>
@@ -105,7 +105,7 @@ $quantidade = $rowestoque ['nquantidade'];
 									$query = $db->query ( $sql );
 									$row2 = $db->fetch_assoc ( $query );
 									?>
-									<?=($row ['fornecedor_idfornecedor'] == 0) ? 'N�o informado' : ucwords ( strtolower ( $row2 ['nome'] ) );?>
+									<?=($row ['fornecedor_idfornecedor'] == 0) ? 'Não informado' : ucwords ( strtolower ( $row2 ['nome'] ) );?>
 								</td>
 							</tr>
 						</table>
@@ -113,18 +113,18 @@ $quantidade = $rowestoque ['nquantidade'];
 						<td width="50%">
 						<table>
 							<tr>
-								<td width="70" height="25" align="left"><b>Cole��o</b></td>
+								<td width="70" height="25" align="left"><b>Coleção</b></td>
 								<td align="left">
 									<?
 									$sql = "SELECT idcolecao, txtnome, txtperiodo FROM colecao WHERE idcolecao=" . $row ['colecao_idcolecao'] . "";
 									$query = $db->query ( $sql );
 									$row2 = $db->fetch_assoc ( $query );
 									?>
-									<?=($row ['colecao_idcolecao'] == 0) ? 'N�o informada' : ucwords ( strtolower ( $row2 ['txtnome'] ) );?>
+									<?=($row ['colecao_idcolecao'] == 0) ? 'Não informada' : ucwords ( strtolower ( $row2 ['txtnome'] ) );?>
 								</td>
 							</tr>
 							<tr>
-								<td width="70" height="25" align="left"><b>C�d. Barras</b></td>
+								<td width="70" height="25" align="left"><b>Cód. Barras</b></td>
 								<td align="left"><?=$row ['cod_barra'];?></td>
 							</tr>
 						</table>
@@ -137,7 +137,7 @@ $quantidade = $rowestoque ['nquantidade'];
 				<td class="l3"></td>
 			</tr>
 			<tr>
-				<td height="25">&nbsp&nbsp<b>Pre�os</b></td>
+				<td height="25">&nbsp&nbsp<b>Preços</b></td>
 			</tr>
 			<tr>
 				<td class="l3"></td>

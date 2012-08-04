@@ -27,12 +27,12 @@ if (! isset ( $_CONF ['PATH'] )) {
 <table width="100%">
 	<tr>
 		<td>
-			<b style="color:red;"><u>Voc� est� retirando <span id="qtdItens"></span> do estoque</u>
+			<b style="color:red;"><u>Você está retirando <span id="qtdItens"></span> do estoque</u>
 			<BR>Deseja confirmar a retirada?</b>
 		</td>
 		<td width="15"></td>
 		<td align="left">
-			<a href="javascript:;" class="botao red btn_naored" style="width:70px;" id="btnRetiradaNao">N�o</a>
+			<a href="javascript:;" class="botao red btn_naored" style="width:70px;" id="btnRetiradaNao">Não</a>
 			<br />
 			<a href="javascript:;" class="botao green btn_simgreen" style="width:70px;" id="btnRetiradaSim">Sim</a>
 		</td>

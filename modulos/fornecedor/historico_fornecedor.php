@@ -47,9 +47,9 @@ if ($totalfornecedores > 0) {
 }
 ?>
 
-<fieldset id="p"><legend>Estat�sticas dos Fornecedores</legend>
+<fieldset id="p"><legend>Estatísticas dos Fornecedores</legend>
 
-<div class="linha_separador" style="width: 350px;"><b>Gr�fico dos fornecedores que possuem produtos cadastrados</b></div>
+<div class="linha_separador" style="width: 350px;"><b>Gráfico dos fornecedores que possuem produtos cadastrados</b></div>
 
 <div>
 
@@ -58,7 +58,7 @@ if ($totalfornecedores > 0) {
 		<td height="5"></td>
 	</tr>
 	<tr>
-		<td>Clique na listagem ou no gr�fico abaixo para obter informa��es detalhadas sobre cada um dos fornecedores</td>
+		<td>Clique na listagem ou no gráfico abaixo para obter informações detalhadas sobre cada um dos fornecedores</td>
 	</tr>
 	<tr>
 		<td height="10"></td>
@@ -79,7 +79,7 @@ if ($totalfornecedores > 0) {
 		</td>
 	</tr>
 	<tr>
-		<td align="center"><b style="font-size: 9px; color: #c0c0c0">* Somente os fornecedores com produtos cadastrados constam no gr�fico</b></td>
+		<td align="center"><b style="font-size: 9px; color: #c0c0c0">* Somente os fornecedores com produtos cadastrados constam no gráfico</b></td>
 	</tr>
 </table>
 

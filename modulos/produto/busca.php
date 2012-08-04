@@ -109,9 +109,9 @@ if ($db->num_rows ( $query )) {
 	$totalprodutos = $db->num_rows ( $queryproduto );
 	
 	if ($totalprodutos == 0) {
-		echo exibe_errohtml ( 'N�o possui nenhum produto cadastrado' );
+		echo exibe_errohtml ( 'Não possui nenhum produto cadastrado' );
 	} else {
-		echo exibe_errohtml ( '' . $_GET ['s'] . ' - n�o encontrado');
+		echo exibe_errohtml ( '' . $_GET ['s'] . ' - não encontrado');
 	}
 
 }

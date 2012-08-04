@@ -143,7 +143,7 @@ $db->connect ();
 				<td width="70" height="20">
 				<table cellpadding="0" cellspacing="0" border="0">
 					<tr>
-						<td height="20" width="66">Endere�o</td>
+						<td height="20" width="66">Endereço</td>
 						<td><input type="text" id="endereco" style="width: 120px"
 							maxlength="50"></td>
 						<td width="10"></td>
@@ -211,7 +211,7 @@ $db->connect ();
 									maxlength="3" style="width: 25px"></td>
 							</tr>
 							<tr>
-								<td height="25">Pa�s</td>
+								<td height="25">País</td>
 								<td align="right"><select id="pais" style="width: 125px"
 									onchange="javascript:document.getElementById('cidade').value='';document.getElementById('estado').selectedIndex=27;">
 																<?

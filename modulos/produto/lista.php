@@ -47,7 +47,7 @@ $totalprodutos = $db->num_rows ( $query );
 				<td><img src="<?=$_CONF ['PATH_VIRTUAL'];?>imgs/icons/produto_72.png"
 					class="t72"></td>
 				<td width="10"></td>
-				<td><b>Atualmente <?=(($totalprodutos == 0) ? 'n�o possui nenhum produto cadastrado' : 'possui ' . $totalprodutos . ' produtos cadastrado') . (($totalprodutos <= 1) ? '' : 's');?></b>
+				<td><b>Atualmente <?=(($totalprodutos == 0) ? 'não possui nenhum produto cadastrado' : 'possui ' . $totalprodutos . ' produtos cadastrado') . (($totalprodutos <= 1) ? '' : 's');?></b>
 				<br />
 				Para encontrar um produto com facilidade utilize a busca</i></td>
 			</tr>
@@ -71,7 +71,7 @@ $totalprodutos = $db->num_rows ( $query );
 								<td width="5"><input type="hidden" id="rdopesquisacodigo"></td>
 								<td><input type="radio" id="rdopesquisacodbarra" name="pesquisa"
 									onClick="javascript:pesquisarproduto();"></td>
-								<td>c�d. barras</td>
+								<td>cód. barras</td>
 							</tr>
 						</table>
 						</td>
@@ -121,7 +121,7 @@ $totalprodutos = $db->num_rows ( $query );
 						<td><select name="produtocolecao" id="produtocolecao"
 							onChange="javascript:pesquisarproduto();"
 							style="width: 100px; font-size: 11px;" disabled>
-							<option value="0">cole��o</option>
+							<option value="0">coleção</option>
 												<?
 												$sql = "SELECT idcolecao, txtnome FROM colecao ORDER BY txtnome ASC";
 												$query = $db->query ( $sql );
@@ -153,7 +153,7 @@ $totalprodutos = $db->num_rows ( $query );
 							<td align="center" width="120" height="25"><a href="javascript:;" onclick="javascript:ordenaproduto('p.cod_barra', 'issetcodigo');"><strong>C&oacute;d. Barra</strong><img src="<?=$_CONF ['PATH_VIRTUAL'];?>imgs/asset.png" id="issetcodigo" valign="absmiddle" border="0"></a></td>
 							<td width="360" height="25"><a href="javascript:;" onclick="javascript:ordenaproduto('p.txtproduto', 'issetproduto');"><strong>Nome</strong><img src="<?=$_CONF ['PATH_VIRTUAL'];?>imgs/asset.png" id="issetproduto" valign="absmiddle" border="0"></a></td>
 							<td width="170" height="25" align="center"><a href="javascript:;" onclick="javascript:ordenaproduto('col.idcolecao', 'issetcolecao');"><strong>Colecao</strong><img src="<?=$_CONF ['PATH_VIRTUAL'];?>imgs/asset.png"" id="issetcolecao" valign="absmiddle" border="0"></a></td>
-							<td width="120" height="25" align="center"><a href="javascript:;" onclick="javascript:ordenaproduto('p.vlvarejo', 'issetvalor');"><strong>Pre�o varejo</strong><img src="<?=$_CONF ['PATH_VIRTUAL'];?>imgs/asset.png" id="issetvalor" valign="absmiddle" border="0"></a></td>
+							<td width="120" height="25" align="center"><a href="javascript:;" onclick="javascript:ordenaproduto('p.vlvarejo', 'issetvalor');"><strong>Preço varejo</strong><img src="<?=$_CONF ['PATH_VIRTUAL'];?>imgs/asset.png" id="issetvalor" valign="absmiddle" border="0"></a></td>
 							<td width="70" height="25" align="center"><a href="javascript:;" onclick="javascript:ordenaproduto('e.nquantidade', 'issetestoque');"><strong>Estoque</strong><img src="<?=$_CONF ['PATH_VIRTUAL'];?>imgs/asset.png" id="issetestoque" valign="absmiddle" border="0"></a></td>
 							<td width="120"></td>
 						</tr>

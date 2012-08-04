@@ -34,7 +34,7 @@ if (! isset ( $_CONF ['PATH'] )) {
 <table width="100%" height="100%">
 	<tr>
 		<td align="center"><span id="msggrade"><b style="color: blue;">Preencha
-		os campos abaixo para adicionar itens � grade</b><span></td>
+		os campos abaixo para adicionar itens a grade</b><span></td>
 	</tr>
 </table>
 </div>
@@ -48,7 +48,7 @@ if (! isset ( $_CONF ['PATH'] )) {
 		<td height="20">
 		<table width="100%" cellpadding="0" cellspacing="0" border="0">
 			<tr>
-				<td align="left"><b>Adicionar novo item � grade</b></td>
+				<td align="left"><b>Adicionar novo item a grade</b></td>
 				<td align="right"><span id="addgradeerro"></span></td>
 			</tr>
 		</table>
@@ -70,7 +70,7 @@ if (! isset ( $_CONF ['PATH'] )) {
 				<td height="20"><input type="text" id="add_qtdgrade" style="width: 50px; text-align: right;" maxlength="4"></td>
 			</tr>
 			<tr>
-				<td height="20">Pre�o �nico</td>
+				<td height="20">Preço único</td>
 				<td width="5"></td>
 				<td height="20"><input type="text" id="add_precounico" style="width: 50px; text-align: right;" value="0.00" onkeydown="javascript:formata_valor('add_precounico', 13, event)" onfocus="javascript:document.getElementById('add_precounico').value='';" maxlength="6" /></td>
 				<td width="10"></td>
@@ -93,7 +93,7 @@ if (! isset ( $_CONF ['PATH'] )) {
 		<table width="100%" cellpadding="0" cellspacing="0">
 			<tr bgcolor="#f0f0f0">
 				<td height="20">&nbsp;&nbsp;<b>Nome</b></td>
-				<td width="100" align="center"><b>Pre�o �nico</b></td>
+				<td width="100" align="center"><b>Preço único</b></td>
 				<td width="85" align="center"><b>Quantidade</b></td>
 				<td width="60"></td>
 			</tr>

@@ -34,13 +34,13 @@ $totalprodutos = $db->num_rows ( $query );
 
 ?>
 
-<fieldset id="p"><legend>Resultado da compara��o</legend>
+<fieldset id="p"><legend>Resultado da comparação</legend>
 
 <div class="linha_separador" style="width: 350px; height: 25px;">
 <table width="100%">
 	<tr>
 		<td align="left"><input type="button"
-			value="Estat�sticas dos fornecedores" id="irestatisticas_resultado"
+			value="Estatísticas dos fornecedores" id="irestatisticas_resultado"
 			class="botao" style="cursor: pointer; cursor: hand; width: 190px;"
 			onclick="javascript:historicofornecedor();"></td>
 		<td align="right"><input type="button" value="Ir para listagem"
@@ -57,7 +57,7 @@ $totalprodutos = $db->num_rows ( $query );
 		<td height="5"></td>
 	</tr>
 	<tr>
-		<td height="20"><b>Gr�fico comparativo dos fornecedores</b></td>
+		<td height="20"><b>Gráfico comparativo dos fornecedores</b></td>
 	</tr>
 	<tr>
 		<td style="border-top: 2px solid black"></td>
@@ -88,7 +88,7 @@ $totalprodutos = $db->num_rows ( $query );
 		<td style="border-top: 2px solid black"></td>
 	</tr>
 	<tr>
-		<td height="20"><b>Relat�rio comparativo dos fornecedores</b></td>
+		<td height="20"><b>Relatório comparativo dos fornecedores</b></td>
 	</tr>
 	<tr>
 		<td style="border-top: 2px solid black"></td>

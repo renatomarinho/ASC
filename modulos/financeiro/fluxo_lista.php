@@ -53,7 +53,7 @@ $data_final = date ( 'Y-m-d', mktime ( 23, 59, 59, date ( 'm' ), date ( 'd' ) + 
 		</td>
 		<td align="right">
 			<input type="button" value="modo texto" class="botao" style="width: 120px; display: none;" onclick="javascript:utilitarios_agenda_tarefasalvar();"> 
-			<input type="button" value="modo gr�fico" class="botao" style="width: 120px; display: none;" onclick="javascript:utilitarios_agenda_tarefasalvar();">
+			<input type="button" value="modo gráfico" class="botao" style="width: 120px; display: none;" onclick="javascript:utilitarios_agenda_tarefasalvar();">
 		</td>
 	</tr>
 </table>
@@ -70,7 +70,7 @@ $data_final = date ( 'Y-m-d', mktime ( 23, 59, 59, date ( 'm' ), date ( 'd' ) + 
 				<td align="center">
 				<table>
 					<tr>
-						<td>Per�odo:</td>
+						<td>Período:</td>
 						<td>
 						<table>
 
@@ -110,7 +110,7 @@ $data_final = date ( 'Y-m-d', mktime ( 23, 59, 59, date ( 'm' ), date ( 'd' ) + 
 							</tr>
 						</table>
 						</td>
-						<td>&nbsp;at�&nbsp;</td>
+						<td>&nbsp;até&nbsp;</td>
 						<td>
 						<table>
 							<tr>
@@ -155,10 +155,10 @@ $data_final = date ( 'Y-m-d', mktime ( 23, 59, 59, date ( 'm' ), date ( 'd' ) + 
 				<table width="100%">
 					<tr>
 						<td align="left" width="50"><input type="button" value="- ano" id="ano_anterior" class="botao" style="cursor: pointer; cursor: hand; width: 50px;" onclick="javascript:fluxo_reload_date(8);" /></td>
-						<td align="left" width="50"><input type="button" value="- m�s" id="mes_anterior" class="botao" style="cursor: pointer; cursor: hand; width: 50px;" onclick="javascript:fluxo_reload_date(4);" /></td>
+						<td align="left" width="50"><input type="button" value="- mês" id="mes_anterior" class="botao" style="cursor: pointer; cursor: hand; width: 50px;" onclick="javascript:fluxo_reload_date(4);" /></td>
 						<td align="left" width="50"><input type="button" value="- dia" id="dia_anterior" class="botao" style="cursor: pointer; cursor: hand; width: 50px;" onclick="javascript:fluxo_reload_date(2);" /></td>
 						<td align="right" width="50"><input type="button" value="dia +" id="dia_proximo" class="botao" style="cursor: pointer; cursor: hand; width: 50px;" onclick="javascript:fluxo_reload_date(1);" /></td>
-						<td align="right" width="50"><input type="button" value="m�s +" id="mes_proximo" class="botao" style="cursor: pointer; cursor: hand; width: 50px;" onclick="javascript:fluxo_reload_date(3);" /></td>
+						<td align="right" width="50"><input type="button" value="mês +" id="mes_proximo" class="botao" style="cursor: pointer; cursor: hand; width: 50px;" onclick="javascript:fluxo_reload_date(3);" /></td>
 						<td align="right" width="50"><input type="button" value="ano +" id="ano_proximo" class="botao" style="cursor: pointer; cursor: hand; width: 50px;" onclick="javascript:fluxo_reload_date(7);" /></td>
 					</tr>
 				</table>

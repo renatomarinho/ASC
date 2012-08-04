@@ -41,7 +41,7 @@ $dinheiro = 0;
 $debito = 0;
 
 /**
- * Consulta a dados da mesma opera��o
+ * Consulta a dados da mesma operação
  */
 $sql = "SELECT * FROM (
 
@@ -134,7 +134,7 @@ while ( $row = $db->fetch_assoc ( $query ) ) {
 		$query_taxa = $db->query ( $sql_taxa );
 		$row_taxa = $db->fetch_assoc ( $query_taxa );
 		
-		$descricao = "Cart�o de Cr�dito : " . $row ['nome'];
+		$descricao = "Cartão de Crédito : " . $row ['nome'];
 		
 		// calculando valor
 		$valor = ($row ['vr_cartao'] - ($row ['vr_cartao'] * ($row_taxa ['tx_credito2'] / 100))) / $row_n_parcelas ['total_parcelas_cartao'];
@@ -154,7 +154,7 @@ while ( $row = $db->fetch_assoc ( $query ) ) {
 		$query_debito = $db->query ( $sql_debito );
 		$row_debito = $db->fetch_assoc ( $query_debito );
 		
-		$descricao = "Cart�o de D�bito : " . $row ['nome'];
+		$descricao = "Cartão de Débito : " . $row ['nome'];
 		$valor = ($row ['valor_debito'] - ($row ['valor_debito'] * ($row_debito ['tx_debito1'] / 100)));
 		$total_mes_receita += ($tipo_lancamento == 'E' ? $valor : 0);
 		$total_mes_despesa += ($tipo_lancamento == 'S' ? $valor : 0);
@@ -165,7 +165,7 @@ while ( $row = $db->fetch_assoc ( $query ) ) {
 	
 	// Cheques
 	if ($row ['valor_cheque'] > 0) {
-		$descricao = "Cheque - N�mero : " . $row ['numero_cheque'] . " Banco: " . $row ['nome_banco'];
+		$descricao = "Cheque - Número : " . $row ['numero_cheque'] . " Banco: " . $row ['nome_banco'];
 		$valor = $row ['valor_cheque'];
 		$total_mes_receita += ($tipo_lancamento == 'E' ? $valor : 0);
 		$total_mes_despesa += ($tipo_lancamento == 'S' ? $valor : 0);
@@ -247,7 +247,7 @@ while ( $row = $db->fetch_assoc ( $query ) ) {
 				<td colspan="9" class="l3"></td>
 			</tr>-->
 			<tr>
-				<td width="120"><b>Dados m�s</b></td>
+				<td width="120"><b>Dados mês</b></td>
 				<td height="25"><b style="color: green;">Receita </b></td>
 				<td width="10"></td>
 				<td>R$ <?=number_format ( $total_mes_receita, 2, ',', '.' );?></td>

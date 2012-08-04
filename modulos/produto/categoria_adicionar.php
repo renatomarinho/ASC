@@ -27,7 +27,7 @@ if (! isset ( $_CONF ['PATH'] )) {
 ?>
 
 
-<fieldset id="p"><legend>Adicionar Categoria [ modo r�pido ]</legend>
+<fieldset id="p"><legend>Adicionar Categoria [ modo rápido ]</legend>
 
 <div id="etapa1" style="width: 377px;">
 

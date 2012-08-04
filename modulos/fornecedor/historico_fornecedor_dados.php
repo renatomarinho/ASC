@@ -35,16 +35,16 @@ $query = $db->query ( $sql );
 $rowfornecedor = $db->fetch_assoc ( $query );
 
 $nome = $rowfornecedor ['nome'];
-$cnpj = ($rowfornecedor ['cnpj']) ? $rowfornecedor ['cnpj'] : 'N�o informado';
-$uf = ($rowfornecedor ['uf']) ? $rowfornecedor ['uf'] : 'N�o informado';
+$cnpj = ($rowfornecedor ['cnpj']) ? $rowfornecedor ['cnpj'] : 'Não informado';
+$uf = ($rowfornecedor ['uf']) ? $rowfornecedor ['uf'] : 'Não informado';
 if ($uf == 'OU') {
 	$uf = 'Exterior';
 }
 
-$cidade = ($rowfornecedor ['cidade']) ? $rowfornecedor ['cidade'] : 'N�o informado';
-$endereco = ($rowfornecedor ['endereco']) ? $rowfornecedor ['endereco'] : 'N�o informado';
-$contato = ($rowfornecedor ['contato']) ? $rowfornecedor ['contato'] : 'N�o informado';
-$email = ($rowfornecedor ['email']) ? strtolower ( $rowfornecedor ['email'] ) : 'N�o informado';
+$cidade = ($rowfornecedor ['cidade']) ? $rowfornecedor ['cidade'] : 'Não informado';
+$endereco = ($rowfornecedor ['endereco']) ? $rowfornecedor ['endereco'] : 'Não informado';
+$contato = ($rowfornecedor ['contato']) ? $rowfornecedor ['contato'] : 'Não informado';
+$email = ($rowfornecedor ['email']) ? strtolower ( $rowfornecedor ['email'] ) : 'Não informado';
 $telefone = $rowfornecedor ['telefone'];
 if (strlen ( $telefone ) > 6) {
 	$telefone = (strlen ( $telefone )) ? str_pad ( str_replace ( '-', '', $telefone ), 10, '0', STR_PAD_LEFT ) : '';
@@ -52,7 +52,7 @@ if (strlen ( $telefone ) > 6) {
 	$tel1 = substr ( $telefone, 2, 4 );
 	$tel2 = substr ( $telefone, 6, 4 );
 } else {
-	$telefone = 'N�o informado';
+	$telefone = 'Não informado';
 }
 
 $telefone2 = $rowfornecedor ['telefone2'];
@@ -62,23 +62,23 @@ if (strlen ( $telefone2 ) > 6) {
 	$tel1_2 = substr ( $telefone2, 2, 4 );
 	$tel2_2 = substr ( $telefone2, 6, 4 );
 } else {
-	$telefone2 = 'N�o informado';
+	$telefone2 = 'Não informado';
 }
 
-$fax = ($rowfornecedor ['fax']) ? $rowfornecedor ['fax'] : 'N�o informado';
-$ie = ($rowfornecedor ['ie']) ? $rowfornecedor ['ie'] : 'N�o informado';
+$fax = ($rowfornecedor ['fax']) ? $rowfornecedor ['fax'] : 'Não informado';
+$ie = ($rowfornecedor ['ie']) ? $rowfornecedor ['ie'] : 'Não informado';
 $cep = $rowfornecedor ['cep'];
 if (strlen ( $cep ) > 4) {
 	$txtcep = (strlen ( $cep )) ? str_pad ( str_replace ( '-', '', $cep ), 8, '0', STR_PAD_LEFT ) : '';
 	$cep1 = substr ( $txtcep, 0, 5 );
 	$cep2 = substr ( $txtcep, 5, 3 );
 } else {
-	$cep = 'N�o informado';
+	$cep = 'Não informado';
 }
 
-$bairro = ($rowfornecedor ['bairro']) ? $rowfornecedor ['bairro'] : 'N�o informado';
-$idpais = ($rowfornecedor ['idpais']) ? $rowfornecedor ['idpais'] : 'N�o informado';
-$nomepais = ($rowfornecedor ['nomepais']) ? $rowfornecedor ['nomepais'] : 'N�o informado';
+$bairro = ($rowfornecedor ['bairro']) ? $rowfornecedor ['bairro'] : 'Não informado';
+$idpais = ($rowfornecedor ['idpais']) ? $rowfornecedor ['idpais'] : 'Não informado';
+$nomepais = ($rowfornecedor ['nomepais']) ? $rowfornecedor ['nomepais'] : 'Não informado';
 
 $sql = "SELECT idproduto, vlcusto, vlvarejo, vlatacado, vlprontaentrega FROM produto WHERE fornecedor_idfornecedor=" . $idfornecedor . "";
 $query = $db->query ( $sql );
@@ -129,14 +129,14 @@ if ($total > 0) {
 }
 ?>
 
-<fieldset id="p"><legend>Hist�rico do Fornecedor</legend>
+<fieldset id="p"><legend>Histórico do Fornecedor</legend>
 
 <div class="linha_separador" style="width: 360px; height: 25px;">
 
 <table width="100%">
 	<tr>
 		<td align="right"><input type="button"
-			value="Ir para listagem cole��es" class="botao"
+			value="Ir para listagem coleções" class="botao"
 			id="irlistagem_resultado"
 			style="cursor: pointer; cursor: hand; width: 180px;"
 			onclick="javascript:carrega_listagemcolecoes(path+'modulos/colecao/colecao_lista.php','conteudo_direito', '-');"></td>
@@ -273,7 +273,7 @@ if ($total > 0) {
 												<td width="70" height="20">
 												<table cellpadding="0" cellspacing="0" border="0">
 													<tr>
-														<td height="20" width="66">Endere�o</td>
+														<td height="20" width="66">Endereço</td>
 														<td width="160"><span id="endereco"><?=ucwords ( strtolower ( $endereco ) );?></span></td>
 														<td width="10"></td>
 														<td height="20" width="50">Bairro</td>
@@ -296,13 +296,13 @@ if ($total > 0) {
 																										<?
 																										} else {
 																											?>
-																											<span id="cep">N�o informado</span>
+																											<span id="cep">Não informado</span>
 																										<?
 																										}
 																										?>
 																									</td>
 														<td width="10"></td>
-														<td height="20" width="50">Pa�s</td>
+														<td height="20" width="50">País</td>
 														<td align="left"><span id="pais"><?=$nomepais;?></span></td>
 													</tr>
 												</table>
@@ -327,7 +327,7 @@ if ($total > 0) {
 						<td height="25">
 						<table width="100%">
 							<tr>
-								<td><b>Estat�sticas</b></td>
+								<td><b>Estatísticas</b></td>
 								<td align="right"><b>Custo</b> : R$ <?=number_format ( $vlcusto_fornecedor_total, 2 );?></td>
 							</tr>
 						</table>
@@ -408,7 +408,7 @@ if ($total > 0) {
 																	} else {
 																		$lucro_vendas_porcento = number_format ( - 1 * ((($valor_total_custo / $valor_vendas) * 100)) + 100, 2 );
 																		$lucro_vendas = $valor_total_custo - $valor_vendas;
-																		$nomeclatura_lucro = 'Preju�zo';
+																		$nomeclatura_lucro = 'Prejuízo';
 																	}
 																	
 																	?>

@@ -31,7 +31,7 @@ $db->connect ();
 $i = 0;
 ?>
 
-<fieldset id="p"><legend>Hist�rico do Produto</legend>
+<fieldset id="p"><legend>Histórico do Produto</legend>
 
 		<?
 		if (isset ( $_GET ['id'] )) {
@@ -54,7 +54,7 @@ $i = 0;
 			if ($rows ['dtcadastro'] > 1) {
 				$datacadastro = gmdate ( 'd/m/Y h:i:s', $rows ['dtcadastro'] );
 			} else {
-				$datacadastro = '<b style="color:red">n�o consta</b>';
+				$datacadastro = '<b style="color:red">não consta</b>';
 			}
 			
 			$sql2 = 'SELECT SUM(vr_total) as total, SUM(quant) as vendidos FROM mv_vendas_movimento WHERE estornado=0 AND id_produto = ' . $rows ['idproduto'];
@@ -70,14 +70,14 @@ $i = 0;
 				?>
 						<td><input type="button" class="botao"
 			style="cursor: pointer; cursor: hand; width: 200px;"
-			value="Ir para estat�sticas das cole�oes"
+			value="Ir para estatísticas das coleções"
 			onClick="javascript:historicocolecao();"></td>
 					<?
 			} else if (isset ( $_GET ['origem'] ) && $_GET ['origem'] == 'fornecedor') {
 				?>
 						<td><input type="button" class="botao"
 			style="cursor: pointer; cursor: hand; width: 220px;"
-			value="Ir para estat�sticas dos fornecedores"
+			value="Ir para estatísticas dos fornecedores"
 			onClick="javascript:historicofornecedor();"></td>
 					<?
 			} else {
@@ -202,7 +202,7 @@ $i = 0;
 					value="ver modo texto"
 					onclick="javascript:produto_exibe_modotexto();"> <input
 					type="button" class="botao btn_stats" id="modotexto"
-					value="ver modo gr�fico" style="display: none;"
+					value="ver modo gráfico" style="display: none;"
 					onclick="javascript:produto_exibe_modocharts();"></td>
 			</tr>
 		</table>
