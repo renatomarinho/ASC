@@ -25,14 +25,14 @@ if (! isset ( $_CONF ['PATH'] )) {
 }
 ?>
 
-<fieldset id="m"><legend><span id="titusuadmdados">Dados do usu�rio
+<fieldset id="m"><legend><span id="titusuadmdados">Dados do usuário
 administrador</span></legend>
 
 <div class="linha_separador" style="width: 480px; height: 25px;">
 <table width="100%" height="100%">
 	<tr>
 		<td align="center"><span id="msgdadosuser"><b style="color: blue;">Selecione
-		um usu�rio administrador na listagem ao lado</b></span></td>
+		um usuário administrador na listagem ao lado</b></span></td>
 	</tr>
 </table>
 </div>

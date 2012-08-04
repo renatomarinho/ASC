@@ -25,7 +25,7 @@ if (! isset ( $_CONF ['PATH'] )) {
 }
 ?>
 
-<fieldset id="m"><legend>Detalhes da atualiza��o</legend>
+<fieldset id="m"><legend>Detalhes da atualização</legend>
 
 <div class="linha_separador" id="linha_atualizacao"
 	style="width: 480px; height: 13px;">
@@ -43,7 +43,7 @@ if (! isset ( $_CONF ['PATH'] )) {
 		<td height="5"></td>
 	</tr>
 	<tr>
-		<td height="20"><b>Informa��es detalhadas</b></td>
+		<td height="20"><b>Informações detalhadas</b></td>
 	</tr>
 	<tr>
 		<td style="border-bottom: 2px solid black"></td>

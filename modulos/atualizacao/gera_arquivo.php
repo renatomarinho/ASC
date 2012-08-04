@@ -109,9 +109,9 @@ if ($handle = opendir ( $diretorio )) {
 
 ?>
 <!--
-<meta name="nome_fake" content="Topo da P�gina">
+<meta name="nome_fake" content="Topo da Página">
 <meta name="nome_rvs" content="header.php">
 <meta name="localizacao" content="/include">
-<meta name="descricao" content="Mudan�a nos links do menu e espa�amentos">
+<meta name="descricao" content="Mudança nos links do menu e espaçamentos">
 </head>
 -->

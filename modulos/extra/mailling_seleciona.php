@@ -33,13 +33,13 @@ $db->connect ();
 
 
 
-<fieldset id="p"><legend>Emiss�o de Mailling</legend>
+<fieldset id="p"><legend>Emissão de Mailling</legend>
 
 <div class="linha_separador" style="height: 28px;">
 <table width="100%" height="100%">
 	<tr>
 		<td align="center"><span id="msggrade"><b style="color: blue;">Escolha
-		as op��es para a impress�o do mailling</b><span></td>
+		as opções para a impressão do mailling</b><span></td>
 	</tr>
 </table>
 </div>
@@ -51,7 +51,7 @@ $db->connect ();
 		<td height="10"></td>
 	</tr>
 	<tr>
-		<td height="25"><b>Campos para impress�o das etiquetas</b></td>
+		<td height="25"><b>Campos para impressão das etiquetas</b></td>
 	</tr>
 	<tr>
 		<td style="border-bottom: 2px solid black"></td>
@@ -71,12 +71,12 @@ $db->connect ();
 				<td>Estado</td>
 				<td width="30"></td>
 				<td><input type="checkbox" name="valor" id="pais"></td>
-				<td>Pa�s</td>
+				<td>País</td>
 			</tr>
 			<tr>
 				<td height="25"><input type="checkbox" name="valor" id="endereco"
 					checked></td>
-				<td>Endere�o</td>
+				<td>Endereço</td>
 				<td width="30"></td>
 				<td><input type="checkbox" name="valor" id="cidade" checked></td>
 				<td>Cidade</td>
@@ -94,7 +94,7 @@ $db->connect ();
 		<td style="border-bottom: 2px solid black"></td>
 	</tr>
 	<tr>
-		<td height="25"><b>Crit�rio de clientes</b></td>
+		<td height="25"><b>Critério de clientes</b></td>
 	</tr>
 	<tr>
 		<td style="border-bottom: 2px solid black"></td>
@@ -115,7 +115,7 @@ $db->connect ();
 				<td>
 				<table width="100%">
 					<tr>
-						<td>Estado espec�fico</td>
+						<td>Estado específico</td>
 						<td align="right">
 						<div id="etiquetaporestado" style="display: none;">
 						<table>
@@ -164,13 +164,13 @@ $db->connect ();
 				<td>
 				<table width="100%">
 					<tr>
-						<td>M�s de anivers�rio</td>
+						<td>Mês de aniversário</td>
 						<td align="right">
 						<div id="etiquetapormes" style="display: none;">
 						<table>
 							<tr>
 								<td><select id="mes_niver" style="width: 140px;">
-									<option value="0">selecione o m�s</option>
+									<option value="0">selecione o mês</option>
 																<?
 																for($n = 1; $n <= 12; $n ++) {
 																	?>

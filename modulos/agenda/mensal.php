@@ -53,12 +53,12 @@ else
 				<td align="left" width="50"><input type="button" value="- ano"
 					class="botao" style="cursor: pointer; cursor: hand; width: 50px;"
 					onclick="javascript:Calendar.Monthly(<?=mktime ( 0, 0, 0, gmdate ( 'm', $a ), gmdate ( 'd', $a ), gmdate ( 'Y', $a ) - 1 );?>);"></td>
-				<td align="left" width="50"><input type="button" value="- m�s"
+				<td align="left" width="50"><input type="button" value="- mês"
 					id="diasemana_anterior" class="botao"
 					style="cursor: pointer; cursor: hand; width: 50px;"
 					onclick="javascript:Calendar.Monthly(<?=mktime ( 0, 0, 0, gmdate ( 'm', $a ) - 1, gmdate ( 'd', $a ), gmdate ( 'Y', $a ) );?>);"></td>
 				<td align="center"><b style="font-size: 14px;"><?=$meses [date ( 'n', $a )];?>, <?=date ( 'Y', $a )?></b></td>
-				<td align="right" width="50"><input type="button" value="m�s +"
+				<td align="right" width="50"><input type="button" value="mês +"
 					id="diasemana_proximo" class="botao"
 					style="cursor: pointer; cursor: hand; width: 50px;"
 					onclick="javascript:Calendar.Monthly(<?=mktime ( 0, 0, 0, gmdate ( 'm', $a ) + 1, gmdate ( 'd', $a ), gmdate ( 'Y', $a ) );?>);"></td>
@@ -107,7 +107,7 @@ else
 				<p class="tall">Segunda</p>
 				</td>
 				<td width="14%" bgcolor="#f0f0f0" align="center">
-				<p class="tall">Ter�a</p>
+				<p class="tall">Terça</p>
 				</td>
 				<td width="14%" align="center">
 				<p class="tall">Quarta</p>
@@ -119,7 +119,7 @@ else
 				<p class="tall">Sexta</p>
 				</td>
 				<td width="14%" bgcolor="#f0f0f0" align="center">
-				<p class="tall">S�bado</p>
+				<p class="tall">Sábado</p>
 				</td>
 			</tr>
 			<?

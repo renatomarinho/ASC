@@ -38,14 +38,14 @@ $txtperiodo = $rowcolecao ['txtperiodo'];
 $txtdescricao = $rowcolecao ['txtdescricao'];
 
 if (strlen ( $txtperiodo ) > 8) {
-	$periodo_explode = explode ( ' at� ', $txtperiodo );
+	$periodo_explode = explode ( ' até ', $txtperiodo );
 	$periodo_1 = explode ( '/', $periodo_explode [0] );
 	$periodo_2 = explode ( '/', $periodo_explode [1] );
 	if ($periodo_1 [0] < 10)
 		$periodo_1 [0] = str_replace ( '0', '', $periodo_1 [0] );
 	if ($periodo_2 [0] < 10)
 		$periodo_2 [0] = str_replace ( '0', '', $periodo_2 [0] );
-	$periodo = $meses [$periodo_1 [0]] . ' de ' . $periodo_1 [1] . ' at� ' . $meses [$periodo_2 [0]] . ' de ' . $periodo_2 [1];
+	$periodo = $meses [$periodo_1 [0]] . ' de ' . $periodo_1 [1] . ' até ' . $meses [$periodo_2 [0]] . ' de ' . $periodo_2 [1];
 } else {
 	$periodo = 'indeterminado';
 }
@@ -103,7 +103,7 @@ if ($total > 0) {
 }
 ?>
 
-<fieldset id="m"><legend>Dados da Cole��o</legend>
+<fieldset id="m"><legend>Dados da Coleção</legend>
 
 <div class="linha_separador" style="width: 480px; height: 25px;">
 
@@ -133,7 +133,7 @@ if ($total > 0) {
 									?>
 								<tr>
 				<td height="30" style="background-color: red; color: white"
-					align="center"><b>ATEN��O : A COLE�AO EST� OPERANDO COM PREJU�ZO</b>
+					align="center"><b>Atenção : A coleçnao está operando com prejuízo</b>
 				</td>
 			</tr>
 			<tr>
@@ -159,12 +159,12 @@ if ($total > 0) {
 						<td height="20">
 						<table width="100%">
 							<tr>
-								<td><b>Dados da Cole��o</b></td>
+								<td><b>Dados da Coleção</b></td>
 								<td align="right"><input type="button"
-									value="salvar dados da cole��o" class="botao" id="diveditar"
+									value="salvar dados da coleção" class="botao" id="diveditar"
 									style="cursor: pointer; cursor: hand; width: 160px; background-color: green; display: none;"
 									onclick="javascript:editar_colecao_salvar('<?=$idcolecao;?>');">
-								<input type="button" value="editar dados da cole��o"
+								<input type="button" value="editar dados da coleção"
 									class="botao" id="btneditarcolecao"
 									style="cursor: pointer; cursor: hand; width: 160px;"
 									onclick="javascript:editar_colecao('<?=$idcolecao;?>');"></td>
@@ -197,12 +197,12 @@ if ($total > 0) {
 								<td>
 								<table width="100%">
 									<tr>
-										<td height="25"><b>Per�odo</b></td>
+										<td height="25"><b>Período</b></td>
 										<td align="right">
 										<div id="defineduracao" style="display: none;">
 										<table>
 											<tr>
-												<td>dura��o indeterminada</td>
+												<td>duração indeterminada</td>
 												<td width="2"></td>
 												<td><input type="checkbox" id="duracaocolecao"
 													onclick="javascript:var p1=document.getElementById('peridodeterminado');p1.style.display=((p1.style.display=='none')?'block':'none');var p2=document.getElementById('peridoindeterminado');p2.style.display=((p1.style.display=='none')?'block':'none')"></td>
@@ -223,14 +223,14 @@ if ($total > 0) {
 																		<?=$periodo;?>
 																	</span></div>
 								<div id="peridoindeterminado" style="display: none;"><b
-									style="color: red;">Sem per�odo definido</b></div>
+									style="color: red;">Sem período definido</b></div>
 								</td>
 							</tr>
 							<tr>
 								<td style="border-bottom: 2px solid black"></td>
 							</tr>
 							<tr>
-								<td height="25"><b>Descri��o</b></td>
+								<td height="25"><b>Descrição</b></td>
 							</tr>
 							<tr>
 								<td style="border-bottom: 2px solid black"></td>
@@ -257,7 +257,7 @@ if ($total > 0) {
 				<td height="25">
 				<table width="100%">
 					<tr>
-						<td><b>Estat�sticas</b></td>
+						<td><b>Estatísticas</b></td>
 						<td align="right"><b>Custo</b> : R$ <?=number_format ( $vlcusto_colecao_total, 2, ',', '.' );?></td>
 					</tr>
 				</table>
@@ -334,7 +334,7 @@ if ($total > 0) {
 																	} else {
 																		$lucro_vendas_porcento = number_format ( - 1 * ((($valor_total_custo / $valor_vendas) * 100)) + 100, 2, ',', '.' );
 																		$lucro_vendas = $valor_total_custo - $valor_vendas;
-																		$nomeclatura_lucro = 'Preju�zo';
+																		$nomeclatura_lucro = 'Prejuízo';
 																	}
 																	
 																	?>

@@ -112,7 +112,7 @@ Compromisso</span></legend>
 				<td>
 				<table cellpadding="0" cellspacing="0">
 					<tr>
-						<td width="155"><b>Hor�rio</b></td>
+						<td width="155"><b>Horário</b></td>
 						<td align="right">
 							<select id="horaescolhida1" style="width: 40px;">
 								<? for($i = 0; $i < 24; $i ++) { ?>
@@ -128,7 +128,7 @@ Compromisso</span></legend>
 								<option value="30">30</option>
 							</select>
 						</td>
-						<td align="center" width="40"><b>at�</b></td>
+						<td align="center" width="40"><b>até</b></td>
 						<td align="right">
 							<select id="horaescolhida2" style="width: 40px;">
 								<? for($i = 0; $i < 24; $i ++) { ?>
@@ -201,7 +201,7 @@ Compromisso</span></legend>
 						<td align="right">
 							<select id="acompanhamento" style="width: 132px;">
 								<option value="1">Pendente</option>
-								<option value="0">Conclu�do</option>
+								<option value="0">Concluído</option>
 							</select>
 						</td>
 					</tr>
@@ -266,10 +266,10 @@ Compromisso</span></legend>
 	<tr>
 		<td><img src="<?=$_CONF ['PATH_VIRTUAL'];?>imgs/icons/calendario_32.png" class="t32" /></td>
 		<td width="10"></td>
-		<td><b>Escolha o modo de exibi��o</b></td>
+		<td><b>Escolha o modo de exibição</b></td>
 		<td width="160"></td>
 		<td>
-			<input type="button" value="Exibir modo di�rio" class="botao" id="btnModoDiario" onclick="javascript:Calendar.ScreenMode();Calendar.Daily(<?=date ( 'd' );?>,<?=date ( 'm' );?>,<?=date ( 'Y' );?>);" />
+			<input type="button" value="Exibir modo diário" class="botao" id="btnModoDiario" onclick="javascript:Calendar.ScreenMode();Calendar.Daily(<?=date ( 'd' );?>,<?=date ( 'm' );?>,<?=date ( 'Y' );?>);" />
 			<input type="button" value="Exibir modo mensal" class="botao" style="display: none;" id="btnModoMensal" onclick="javascript:Calendar.ScreenMode();Calendar.Monthly(0);" />
 		</td>
 	</tr>

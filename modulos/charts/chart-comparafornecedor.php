@@ -32,7 +32,7 @@ $db = new db ( );
 $db->connect ();
 
 $bar = new bar_outline ( 50, '#6aa9e9', '#666666' );
-$bar->key ( utf8_encode ( 'Gr�fico de comparac�o dos fornecedores ' ), 10 );
+$bar->key ( utf8_encode ( 'Gráfico de comparação dos fornecedores ' ), 10 );
 
 $nome_fornecedor = array ();
 

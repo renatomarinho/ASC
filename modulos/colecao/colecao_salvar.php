@@ -36,7 +36,7 @@ $descricao = $validations->validStringForm ( $_POST ['descricao'] );
 $periodo = str_pad ( $_POST ['mes1'], 2, "0", STR_PAD_LEFT ) . '/' . $_POST ['ano1'];
 $periodo2 = str_pad ( $_POST ['mes2'], 2, "0", STR_PAD_LEFT ) . '/' . $_POST ['ano2'];
 if ($periodo2 != $periodo)
-	$periodo .= ' at� ' . $periodo2;
+	$periodo .= ' até ' . $periodo2;
 
 $sql = "INSERT INTO colecao ( txtnome, txtperiodo, txtdescricao ) VALUES ( '" . $colecao . "', '" . $periodo . "', '" . nl2br ( $descricao ) . "' )";
 $db->query ( $sql );

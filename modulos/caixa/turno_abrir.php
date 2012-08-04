@@ -39,7 +39,7 @@ if (! isset ( $_CONF ['PATH'] )) {
 <table width="100%">
 	<tr>
 		<td align="left" width="160"><input type="button"
-			value="estat�sticas fornecedores" class="botao"
+			value="estatísticas fornecedores" class="botao"
 			style="cursor: pointer; cursor: hand; width: 160px;"
 			onclick="javascript:historicofornecedor();document.getElementById('adicionarfornecedor').style.display='block';"></td>
 		<td align="center"><input type="button" value="comparar fornecedores"

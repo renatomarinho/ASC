@@ -57,7 +57,7 @@ if ($idusuario) {
 		<td height="25">
 		<table width="100%">
 			<tr>
-				<td align="left"><b>Dados do usu�rio selecionado</b></td>
+				<td align="left"><b>Dados do usuário selecionado</b></td>
 				<td align="right">
 					<input type="button" value="desativado" class="botao" id="btndesativado_dados_<?=$idusuario;?>" style="cursor:pointer;cursor:hand;width:80px;background-color:red;display:<?=(! $ativo) ? 'block' : 'none'?>" onclick="javascript:carrega_usuariosadm_ativa(<?=$idusuario;?>);" onMouseover="ddrivetip('<font style=color:#fff><center><b>DESATIVADO</b><BR>Clique para ativar</center></font>','<?=$_CONF ['sub_red'];?>', 110)"; onMouseout="hideddrivetip()">
 					<input type="button" value="ativado" class="botao" id="btnativado_dados_<?=$idusuario;?>" style="cursor:pointer;cursor:hand;width:80px;background-color:green;display:<?=(! $ativo) ? 'none' : 'block'?>" onclick="javascript:carrega_usuariosadm_desativa(<?=$idusuario;?>);" onMouseover="ddrivetip('<font style=color:#fff><center><b>ATIVADO</b><BR>Clique para desativar</center></font>','<?=$_CONF ['sub_green'];?>', 130)"; onMouseout="hideddrivetip()">
@@ -86,7 +86,7 @@ if ($idusuario) {
 						</table>
 						</td>
 						<td align="right">
-							<input type="button" value="editar usu�rio" class="botao" id="btneditar" style="cursor: pointer; cursor: hand; width: 120px;" onclick="javascript:carrega_usuariosadm_editar(<?=$idusuario;?>);" />
+							<input type="button" value="editar usuario" class="botao" id="btneditar" style="cursor: pointer; cursor: hand; width: 120px;" onclick="javascript:carrega_usuariosadm_editar(<?=$idusuario;?>);" />
 							<input type="button" value="salvar dados" class="botao" id="btnsalvar" style="cursor: pointer; cursor: hand; width: 120px; background-color: green; display: none;" onclick="javascript:carrega_usuariosadm_salvar(<?=$idusuario;?>);" />
 						</td>
 					</tr>
@@ -119,7 +119,7 @@ if ($idusuario) {
 					<tr>
 						<td><input type="button" value="ver logs acesso" class="botao" id="btnlogacesso" style="cursor: pointer; cursor: hand; width: 120px;" onclick="javascript:carrega_usuariosadm_logacesso('<?=$idusuario;?>');" /></td>
 						<td></td>
-						<td><input type="button" value="ver permiss�es" class="botao" id="btnpermissoes" style="cursor: pointer; cursor: hand; width: 120px;" onclick="javascript:carrega_usuariosadm_permissoesacesso('<?=$idusuario;?>');" /></td>
+						<td><input type="button" value="ver permissoes" class="botao" id="btnpermissoes" style="cursor: pointer; cursor: hand; width: 120px;" onclick="javascript:carrega_usuariosadm_permissoesacesso('<?=$idusuario;?>');" /></td>
 					</tr>
 				</table>
 				</td>

@@ -38,14 +38,14 @@ if ($db->num_rows ( $query )) {
 	while ( $rows = $db->fetch_assoc ( $query ) ) {
 		
 		if (strlen ( $rows ['txtperiodo'] ) > 8) {
-			$periodo_explode = explode ( ' at� ', $rows ['txtperiodo'] );
+			$periodo_explode = explode ( ' até ', $rows ['txtperiodo'] );
 			$periodo_1 = explode ( '/', $periodo_explode [0] );
 			$periodo_2 = explode ( '/', $periodo_explode [1] );
 			if ($periodo_1 [0] < 10)
 				$periodo_1 [0] = str_replace ( '0', '', $periodo_1 [0] );
 			if ($periodo_2 [0] < 10)
 				$periodo_2 [0] = str_replace ( '0', '', $periodo_2 [0] );
-			$periodocolecao = $meses [$periodo_1 [0]] . ' de ' . $periodo_1 [1] . ' at� ' . $meses [$periodo_2 [0]] . ' de ' . $periodo_2 [1];
+			$periodocolecao = $meses [$periodo_1 [0]] . ' de ' . $periodo_1 [1] . ' até ' . $meses [$periodo_2 [0]] . ' de ' . $periodo_2 [1];
 		} else {
 			$periodocolecao = 'indeterminado';
 		}
@@ -70,7 +70,7 @@ if ($db->num_rows ( $query )) {
 
 } else {
 	
-	$table = exibe_errohtml ( 'N�o possui nenhuma cole��o cadastrada' );
+	$table = exibe_errohtml ( 'Não possui nenhuma coleção cadastrada' );
 
 }
 

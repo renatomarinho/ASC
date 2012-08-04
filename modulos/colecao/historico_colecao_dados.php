@@ -35,14 +35,14 @@ $querycolecao = $db->query ( $sql );
 $rowcolecao = $db->fetch_assoc ( $querycolecao );
 
 if (strlen ( $rowcolecao ['txtperiodo'] ) > 8) {
-	$periodo_explode = explode ( ' at� ', $rowcolecao ['txtperiodo'] );
+	$periodo_explode = explode ( ' até ', $rowcolecao ['txtperiodo'] );
 	$periodo_1 = explode ( '/', $periodo_explode [0] );
 	$periodo_2 = explode ( '/', $periodo_explode [1] );
 	if ($periodo_1 [0] < 10)
 		$periodo_1 [0] = str_replace ( '0', '', $periodo_1 [0] );
 	if ($periodo_2 [0] < 10)
 		$periodo_2 [0] = str_replace ( '0', '', $periodo_2 [0] );
-	$periodocolecao = $meses [$periodo_1 [0]] . ' de ' . $periodo_1 [1] . ' at� ' . $meses [$periodo_2 [0]] . ' de ' . $periodo_2 [1];
+	$periodocolecao = $meses [$periodo_1 [0]] . ' de ' . $periodo_1 [1] . ' até ' . $meses [$periodo_2 [0]] . ' de ' . $periodo_2 [1];
 } else {
 	$periodocolecao = 'indeterminado';
 }
@@ -98,12 +98,12 @@ if ($total > 0) {
 
 ?>
 
-<fieldset id="p"><legend>Hist�rico da Cole��o</legend>
+<fieldset id="p"><legend>Histórico da Coleção</legend>
 
 <div class="linha_separador" style="width: 350px; height: 55px;">
 <table width="100%" height="100%">
 	<tr>
-		<td height="25"><b>Cole��o : <?=$rowcolecao ['txtnome'];?></b></td>
+		<td height="25"><b>Coleção : <?=$rowcolecao ['txtnome'];?></b></td>
 	</tr>
 	<tr>
 		<td height="25"><?=$periodocolecao;?></td>
@@ -121,7 +121,7 @@ if ($total > 0) {
 		<td height="25">
 		<table width="100%">
 			<tr>
-				<td><b>Dados da cole��o</b></td>
+				<td><b>Dados da coleção</b></td>
 				<td align="right"><b><?=$totalprodutos;?></b> produto<?=($totalprodutos > 1) ? 's' : ''?> vinculado<?=($totalprodutos > 1) ? 's' : ''?></td>
 			</tr>
 		</table>
@@ -134,7 +134,7 @@ if ($total > 0) {
 		<td height="25">
 		<table width="100%">
 			<tr>
-				<td><b>Estat�sticas da cole��o</b></td>
+				<td><b>Estatísticas da coleção</b></td>
 				<td align="right"><b>Custo</b> : R$ <?=number_format ( $vlcusto_colecao_total, 2, ',', '.' );?></td>
 			</tr>
 		</table>
@@ -207,7 +207,7 @@ if ($total > 0) {
 								} else {
 									$lucro_vendas_porcento = number_format ( - 1 * ((($valor_total_custo / $valor_vendas) * 100)) + 100, 2, ',', '.' );
 									$lucro_vendas = $valor_total_custo - $valor_vendas;
-									$nomeclatura_lucro = 'Preju�zo';
+									$nomeclatura_lucro = 'Prejuízo';
 								}
 								
 								?>

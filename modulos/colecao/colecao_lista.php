@@ -26,21 +26,21 @@ if (! isset ( $_CONF ['PATH'] )) {
 
 ?>
 
-<fieldset id="m"><legend>Lista de Cole��es</legend>
+<fieldset id="m"><legend>Lista de Coleções</legend>
 
 <div class="linha_separador" style="width: 480px;">
 
 <table width="100%">
 	<tr>
 		<td align="left" width="160"><input type="button"
-			value="estat�sticas cole��es" class="botao"
+			value="estatísticas coleções" class="botao"
 			style="cursor: pointer; cursor: hand; width: 160px;"
 			onclick="javascript:historicocolecao();document.getElementById('adicionarcolecao').style.display='block'"></td>
-		<td align="center"><input type="button" value="comparar colec�es"
+		<td align="center"><input type="button" value="comparar coleções"
 			class="botao" style="cursor: pointer; cursor: hand; width: 140px;"
 			onclick="javascript:comparar_colecoes();"></td>
 		<td align="right" width="140"><input type="button"
-			value="adicionar cole��o" class="botao" id="adicionarcolecao"
+			value="adicionar coleção" class="botao" id="adicionarcolecao"
 			style="cursor: pointer; cursor: hand; width: 140px;"
 			onclick="javascript:adicionar_colecao(path+'modulos/colecao/colecao_adicionarmain.php');this.style.display='none';"></td>
 	</tr>
@@ -58,7 +58,7 @@ if (! isset ( $_CONF ['PATH'] )) {
 			<tr>
 				<td width="10"></td>
 				<td width="230" height="25"><b>Nome</b></td>
-				<td height="25" align="right"><b>Per�odo</b></td>
+				<td height="25" align="right"><b>Período</b></td>
 				<td width="80" height="25" align="right"><b>Prods.</b></td>
 				<td width="30"></td>
 			</tr>

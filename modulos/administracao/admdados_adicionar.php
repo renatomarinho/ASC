@@ -36,7 +36,7 @@ if (! isset ( $_CONF ['PATH'] )) {
 		<td height="25">
 		<table width="100%">
 			<tr>
-				<td align="left"><b>Dados do usu�rio</b></td>
+				<td align="left"><b>Dados do usuário</b></td>
 			</tr>
 		</table>
 		</td>
@@ -81,7 +81,7 @@ if (! isset ( $_CONF ['PATH'] )) {
 					<tr>
 						<td height="25"><b>Senha</b></td>
 						<td height="20" width="10"></td>
-						<td><input type="password" id="add_usu_senha" value="" onfocus="javascript:document.getElementById('msgdadosusu').innerHTML='<b style=color:red>Preencha a senha com no m�nimo 4 caracteres</b>';" onblur="javascript:document.getElementById('msgdadosusu').innerHTML='';" maxlength="20" /></td>
+						<td><input type="password" id="add_usu_senha" value="" onfocus="javascript:document.getElementById('msgdadosusu').innerHTML='<b style=color:red>Preencha a senha com no mínimo 4 caracteres</b>';" onblur="javascript:document.getElementById('msgdadosusu').innerHTML='';" maxlength="20" /></td>
 					</tr>
 				</table>
 				</td>

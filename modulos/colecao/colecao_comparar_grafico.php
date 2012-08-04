@@ -33,13 +33,13 @@ $query = $db->query ( $sql );
 $totalprodutos = $db->num_rows ( $query );
 ?>
 
-<fieldset id="p"><legend>Resultado da compara��o</legend>
+<fieldset id="p"><legend>Resultado da comparação</legend>
 
 <div class="linha_separador" style="width: 350px; height: 25px;">
 <table width="100%">
 	<tr>
 		<td align="left"><input type="button"
-			value="Estat�sticas das cole��es" id="irestatisticas_resultado"
+			value="Estatísticas das coleções" id="irestatisticas_resultado"
 			class="botao" style="cursor: pointer; cursor: hand; width: 170px;"
 			onclick="javascript:historicocolecao();"></td>
 		<td align="right"><input type="button" value="Ir para listagem"
@@ -56,7 +56,7 @@ $totalprodutos = $db->num_rows ( $query );
 		<td height="5"></td>
 	</tr>
 	<tr>
-		<td height="20"><b>Gr�fico comparativo das cole��es</b></td>
+		<td height="20"><b>Gráfico comparativo das coleções</b></td>
 	</tr>
 	<tr>
 		<td style="border-top: 2px solid black"></td>
@@ -89,7 +89,7 @@ $totalprodutos = $db->num_rows ( $query );
 		<td style="border-top: 2px solid black"></td>
 	</tr>
 	<tr>
-		<td height="20"><b>Relat�rio comparativo das cole��es</b></td>
+		<td height="20"><b>Relatório comparativo das coleções</b></td>
 	</tr>
 	<tr>
 		<td style="border-top: 2px solid black"></td>

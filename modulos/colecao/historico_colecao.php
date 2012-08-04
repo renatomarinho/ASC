@@ -43,10 +43,10 @@ while ( $row = $db->fetch_assoc ( $query ) ) {
 }
 ?>
 
-<fieldset id="p"><legend>Estat�sticas das Cole��es</legend>
+<fieldset id="p"><legend>Estatísticas das Coleções</legend>
 
-<div class="linha_separador" style="width: 350px;"><b>Gr�fico das
-cole��es que possuem produtos cadastrados</b></div>
+<div class="linha_separador" style="width: 350px;"><b>Gráfico das
+coleções que possuem produtos cadastrados</b></div>
 
 <div>
 
@@ -55,8 +55,8 @@ cole��es que possuem produtos cadastrados</b></div>
 		<td height="5"></td>
 	</tr>
 	<tr>
-		<td>Clique na listagem ou no gr�fico abaixo para obter informa��es
-		detalhadas sobre cada uma das cole��es</td>
+		<td>Clique na listagem ou no gráfico abaixo para obter informações
+		detalhadas sobre cada uma das coleções</td>
 	</tr>
 	<tr>
 		<td height="10"></td>
@@ -71,7 +71,7 @@ cole��es que possuem produtos cadastrados</b></div>
 	</tr>
 	<tr>
 		<td align="center"><b style="font-size: 9px; color: #c0c0c0">* Somente
-		as cole��es com produtos cadastrados constam no gr�fico</b></td>
+		as coleções com produtos cadastrados constam no gráfico</b></td>
 	</tr>
 </table>
 

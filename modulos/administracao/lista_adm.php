@@ -48,7 +48,7 @@ $db->connect ();
 		<td height="5"></td>
 	</tr>
 	<tr>
-		<td height="25"><b>Lista dos usu�rios administradores</b></td>
+		<td height="25"><b>Lista dos usuários administradores</b></td>
 	</tr>
 	<tr>
 		<td style="border-top: 2px solid black"></td>

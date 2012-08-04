@@ -37,7 +37,7 @@ $descricao = $validations->validStringForm ( $_POST ['descricao'] );
 $periodo = str_pad ( $_POST ['mes1'], 2, "0", STR_PAD_LEFT ) . '/' . $_POST ['ano1'];
 $periodo2 = str_pad ( $_POST ['mes2'], 2, "0", STR_PAD_LEFT ) . '/' . $_POST ['ano2'];
 if ($periodo2 != $periodo)
-	$periodo .= ' at� ' . $periodo2;
+	$periodo .= ' até ' . $periodo2;
 
 $sql = "UPDATE colecao SET txtnome='" . $colecao . "', txtperiodo='" . $periodo . "', txtdescricao='" . nl2br ( $descricao ) . "' WHERE idcolecao=" . $idcolecao . "";
 $db->query ( $sql );

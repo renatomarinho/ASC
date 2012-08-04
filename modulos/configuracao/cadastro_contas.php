@@ -60,7 +60,7 @@ $db->connect ();
 				<td height="25"><b>Tipo</b></td>
 				<td><b>Nome Conta</b></td>
 				<td><b>Banco</b></td>
-				<td><b>Ag�ncia</b></td>
+				<td><b>Agência</b></td>
 				<td><b>Conta</b></td>
 				<td><b>Conta</b></td>
 			</tr>

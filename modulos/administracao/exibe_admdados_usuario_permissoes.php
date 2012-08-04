@@ -55,9 +55,9 @@ if ($idusuario) {
 				<td width="78"><input type="button" id="btncadastro" value="cadastro" class="botao" style="cursor:pointer;cursor:hand;width:75px;background-color:<?=$_CONF ['btn_clicado'];?>;" onclick="javascript:visualiza_usuariosadm_permissoes(0);" /></td>
 				<td width="78"><input type="button" id="btnvenda" value="venda" class="botao" style="cursor: pointer; cursor: hand; width: 75px;" onclick="javascript:visualiza_usuariosadm_permissoes(1);" /></td>
 				<td width="78"><input type="button" id="btnfinanceiro" value="financeiro" class="botao" style="cursor: pointer; cursor: hand; width: 75px;" onclick="javascript:visualiza_usuariosadm_permissoes(2);" /></td>
-				<td width="78"><input type="button" id="btnrelatorio" value="relat�rio" class="botao" style="cursor: pointer; cursor: hand; width: 75px;" onclick="javascript:visualiza_usuariosadm_permissoes(3);" /></td>
-				<td width="78"><input type="button" id="btnutilitario" value="utilit�rio" class="botao" style="cursor: pointer; cursor: hand; width: 75px;" onclick="javascript:visualiza_usuariosadm_permissoes(4);" /></td>
-				<td width="80"><input type="button" id="btnconfiguracao" value="configura��o" class="botao" style="cursor: pointer; cursor: hand; width: 100px;" onclick="javascript:visualiza_usuariosadm_permissoes(5);" /></td>
+				<td width="78"><input type="button" id="btnrelatorio" value="relatorio" class="botao" style="cursor: pointer; cursor: hand; width: 75px;" onclick="javascript:visualiza_usuariosadm_permissoes(3);" /></td>
+				<td width="78"><input type="button" id="btnutilitario" value="utilitario" class="botao" style="cursor: pointer; cursor: hand; width: 75px;" onclick="javascript:visualiza_usuariosadm_permissoes(4);" /></td>
+				<td width="80"><input type="button" id="btnconfiguracao" value="configuração" class="botao" style="cursor: pointer; cursor: hand; width: 100px;" onclick="javascript:visualiza_usuariosadm_permissoes(5);" /></td>
 			</tr>
 		</table>
 		</td>
@@ -66,7 +66,7 @@ if ($idusuario) {
 		<td height="10"></td>
 	</tr>
 	<tr>
-		<td>&nbsp;&nbsp;<b>Permiss�es ::</b> <span id="titpermissao"><b>Cadastro</b><span></td>
+		<td>&nbsp;&nbsp;<b>Permissões ::</b> <span id="titpermissao"><b>Cadastro</b><span></td>
 	</tr>
 	<tr>
 		<td style="border-top: 2px solid black"></td>
@@ -108,7 +108,7 @@ if ($idusuario) {
 				<table>
 					<tr>
 						<td><input type="checkbox" style="width: 15px" id="per_2" <?=($per [2]) ? 'checked' : '';?> /></td>
-						<td>cole��es</td>
+						<td>coleções</td>
 					</tr>
 				</table>
 				</td>
@@ -170,7 +170,7 @@ if ($idusuario) {
 				<table>
 					<tr>
 						<td><input type="checkbox" style="width: 15px" id="per_10" <?=($per [10]) ? 'checked' : '';?> /></td>
-						<td>todos lan�amentos</td>
+						<td>todos lançamentos</td>
 					</tr>
 				</table>
 				</td>
@@ -178,7 +178,7 @@ if ($idusuario) {
 				<table>
 					<tr>
 						<td><input type="checkbox" style="width: 15px" id="per_7" <?=($per [7]) ? 'checked' : '';?> /></td>
-						<td>lan�amentos caixa</td>
+						<td>lançamentos caixa</td>
 					</tr>
 				</table>
 				</td>
@@ -188,7 +188,7 @@ if ($idusuario) {
 				<table>
 					<tr>
 						<td><input type="checkbox" style="width: 15px" id="per_11" <?=($per [11]) ? 'checked' : '';?> /></td>
-						<td>lan�amento turno</td>
+						<td>lançamento turno</td>
 					</tr>
 				</table>
 				</td>
@@ -278,7 +278,7 @@ if ($idusuario) {
 				<table>
 					<tr>
 						<td><input type="checkbox" style="width: 15px" id="per_20" <?=($per [20]) ? 'checked' : '';?> /></td>
-						<td>emiss�o de etiquetas</td>
+						<td>emissão de etiquetas</td>
 					</tr>
 				</table>
 				</td>
@@ -286,7 +286,7 @@ if ($idusuario) {
 				<table>
 					<tr>
 						<td><input type="checkbox" style="width: 15px" id="per_21" <?=($per [21]) ? 'checked' : '';?> /></td>
-						<td>verificar atualiza��es</td>
+						<td>verificar atualizações</td>
 					</tr>
 				</table>
 				</td>
@@ -317,7 +317,7 @@ if ($idusuario) {
 				<table>
 					<tr>
 						<td><input type="checkbox" style="width: 15px" id="per_24" <?=($per [24]) ? 'checked' : '';?> /></td>
-						<td>configura��o geral</td>
+						<td>configuração geral</td>
 					</tr>
 				</table>
 				</td>
@@ -336,7 +336,7 @@ if ($idusuario) {
 		<table width="100%" cellpadding="0" cellspacing="0" border="0">
 			<tr>
 				<td align="left"><span id="msgpermissoes"></span></td>
-				<td align="right"><input type="button" value="modificar permiss�es" class="botao" id="btnadicionaradm" style="cursor: pointer; cursor: hand; width: 160px; background-color: green;" onclick="javascript:carregar_permissoessalvar(<?=$idusuario;?>);" /></td>
+				<td align="right"><input type="button" value="modificar permissoes" class="botao" id="btnadicionaradm" style="cursor: pointer; cursor: hand; width: 160px; background-color: green;" onclick="javascript:carregar_permissoessalvar(<?=$idusuario;?>);" /></td>
 			</tr>
 		</table>
 		</td>

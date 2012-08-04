@@ -35,8 +35,8 @@ $db->connect ();
 <div class="linha_separador">
 <table width="100%" height="100%" cellpadding="0" cellspacing="0">
 	<tr>
-		<td align="center"><b style="color: red">Existem novas atualiza��es
-		dispon�veis</b></td>
+		<td align="center"><b style="color: red">Existem novas atualizações
+		disponíveis</b></td>
 	</tr>
 </table>
 </div>
@@ -47,7 +47,7 @@ $db->connect ();
 		<td height="5"></td>
 	</tr>
 	<tr>
-		<td height="20"><b>Lista de atualiza��es</b></td>
+		<td height="20"><b>Lista de atualizações</b></td>
 	</tr>
 	<tr>
 		<td style="border-bottom: 2px solid black"></td>
@@ -103,7 +103,7 @@ $db->connect ();
 				<td align="right"><input type="button" class="botao"
 					id="iniciaratualizacao"
 					style="cursor: pointer; cursor: hand; width: 160px; background-color: green;"
-					value="iniciar atualiza��es"
+					value="iniciar atualizações"
 					onclick="javascript:carrega_loading_arquivos();"></td>
 			</tr>
 		</table>

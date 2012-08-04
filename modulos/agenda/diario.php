@@ -40,7 +40,7 @@ $a1 = (empty ( $_GET ['a1'] )) ? date ( 'Y' ) : $_GET ['a1'];
 				<td>
 				<table width="100%">
 					<tr>
-						<td align="left" width="50"><input type="button" value="- m�s"
+						<td align="left" width="50"><input type="button" value="- mês"
 							class="botao" style="cursor: pointer; cursor: hand; width: 50px;"
 							onclick="javascript:Calendar.ChangeData(4);"></td>
 						<td align="left" width="50"><input type="button" value="- dia"
@@ -59,7 +59,7 @@ $a1 = (empty ( $_GET ['a1'] )) ? date ( 'Y' ) : $_GET ['a1'];
 							style="cursor: pointer; cursor: hand; width: 50px;"
 							onclick="javascript:Calendar.ChangeData(kernel.dge('diasemana_proximo').title);"
 							title="1"></td>
-						<td align="right" width="50"><input type="button" value="m�s +"
+						<td align="right" width="50"><input type="button" value="mês +"
 							class="botao" style="cursor: pointer; cursor: hand; width: 50px;"
 							onclick="javascript:Calendar.ChangeData(3);"></td>
 					</tr>

@@ -31,7 +31,7 @@ $db->connect ();
 ?>
 
 
-<fieldset id="p"><legend>Vincular Produto � Cole��o</legend>
+<fieldset id="p"><legend>Vincular Produto à Coleção</legend>
 
 <div class="linha_separador" id="linha_separador_gradeedicao"
 	style="height: 28px;">
@@ -52,7 +52,7 @@ $db->connect ();
 		<td height="5"></td>
 	</tr>
 	<tr>
-		<td height="20"><b>Marque os produtos que deseja vincular a cole��o</b></td>
+		<td height="20"><b>Marque os produtos que deseja vincular a coleção</b></td>
 	</tr>
 	<tr>
 		<td style="border-bottom: 2px solid black"></td>
@@ -155,7 +155,7 @@ $db->connect ();
 						<br />
 						<br />
 						<br />
-						Todos os produtos est�o vinculados.</td>
+						Todos os produtos estão vinculados.</td>
 					</tr>
                                                                 <?
 								}

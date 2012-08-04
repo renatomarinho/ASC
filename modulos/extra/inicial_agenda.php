@@ -99,7 +99,7 @@ if (! isset ( $_SESSION ['cliente'] ['timestamp'] )) {
 
 ?>
 
-<fieldset id="m" style="height: 110px"><legend>Anivers�riantes do M�s</legend>
+<fieldset id="m" style="height: 110px"><legend>Aniversáriantes do Mês</legend>
 
 <div class="ls_conf_M" style="height: 80px">
 
@@ -125,7 +125,7 @@ if (! isset ( $_SESSION ['cliente'] ['timestamp'] )) {
 				<?
 				} else {
 				?>
-				<b>Nenhum anivers�riante</b>
+				<b>Nenhum aniversáriante</b>
 				<?
 				}
 				?>

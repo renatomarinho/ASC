@@ -32,8 +32,8 @@ $sql = "SELECT idcolecao, txtnome, txtperiodo, txtdescricao FROM colecao WHERE i
 $query = $db->query ( $sql );
 $rowcolecao = $db->fetch_assoc ( $query );
 
-if (strpos ( $rowcolecao ['txtperiodo'], 'at�' )) {
-	$periodo = str_replace ( ' at� ', '|', $rowcolecao ['txtperiodo'] );
+if (strpos ( $rowcolecao ['txtperiodo'], 'até' )) {
+	$periodo = str_replace ( ' até ', '|', $rowcolecao ['txtperiodo'] );
 	$periodo = explode ( '|', $periodo );
 	$periodo01 = explode ( '/', $periodo [0] );
 	$periodo01_mes = adiciona_zeronumero ( $periodo01 [0] );

@@ -31,7 +31,7 @@ $ano2 = date ( 'Y' );
 ?>
 
 
-<fieldset id="p"><legend>Adicionar cole��o</legend>
+<fieldset id="p"><legend>Adicionar coleção</legend>
 
 
 <div class="linha_separador" id="linha_separador_colecao"
@@ -49,7 +49,7 @@ $ano2 = date ( 'Y' );
 		<td height="5"></td>
 	</tr>
 	<tr>
-		<td height="20"><b>Dados Gerais da cole��o</b></td>
+		<td height="20"><b>Dados Gerais da coleção</b></td>
 	</tr>
 	<tr>
 		<td style="border-bottom: 2px solid black"></td>
@@ -73,11 +73,11 @@ $ano2 = date ( 'Y' );
 		<td height="20">
 		<table width="100%">
 			<tr>
-				<td><b>Per�odo</b></td>
+				<td><b>Período</b></td>
 				<td align="right">
 				<table>
 					<tr>
-						<td>dura��o indeterminada</td>
+						<td>duração indeterminada</td>
 						<td width="2"></td>
 						<td><input type="checkbox" id="duracaocolecao"
 							onclick="javascript:var p1=document.getElementById('peridodeterminado');p1.style.display=((p1.style.display=='none')?'block':'none');var p2=document.getElementById('peridoindeterminado');p2.style.display=((p1.style.display=='none')?'block':'none')"></td>
@@ -118,7 +118,7 @@ $ano2 = date ( 'Y' );
 											}
 											?>
 										</select></td>
-				<td>&nbsp;at�&nbsp;</td>
+				<td>&nbsp;até&nbsp;</td>
 				<td><select id="colecaomes2" style="width: 90px;">
 											<?
 											for($n = 1; $n <= 12; $n ++) {
@@ -145,14 +145,14 @@ $ano2 = date ( 'Y' );
 		</table>
 		</div>
 		<div id="peridoindeterminado" style="display: none;"><b
-			style="color: red;">Sem per�odo definido</b></div>
+			style="color: red;">Sem período definido</b></div>
 		</td>
 	</tr>
 	<tr>
 		<td style="border-bottom: 2px solid black"></td>
 	</tr>
 	<tr>
-		<td height="20"><b>Descri��o</b></td>
+		<td height="20"><b>Descrição</b></td>
 	</tr>
 	<tr>
 		<td style="border-bottom: 2px solid black"></td>
@@ -175,7 +175,7 @@ $ano2 = date ( 'Y' );
 	<tr>
 		<td height="25" align="right"><input type="button" class="botao"
 			style="cursor: pointer; cursor: hand; width: 140px; background-color: green;"
-			value="adicionar cole��o"
+			value="adicionar coleção"
 			onClick="javascript:adicionar_novacolecaosalvar('nao', '<b style=color:green>A colecao foi adicionada com sucesso</b>');"></td>
 	</tr>
 </table>

@@ -33,7 +33,7 @@ $query = $db->query ( $sql );
 
 ?>
 
-<fieldset id="m"><legend>Comparar Cole��es</legend>
+<fieldset id="m"><legend>Comparar Coleções</legend>
 
 <div class="linha_separador" style="width: 480px; height: 25px;">
 
@@ -63,7 +63,7 @@ $query = $db->query ( $sql );
 				?>
 				<tr>
 		<td height="25" bgcolor="#f0f0f0">&nbsp;&nbsp;&nbsp;&nbsp;<b>Marque as
-		cole��es que deseja realizar uma compara��o</b></td>
+		coleções que deseja realizar uma comparação</b></td>
 	</tr>
 	<tr>
 		<td>
@@ -111,7 +111,7 @@ $query = $db->query ( $sql );
 		<td height="5"></td>
 	</tr>
 	<tr>
-		<td height="25"><b>Selecione o par�metro para a compara��o</b></td>
+		<td height="25"><b>Selecione o parâmetro para a comparação</b></td>
 	</tr>
 	<tr>
 		<td style="border-bottom: 2px solid black"></td>
@@ -125,7 +125,7 @@ $query = $db->query ( $sql );
 		<table>
 			<tr>
 				<td><input type="radio" name="grafico" value="1" checked></td>
-				<td>Custo da cole��o</td>
+				<td>Custo da coleção</td>
 				<td width="10"></td>
 				<td><input type="radio" name="grafico" value="2"></td>
 				<td>Lucro bruto ( R$ )</td>
@@ -166,7 +166,7 @@ $query = $db->query ( $sql );
 		<td height="10"></td>
 	</tr>
 	<tr>
-		<td align="right"><input type="button" value="Gerar relat�rio"
+		<td align="right"><input type="button" value="Gerar relatório"
 			id="geracomparacaocolecao" class="botao"
 			style="cursor: pointer; cursor: hand; width: 140px; background-color: green;"
 			onclick="javascript:carrega_colecaocomparacaografico();"></td>
@@ -178,8 +178,8 @@ $query = $db->query ( $sql );
 		<td height="15"></td>
 	</tr>
 	<tr>
-		<td height="25" align="center"><b style="color: red;">Aten��o : Para
-		utilizar este recurso voc� dever no m�nimo duas cole��es</b></td>
+		<td height="25" align="center"><b style="color: red;">Atenção : Para
+		utilizar este recurso você dever no mínimo duas coleções</b></td>
 	</tr>
 	<tr>
 		<td height="15"></td>
@@ -188,7 +188,7 @@ $query = $db->query ( $sql );
 		<td style="border-bottom: 2px solid black"></td>
 	</tr>
 	<tr>
-		<td align="right"><input type="button" value="adicionar nova cole��o"
+		<td align="right"><input type="button" value="adicionar nova coleção"
 			class="botao" id="addnovacolecao"
 			style="cursor: pointer; cursor: hand; width: 160px; background-color: green;"
 			onclick="javascript:adicionar_colecao(path+'modulos/colecao/colecao_adicionarmain.php');this.style.display='none';"></td>

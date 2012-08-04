@@ -58,7 +58,7 @@ $db->connect ();
 		<td align="center">
 		<table width="100%">
 			<tr>
-				<td height="25"><b>Descri��o do centro de custo</b></td>
+				<td height="25"><b>Descriçõo do centro de custo</b></td>
 			</tr>
 			<tr>
 				<td style="border-bottom: 1px solid #c0c0c0"></td>

@@ -36,7 +36,7 @@ $total = $db->num_rows ( $query );
 ?>
 
 
-<fieldset id="p"><legend>Not�cias Recentes</legend>
+<fieldset id="p"><legend>Notécias Recentes</legend>
 
 <div class="linha_separador ls_conf_P" style="height: 75px">
 
@@ -49,7 +49,7 @@ $total = $db->num_rows ( $query );
 					src="<?=$_CONF ['PATH_VIRTUAL'];?>imgs/icons/noticias_72.png"
 					class="t72"></td>
 				<td width="10"></td>
-				<td><b>N�ticias de Moda ( Terra )</b> <br />
+				<td><b>Noticias</b> <br />
 				<!--								�ltima atualiza��o realizada em xx/xx �s xx:xx--></td>
 			</tr>
 		</table>
