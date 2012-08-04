@@ -30,7 +30,7 @@ $db->connect ();
 
 ?>
 
-<fieldset id="p"><legend>Hist�rico de Clientes</legend>
+<fieldset id="p"><legend>Histórico de Clientes</legend>
 	
 		<?
 		if (isset ( $_GET ['id'] )) {
@@ -53,7 +53,7 @@ $db->connect ();
 			if ($rows ['dtcadastro'] > 1) {
 				$datacadastro = gmdate ( 'd/m/Y h:i:s', $rows ['dtcadastro'] );
 			} else {
-				$datacadastro = '<b style="color:red">n�o consta</b>';
+				$datacadastro = '<b style="color:red">não consta</b>';
 			}
 			
 			$sql2 = 'SELECT SUM(vr_total) as total, SUM(quant) as vendidos FROM mv_vendas_movimento WHERE estornado=0 AND id_produto = ' . $rows ['idproduto'];
@@ -69,7 +69,7 @@ $db->connect ();
 				?>
 						<td><input type="button" class="botao"
 			style="cursor: pointer; cursor: hand; width: 200px;"
-			value="Ir para estat�sticas das cole��es"
+			value="Ir para estatasticas das colecoes"
 			onClick="javascript:historicocolecao();"></td>
 						<?
 			} else {

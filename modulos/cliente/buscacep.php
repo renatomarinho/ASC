@@ -54,7 +54,7 @@ if ($cep)
 ?>
 <table>
 	<tr>
-		<td width="60" height="30">Endere�o</td>
+		<td width="60" height="30">Endereço</td>
 		<td><input type="text" name="endereco" id="endereco"
 			class="inputform250"
 			value="<?=$endereco ['tipo_logradouro'] . ' ' . $endereco ['logradouro'];?>"

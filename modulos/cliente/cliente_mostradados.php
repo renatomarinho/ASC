@@ -251,7 +251,7 @@ if (isset ( $data_venda [0] )) {
 			onclick="javascript:modificar_tamanho('cliente_dadosgerais', 60, 'cliente_estrategicos', 265, 'cliente_tamanho_menos', 'cliente_tamanho_mais');">
 		<input type="button" class="botao btn_diminuir"
 			style="width: 195px; display: none;"
-			value="fechar dados estrat�gicos" id="cliente_tamanho_menos"
+			value="fechar dados estratagicos" id="cliente_tamanho_menos"
 			onclick="javascript:modificar_tamanho('cliente_estrategicos', 0, 'cliente_dadosgerais', 260, 'cliente_tamanho_mais', 'cliente_tamanho_menos');">
 		</td>
 				<?
@@ -311,7 +311,7 @@ if (isset ( $data_venda [0] )) {
 									if ($total_vezes_comprou > 1) {
 										?>
 									<BR>
-									No per�odo de <?=$periodo2;?> � <?=$periodo1;?>
+									No período de <?=$periodo2;?> à <?=$periodo1;?>
 									<?
 									} else {
 										?>
@@ -345,23 +345,23 @@ if (isset ( $data_venda [0] )) {
 				<table>
 					<tr>
 						<td width="70" height="20"><b>Telefone 1</b></td>
-						<td height="20"><?=($tel1) ? '( ' . $dddtel . ' ) ' . $tel1 . ' - ' . $tel2 : 'N�o informado';?></td>
+						<td height="20"><?=($tel1) ? '( ' . $dddtel . ' ) ' . $tel1 . ' - ' . $tel2 : 'Não informado';?></td>
 					</tr>
 					<tr>
 						<td width="70" height="20"><b>Telefone 2</b></td>
-						<td height="20"><?=($dddcel) ? '( ' . $dddcel . ' ) ' . $cel1 . ' - ' . $cel2 : 'N�o informado';?></td>
+						<td height="20"><?=($dddcel) ? '( ' . $dddcel . ' ) ' . $cel1 . ' - ' . $cel2 : 'Não informado';?></td>
 					</tr>
 					<tr>
-						<td width="70" height="20"><b>Anivers�rio</b></td>
-						<td height="20"><?=($dia) ? $dia . ' de ' . $meses [$mes] : 'N�o informado';?></td>
+						<td width="70" height="20"><b>Aniversário</b></td>
+						<td height="20"><?=($dia) ? $dia . ' de ' . $meses [$mes] : 'Não informado';?></td>
 					</tr>
 					<tr>
 						<td width="70" height="20"><b>CPF</b></td>
-						<td height="20"><?=($txtcpf) ? $txtcpf : 'N�o informado';?></td>
+						<td height="20"><?=($txtcpf) ? $txtcpf : 'Não informado';?></td>
 					</tr>
 					<tr>
 						<td width="70" height="20"><b>Identidade</b></td>
-						<td height="20"><?=($txtrg) ? $txtrg : 'N�o informado';?></td>
+						<td height="20"><?=($txtrg) ? $txtrg : 'Não informado';?></td>
 					</tr>
 				</table>
 				</td>
@@ -369,23 +369,23 @@ if (isset ( $data_venda [0] )) {
 				<table>
 					<tr>
 						<td width="70" height="20"><b>Endere&ccedil;o</b></td>
-						<td height="20"><?=($txtendereco) ? ucwords ( strtolower ( $txtendereco ) ) : 'N�o informado';?></td>
+						<td height="20"><?=($txtendereco) ? ucwords ( strtolower ( $txtendereco ) ) : 'Não informado';?></td>
 					</tr>
 					<tr>
 						<td width="70" height="20"><b>Bairro</b></td>
-						<td height="20"><?=($txtbairro) ? ucwords ( strtolower ( $txtbairro ) ) : 'N�o informado';?></td>
+						<td height="20"><?=($txtbairro) ? ucwords ( strtolower ( $txtbairro ) ) : 'Não informado';?></td>
 					</tr>
 					<tr>
 						<td width="70" height="20"><b>Cidade</b></td>
-						<td height="20"><?=($txtcidade) ? ucwords ( strtolower ( $txtcidade ) ) : 'N�o informado';?></td>
+						<td height="20"><?=($txtcidade) ? ucwords ( strtolower ( $txtcidade ) ) : 'Não informado';?></td>
 					</tr>
 					<tr>
 						<td width="70" height="20"><b>Estado</b></td>
-						<td height="20"><?=($txtuf) ? strtoupper ( $txtuf ) : 'N�o informado';?></td>
+						<td height="20"><?=($txtuf) ? strtoupper ( $txtuf ) : 'Não informado';?></td>
 					</tr>
 					<tr>
 						<td width="70" height="20"><b>CEP</b></td>
-						<td height="20"><?=($txtcep) ? substr ( $txtcep, 0, 5 ) . ' - ' . substr ( $txtcep, 5, 3 ) : 'N�o informado';?></td>
+						<td height="20"><?=($txtcep) ? substr ( $txtcep, 0, 5 ) . ' - ' . substr ( $txtcep, 5, 3 ) : 'Não informado';?></td>
 					</tr>
 				</table>
 				</td>
@@ -409,7 +409,7 @@ if (isset ( $data_venda [0] )) {
 		<td height="10"></td>
 	</tr>
 	<tr>
-		<td height="25">&nbsp&nbsp<b>Informa��es adicionais</b></td>
+		<td height="25">&nbsp&nbsp<b>Informções adicionais</b></td>
 	</tr>
 	<tr>
 		<td class="l1"></td>
@@ -438,7 +438,7 @@ if (isset ( $data_venda [0] )) {
 		<td height="10"></td>
 	</tr>
 	<tr>
-		<td height="25">&nbsp&nbsp<b>Dados estrat�gicos</b></td>
+		<td height="25">&nbsp&nbsp<b>Dados estratégicos</b></td>
 	</tr>
 	<tr>
 		<td class="l1"></td>
@@ -451,7 +451,7 @@ if (isset ( $data_venda [0] )) {
 				<?
 				if ($total_vezes_comprou > 1) {
 					?>
-				no per�odo de <?=$periodo2;?> � <?=$periodo1;?>
+				no período de <?=$periodo2;?> à <?=$periodo1;?>
 				<?
 				} else {
 					?>
@@ -461,7 +461,7 @@ if (isset ( $data_venda [0] )) {
 				?></b></td>
 	</tr>
 	<tr>
-		<td height="25"><b style="color: blue;">Prefer�ncia<?=($db->num_rows ( $querytipo ) > 1) ? 's' : '';?> :
+		<td height="25"><b style="color: blue;">Preferência<?=($db->num_rows ( $querytipo ) > 1) ? 's' : '';?> :
 				<?
 				$i=0;
 				while ( $rowtipo = $db->fetch_assoc ( $querytipo ) ) {
@@ -473,7 +473,7 @@ if (isset ( $data_venda [0] )) {
 				?></b></td>
 	</tr>
 	<tr>
-		<td height="25"><b style="color: blue;">Ticket m�dio : R$ <?=$ticket_medio;?></b></td>
+		<td height="25"><b style="color: blue;">Ticket médio : R$ <?=$ticket_medio;?></b></td>
 	</tr>
 	<tr>
 		<td class="l1"></td>
@@ -582,21 +582,21 @@ if (isset ( $data_venda [0] )) {
 					}
 					if ($vr_cartao != '0.00') {
 						?>
-														<td>Cr�dito :</td>
+														<td>Crédito :</td>
 								<td>R$ <?=number_format ( $vr_cartao, 2, '.', ',' );?></td>
 								<td width="5"></td>
 														<?
 					}
 					if ($vr_debito != '0.00') {
 						?>
-														<td>D�bito :</td>
+														<td>Débito :</td>
 								<td>R$ <?=number_format ( $vr_debito, 2, '.', ',' );?></td>
 								<td width="5"></td>
 														<?
 					}
 					if ($vr_outro != '0.00') {
 						?>
-														<td>D�bito :</td>
+														<td>Débito :</td>
 								<td>R$ <?=number_format ( $vr_outro, 2, '.', ',' );?></td>
 								<td width="5"></td>
 														<?
@@ -627,7 +627,7 @@ if (isset ( $data_venda [0] )) {
 		<td height="10"></td>
 	</tr>
 	<tr>
-		<td height="25">&nbsp&nbsp<b>Clientes clones ( baseado no ticket m�dio
+		<td height="25">&nbsp&nbsp<b>Clientes clones ( baseado no ticket médio
 		~15% )</b></td>
 	</tr>
 	<tr>

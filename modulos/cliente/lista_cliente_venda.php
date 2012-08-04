@@ -50,7 +50,7 @@ $db->connect ();
 				<td width="10"></td>
 				<td><input type="radio" id="rdopesquisacodigo" name="pesquisa"
 					value="2" onclick="javascript:pesquisar_clienteselecionevenda();"></td>
-				<td>C�digo</td>
+				<td>Código</td>
 				<td width="10"></td>
 				<td><input type="radio" id="rdopesquisacpf" name="pesquisa"
 					value="3" onclick="javascript:pesquisar_clienteselecionevenda();"></td>
@@ -93,7 +93,7 @@ $db->connect ();
 	</tr>
 	<tr>
 		<td align="right" height="25"><input type="button"
-			value="fechar sele��o de cliente" class="botao"
+			value="fechar selecao de cliente" class="botao"
 			style="cursor: pointer; cursor: hand; width: 180px;"
 			onclick="javascript:carrega_selecionaclientevenda_fechar();"></td>
 	</tr>

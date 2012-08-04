@@ -118,7 +118,7 @@ if ($i > 0) {
 
 ?>
 
-<fieldset id="p"><legend>Estat�sticas</legend>
+<fieldset id="p"><legend>Estatísticas</legend>
 
 <div class="linha_separador ls_conf_P">
 <table>
@@ -126,7 +126,7 @@ if ($i > 0) {
 		<td><img src="<?=$_CONF ['PATH_VIRTUAL'];?>imgs/icons/relatorio_32.png"
 			class="t32"></td>
 		<td width="10"></td>
-		<td><b>Estat�sticas dos cadastros de clientes</b> <br />
+		<td><b>Estatísticas dos cadastros de clientes</b> <br />
 		Procure obter a maior quantidade de dados do cliente</td>
 	</tr>
 </table>
@@ -206,13 +206,13 @@ if ($i > 0) {
 						<tr>
 				<td><b style="color:<?=($total_semaniversario_porcento < 50) ? 'blue' : 'red';?>"><?=$total_semaniversario_porcento;?>% ( <?=$total_semaniversario;?> )</b></td>
 				<td width="5"></td>
-				<td>sem Anivers�rio</td>
+				<td>sem Aniversário</td>
 			</tr>
 						<?
 						} else {
 							?>
 						<tr>
-				<td colspan="3">Todos possuem <b style="color: blue;">Anivers�rio</b></td>
+				<td colspan="3">Todos possuem <b style="color: blue;">Aniversário</b></td>
 			</tr>
 						<?
 						}
@@ -223,13 +223,13 @@ if ($i > 0) {
 						<tr>
 				<td><b style="color:<?=($total_semendereco_porcento < 50) ? 'blue' : 'red';?>"><?=$total_semendereco_porcento;?>% ( <?=$total_semendereco;?> )</b></td>
 				<td width="5"></td>
-				<td>sem Endere�o</td>
+				<td>sem Endereço</td>
 			</tr>
 						<?
 						} else {
 							?>
 						<tr>
-				<td colspan="3">Todos possuem <b style="color: blue;">Endere�o</b></td>
+				<td colspan="3">Todos possuem <b style="color: blue;">Endereço</b></td>
 			</tr>
 						<?
 						}
@@ -342,13 +342,13 @@ if ($i > 0) {
 						<tr>
 				<td><b style="color:<?=($total_seminfoadd_porcento < 50) ? 'blue' : 'red';?>"><?=$total_seminfoadd_porcento;?>% ( <?=$total_seminfoadd;?> )</b></td>
 				<td width="5"></td>
-				<td>sem Informa��es Adicionais</td>
+				<td>sem Informações Adicionais</td>
 			</tr>
 						<?
 						} else {
 							?>
 						<tr>
-				<td colspan="3">Todos possuem <b style="color: blue;">Informa��es
+				<td colspan="3">Todos possuem <b style="color: blue;">Informações
 				Adicionais</b></td>
 			</tr>
 						<?
@@ -360,7 +360,7 @@ if ($i > 0) {
 						?>
 					<table cellpadding="6" cellspacing="6">
 			<tr>
-				<td><b style="color: red">N�o possui nenhum cliente cadastrado</b></td>
+				<td><b style="color: red">Não possui nenhum cliente cadastrado</b></td>
 			</tr>
 		</table>
 					<?

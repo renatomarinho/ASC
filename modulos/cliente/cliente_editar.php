@@ -409,7 +409,7 @@ if (! isset ( $ddcadastro ) && ! isset ( $mmcadastro ) && ! isset ( $yycadastro 
 		<td class="l3"></td>
 	</tr>
 	<tr>
-		<td height="25"><b>Informa��es adicionais</b></td>
+		<td height="25"><b>Informações adicionais</b></td>
 	</tr>
 	<tr>
 		<td class="l3"></td>

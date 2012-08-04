@@ -47,7 +47,7 @@ $db->connect ();
 				<td>Nome</td>
 				<td width="10"></td>
 				<td><input type="radio" id="rdopesquisacodigo" name="pesquisa" value="2" onclick="javascript:;"></td>
-				<td>C�digo</td>
+				<td>Código</td>
 				<td width="10"></td>
 				<td><input type="radio" id="rdopesquisacpf" name="pesquisa" value="3" onclick="javascript:;"></td>
 				<td>CFP/CNPJ</td>

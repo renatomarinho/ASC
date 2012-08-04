@@ -65,9 +65,9 @@ if ($db->num_rows ( $query )) {
 	$querycliente = $db->query ( $sql );
 	$quantidade = $db->num_rows ( $querycliente );
 	if ($quantidade == 0) {
-		$table = exibe_errohtml ( 'N�o possui nenhum cliente cadastrado' );
+		$table = exibe_errohtml ( 'Não possui nenhum cliente cadastrado' );
 	} else {
-		$table = exibe_errohtml ( '' . $_GET ['s'] . ' - n�o encontrado' );
+		$table = exibe_errohtml ( '' . $_GET ['s'] . ' - não encontrado' );
 	}
 }
 

@@ -92,7 +92,7 @@ if (! isset ( $_CONF ['PATH'] )) {
 				<td width="50%" valign="top">
 				<table>
 					<tr>
-						<td height="25">Aniversario</td>
+						<td height="25">Aniversário</td>
 						<td width="5"></td>
 						<td><SELECT NAME="dia" id="dia">
 										<?

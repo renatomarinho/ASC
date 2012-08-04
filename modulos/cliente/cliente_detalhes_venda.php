@@ -263,7 +263,7 @@ if (! isset ( $ddcadastro ) && ! isset ( $mmcadastro ) && ! isset ( $yycadastro 
 							if ($dia && $mes) {
 								?>
 							<tr>
-						<td width="60" height="25">Anivers�rio</td>
+						<td width="60" height="25">Aniversário</td>
 						<td width="5"></td>
 						<td><b><?=$dia;?> &nbsp;de&nbsp; <?=$meses [$mes];?></b></td>
 					</tr>

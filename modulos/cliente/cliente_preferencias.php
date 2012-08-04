@@ -47,9 +47,9 @@ if ($db->num_rows ( $querytipo )) {
 	$mes = $ultima_compra [1];
 	$ano = $ultima_compra [0];
 	?>
-<b>�ltima Compra: </b><?=$dia . "/" . $mes . "/" . $ano?></b>
+<b>Última Compra: </b><?=$dia . "/" . $mes . "/" . $ano?></b>
 <br>
-<b>Prefer�ncia<?=($db->num_rows ( $querytipo ) > 1) ? 's' : '';?> :</b>
+<b>Preferência<?=($db->num_rows ( $querytipo ) > 1) ? 's' : '';?> :</b>
 
 <?
 	echo substr ( $preferencia, 0, - 2 );

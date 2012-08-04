@@ -107,7 +107,7 @@ if (isset ( $_GET ['refer'] )) {
 							type="text" id="cel2" maxlength="4" style="width: 30px;"></td>
 					</tr>
 					<tr>
-						<td width="70" height="20"><b>Anivers�rio</b></td>
+						<td width="70" height="20"><b>Aniversário</b></td>
 						<td height="20"><select id="dia">
 												<?
 												for($n = 1; $n <= 31; $n ++) {
@@ -261,7 +261,7 @@ if (isset ( $_GET ['refer'] )) {
 		<td class="l3"></td>
 	</tr>
 	<tr>
-		<td height="25"><b>Informa��es adicionais</b></td>
+		<td height="25"><b>Informações adicionais</b></td>
 	</tr>
 	<tr>
 		<td class="l3"></td>

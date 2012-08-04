@@ -58,7 +58,7 @@ if ($db->num_rows ( $query )) {
 } else {
 	
 	$table = '<table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">';
-	$table .= '<tr><td align=center><img src="' . $_CONF ['PATH_VIRTUAL'] . 'imgs/aviso.png"><BR><b style=color:red>[ ' . $_GET ['s'] . ' ]<BR><BR>cliente n�o encontrado</b></td></tr>';
+	$table .= '<tr><td align=center><img src="' . $_CONF ['PATH_VIRTUAL'] . 'imgs/aviso.png"><BR><b style=color:red>[ ' . $_GET ['s'] . ' ]<BR><BR>cliente não encontrado</b></td></tr>';
 	$table .= '<table>';
 
 }

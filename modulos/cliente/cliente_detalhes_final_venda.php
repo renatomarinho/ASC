@@ -213,7 +213,7 @@ if (! isset ( $ddcadastro ) && ! isset ( $mmcadastro ) && ! isset ( $yycadastro 
 							strtolower ( $txtemail );
 							?><?
 						} else {
-							?>N�o informado<?
+							?>Não informado<?
 						}
 						?></td>
 					</tr>
@@ -239,7 +239,7 @@ if (! isset ( $ddcadastro ) && ! isset ( $mmcadastro ) && ! isset ( $yycadastro 
 								<td width="70" height="20"><b>Telefone 1</b></td>
 								<td height="20"><?
 								if ($dddtel || $tel1 || $tel2) {
-									?>( <?=$dddtel;?> ) <?=$tel1;?> - <?=$tel2;?><?} else {?>N�o informado<?
+									?>( <?=$dddtel;?> ) <?=$tel1;?> - <?=$tel2;?><?} else {?>Não informado<?
 								}
 								?></td>
 							</tr>
@@ -247,18 +247,18 @@ if (! isset ( $ddcadastro ) && ! isset ( $mmcadastro ) && ! isset ( $yycadastro 
 								<td width="70" height="20"><b>Telefone 2</b></td>
 								<td height="20"><?
 								if ($dddcel || $cel1 || $cel2) {
-									?>( <?=$dddcel;?> ) <?=$cel1;?> - <?=$cel2;?><?} else {?>N�o informado<?
+									?>( <?=$dddcel;?> ) <?=$cel1;?> - <?=$cel2;?><?} else {?>Não informado<?
 								}
 								?></td>
 							</tr>
 							<tr>
-								<td width="70" height="20"><b>Anivers�rio</b></td>
+								<td width="70" height="20"><b>Aniversário</b></td>
 								<td height="20"><?
 								if ($dia && $mes) {
 									?><?=
 
 									$dia;
-									?> &nbsp;de&nbsp; <?=$meses [$mes];?><?} else {?>N�o informado<?
+									?> &nbsp;de&nbsp; <?=$meses [$mes];?><?} else {?>Não informado<?
 								}
 								?></td>
 							</tr>
@@ -271,7 +271,7 @@ if (! isset ( $ddcadastro ) && ! isset ( $mmcadastro ) && ! isset ( $yycadastro 
 									$txtcpf;
 									?><?
 								} else {
-									?>N�o informado<?
+									?>Não informado<?
 								}
 								?></td>
 							</tr>
@@ -284,7 +284,7 @@ if (! isset ( $ddcadastro ) && ! isset ( $mmcadastro ) && ! isset ( $yycadastro 
 									$txtrg;
 									?><?
 								} else {
-									?>N�o informado<?
+									?>Não informado<?
 								}
 								?></td>
 							</tr>
@@ -301,7 +301,7 @@ if (! isset ( $ddcadastro ) && ! isset ( $mmcadastro ) && ! isset ( $yycadastro 
 									ucwords ( strtolower ( $txtendereco ) );
 									?><?
 								} else {
-									?>N�o informado<?
+									?>Não informado<?
 								}
 								?></td>
 							</tr>
@@ -314,7 +314,7 @@ if (! isset ( $ddcadastro ) && ! isset ( $mmcadastro ) && ! isset ( $yycadastro 
 									ucwords ( strtolower ( $txtbairro ) );
 									?><?
 								} else {
-									?>N�o informado<?
+									?>Não informado<?
 								}
 								?></td>
 							</tr>
@@ -327,7 +327,7 @@ if (! isset ( $ddcadastro ) && ! isset ( $mmcadastro ) && ! isset ( $yycadastro 
 									ucwords ( strtolower ( $txtcidade ) );
 									?><?
 								} else {
-									?>N�o informada<?
+									?>Não informada<?
 								}
 								?></td>
 							</tr>
@@ -340,7 +340,7 @@ if (! isset ( $ddcadastro ) && ! isset ( $mmcadastro ) && ! isset ( $yycadastro 
 									$txtuf;
 									?><?
 								} else {
-									?>N�o informado<?
+									?>Não informado<?
 								}
 								?></td>
 							</tr>
@@ -351,7 +351,7 @@ if (! isset ( $ddcadastro ) && ! isset ( $mmcadastro ) && ! isset ( $yycadastro 
 									?><?=
 
 									substr ( $txtcep, 0, 5 );
-									?> - <?=substr ( $txtcep, 5, 3 );?><?} else {?>N�o informado<?
+									?> - <?=substr ( $txtcep, 5, 3 );?><?} else {?>Não informado<?
 								}
 								?></td>
 							</tr>
@@ -365,7 +365,7 @@ if (! isset ( $ddcadastro ) && ! isset ( $mmcadastro ) && ! isset ( $yycadastro 
 				<td class="l3"></td>
 			</tr>
 			<tr>
-				<td height="25"><b>Informa��es adicionais</b></td>
+				<td height="25"><b>Informações adicionais</b></td>
 			</tr>
 			<tr>
 				<td class="l3"></td>
@@ -381,7 +381,7 @@ if (! isset ( $ddcadastro ) && ! isset ( $mmcadastro ) && ! isset ( $yycadastro 
 							$txtinf_adicional;
 							?><?
 						} else {
-							?>Sem informa��es adicionais<?
+							?>Sem informações adicionais<?
 						}
 						?></td>
 					</tr>
@@ -406,7 +406,7 @@ if (! isset ( $ddcadastro ) && ! isset ( $mmcadastro ) && ! isset ( $yycadastro 
 					value="selecionar cliente"
 					onclick="javascript:carregar_cliente_finalselecionadoparavenda('<?=$idcliente;?>', '<?=ucwords ( strtolower ( $txtnome ) );?>');"></td>
 				<td align="right"><input type="button" class="botao btn_irpara"
-					value="n�o selecionar"
+					value="nao selecionar"
 					onclick="javascript:carrega_finalvenda_escolhapagamento();"></td>
 			</tr>
 		</table>
