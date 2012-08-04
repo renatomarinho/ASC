@@ -1206,6 +1206,6 @@ CREATE TABLE IF NOT EXISTS `terminal` (
 -- Dumping data for table `terminal`
 --
 
-
-ALTER TABLE  `cliente` CHANGE  `idcliente`  `idcliente` INT( 11 ) NOT NULL AUTO_INCREMENT
+ALTER TABLE  `cliente` ADD PRIMARY KEY (  `idcliente` ) ;
+ALTER TABLE  `cliente` CHANGE  `idcliente`  `idcliente` INT( 11 ) NOT NULL AUTO_INCREMENT;
 
