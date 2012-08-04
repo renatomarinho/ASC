@@ -32,13 +32,13 @@ $db->connect ();
 ?>
 
 
-<fieldset id="p"><legend>Emiss�o de Etiquetas</legend>
+<fieldset id="p"><legend>Emissão de Etiquetas</legend>
 
 <div class="linha_separador" style="height: 28px;">
 <table width="100%" height="100%">
 	<tr>
 		<td align="center"><span id="msggrade"><b style="color: blue;">Escolha
-		as op��es para a impress�o das etiquetas</b><span></td>
+		as opções para a impressão das etiquetas</b><span></td>
 	</tr>
 </table>
 </div>
@@ -134,7 +134,7 @@ $db->connect ();
 							</tr>
 							<tr>
 								<td width="15"></td>
-								<td align="left" height="25"><b>Cole��o</b></td>
+								<td align="left" height="25"><b>Coleção</b></td>
 								<td align="right"><select name="colecao_id" id="colecao_id"
 									onclick="javascript:document.getElementById('codbarra').value='';"
 									style="width: 150px; font-size: 11px;">
@@ -162,12 +162,12 @@ $db->connect ();
 				<td>
 				<table width="100%">
 					<tr>
-						<td>Produto espec�fico</td>
+						<td>Produto específico</td>
 						<td align="right">
 						<div id="ecodbarra" style="display: none;">
 						<table>
 							<tr>
-								<td><b>C�d. Barra</b></td>
+								<td><b>Cód. Barra</b></td>
 								<td width="5"></td>
 								<td><input type="text" id="codbarra"
 									style="width: 115px; text-align: right;" maxlength="18"></td>
