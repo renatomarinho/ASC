@@ -42,7 +42,7 @@ if ($db->num_rows ( $query )) {
 	?>
 <table width="100%" cellpadding="0" cellspacing="0">
 	<tr bgcolor="#f0f0f0">
-		<td width="120" height="25" align="center"><b>C�d. Barras</b></td>
+		<td width="120" height="25" align="center"><b>Cód. Barras</b></td>
 		<td height="25"><b>Produto</b></td>
 		<td width="60" height="25" align="center"><b>Qtd</b></td>
 		<td width="90" height="25" align="right"><b>Custo</b></td>
@@ -104,7 +104,7 @@ if ($db->num_rows ( $query )) {
 					$total_atacado += $rowgrade ['vlprodgrade'] * $rowgrade ['quantidade'];
 					$total_vlvarejo += $rowgrade ['vlprodgrade'] * $rowgrade ['quantidade'];
 					?>
-									<td>Vl �nico dif.</td>
+									<td>Vl único dif.</td>
 				<td><?=number_format ( $rowgrade ['vlprodgrade'], 2, ',', '.' );?></td>
 						<?
 				} else {

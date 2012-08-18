@@ -37,7 +37,7 @@ $db->connect ();
 		<td align="left">
 		<table>
 			<tr>
-				<td><b>Relat�rio : </b></td>
+				<td><b>Relatário : </b></td>
 				<td width="5"></td>
 				<td>Quantidade em estoque</td>
 			</tr>
@@ -46,7 +46,7 @@ $db->connect ();
 		<td align="right">
 		<table>
 			<tr>
-				<td><b>Crit�rio : </b></td>
+				<td><b>Critério : </b></td>
 				<td width="5"></td>
 				<td><select
 					onchange="javascript:troca_relatorioestoque(this.value);"
@@ -58,7 +58,7 @@ $db->connect ();
 					<option value="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agrupados por
 					fornecedor</option>
 					<option value="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agrupados por
-					cole��o</option>
+					coleção</option>
 					<optgroup label="Produtos sem estoque"></optgroup>
 					<option value="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Todos os produtos</option>
 					<option value="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agrupados por
@@ -66,7 +66,7 @@ $db->connect ();
 					<option value="7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agrupados por
 					fornecedor</option>
 					<option value="8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agrupados por
-					cole��o</option>
+					coleção</option>
 				</select></td>
 			</tr>
 		</table>
@@ -98,7 +98,7 @@ $db->connect ();
 		<td align="right">
 		<table>
 			<tr>
-				<td><b style="color: gray;">Op��es do relat�rio</b></td>
+				<td><b style="color: gray;">Opções do relatório</b></td>
 				<td width="5"></td>
 				<td width="22"><img
 					src="<?=$_CONF ['PATH_VIRTUAL']?>imgs/icon_pdf.jpg" width="22"

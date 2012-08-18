@@ -65,7 +65,7 @@ while ( $rowfornecedor = $db->fetch_assoc ( $queryfornecedor ) ) {
 		<table width="100%">
 			<tr>
 				<td><b>Fornecedor :</b> <a href="javascript:;" onclick="javascript:document.getElementById('produtofor_<?=$rowfornecedor ['idfornecedor'];?>').style.display = ((document.getElementById('produtofor_<?=$rowfornecedor ['idfornecedor'];?>').style.display=='none')?'block':'none');"><b><?=ucwords ( strtolower ( $rowfornecedor ['nome'] ) );?></b></a></td>
-				<td align="right">[ hist�rico fornecedor ]</td>
+				<td align="right">[ histórico fornecedor ]</td>
 			</tr>
 		</table>
 		</td>
@@ -79,7 +79,7 @@ while ( $rowfornecedor = $db->fetch_assoc ( $queryfornecedor ) ) {
 			</tr>
 			<tr>
 				<td width="110"></td>
-				<td width="110" height="25" align="center"><b>C�d barras</b></td>
+				<td width="110" height="25" align="center"><b>Cód barras</b></td>
 				<td height="25"><b>Produto</b></td>
 				<td width="140" height="25" align="center"><b>Qtd</b></td>
 				<td width="140" height="25" align="center"><b>Valor</b></td>

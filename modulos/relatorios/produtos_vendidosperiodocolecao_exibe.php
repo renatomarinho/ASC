@@ -64,8 +64,8 @@ while ( $rowcolecao = $db->fetch_assoc ( $querycolecao ) ) {
 		<td>
 		<table width="100%">
 			<tr>
-				<td><b>Cole��o :</b> <a href="javascript:;" onclick="javascript:document.getElementById('produtocol_<?=$rowcolecao ['idcolecao'];?>').style.display = ((document.getElementById('produtocol_<?=$rowcolecao ['idcolecao'];?>').style.display=='none')?'block':'none');"><b><?=ucwords ( strtolower ( $rowcolecao ['txtnome'] ) );?></b></a></td>
-				<td align="right">[ hist�rico cole��o ]</td>
+				<td><b>Coleção :</b> <a href="javascript:;" onclick="javascript:document.getElementById('produtocol_<?=$rowcolecao ['idcolecao'];?>').style.display = ((document.getElementById('produtocol_<?=$rowcolecao ['idcolecao'];?>').style.display=='none')?'block':'none');"><b><?=ucwords ( strtolower ( $rowcolecao ['txtnome'] ) );?></b></a></td>
+				<td align="right">[ histórico coleção ]</td>
 			</tr>
 		</table>
 		</td>
@@ -80,7 +80,7 @@ while ( $rowcolecao = $db->fetch_assoc ( $querycolecao ) ) {
 			</tr>
 			<tr>
 				<td width="110"></td>
-				<td width="110" height="25" align="center"><b>C�d barras</b></td>
+				<td width="110" height="25" align="center"><b>Cód barras</b></td>
 				<td height="25"><b>Produto</b></td>
 				<td width="140" height="25" align="center"><b>Qtd</b></td>
 				<td width="140" height="25" align="center"><b>Valor</b></td>

@@ -84,7 +84,7 @@ if ($db->num_rows ( $queryfornecedor )) {
 				<td colspan="9" bgcolor="#f0f0f0">
 				<table width="100%" cellpadding="0" cellspacing="0">
 					<tr>
-						<td width="120" height="25" align="center"><b>C�d. Barras</b></td>
+						<td width="120" height="25" align="center"><b>Cód. Barras</b></td>
 						<td height="25"><b>Produto</b></td>
 						<td width="90" height="25" align="center"><b>Qtd</b></td>
 						<td width="90" height="25" align="right"><b>Custo</b></td>
@@ -135,7 +135,7 @@ if ($db->num_rows ( $queryfornecedor )) {
 									<td width="100" align="center">
 						<table>
 							<tr>
-								<td>Vl �nico dif.</td>
+								<td>Vl único dif.</td>
 								<td><?=number_format ( $rowgrade ['vlprodgrade'], 2, ',', '.' );?></td>
 							</tr>
 						</table>
@@ -200,7 +200,7 @@ if ($db->num_rows ( $queryfornecedor )) {
 		<td colspan="9" style="border-top: 2px solid black"></td>
 	</tr>
 	<tr>
-		<td align=center><b style="color: red"> [ Este fornecedor n�o possui
+		<td align=center><b style="color: red"> [ Este fornecedor não possui
 		nenhum produto ] </b></td>
 	</tr>
 	<tr>

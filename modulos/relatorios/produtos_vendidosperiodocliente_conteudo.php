@@ -41,7 +41,7 @@ $db->connect ();
 	</tr>
 	<tr>
 		<td width="90" height="25" align="center"><b>Data</b></td>
-		<td width="120" height="25" align="center"><b>C�d barras</b></td>
+		<td width="120" height="25" align="center"><b>Cód barras</b></td>
 		<td height="25"><b>Produto</b></td>
 		<td width="140" height="25" align="center"><b>Quantidade</b></td>
 		<td width="140" height="25" align="center"><b>Valor R$</b></td>

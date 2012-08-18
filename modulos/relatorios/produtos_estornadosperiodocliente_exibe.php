@@ -82,7 +82,7 @@ if (isset ( $cliente_compraram )) {
 					onclick="javascript:document.getElementById('produtocliente_<?=$rowcliente ['idcliente'];?>').style.display = ((document.getElementById('produtocliente_<?=$rowcliente ['idcliente'];?>').style.display=='none')?'block':'none');"><b><?=ucwords ( strtolower ( $rowcliente ['txtnome'] ) );?></b></a></td>
 				<td align="right"><a href="javascript:;"
 					onclick="javascript:carrega_cliente_mostradadoshistorico('<?=$rowcliente ['idcliente'];?>');">[
-				hist�rico cliente ]</a></td>
+				histórico cliente ]</a></td>
 			</tr>
 		</table>
 		</td>
@@ -98,7 +98,7 @@ if (isset ( $cliente_compraram )) {
 			<tr>
 				<td width="110"></td>
 				<td width="90" height="25" align="center"><b>Data</b></td>
-				<td width="110" height="25" align="center"><b>C�d barras</b></td>
+				<td width="110" height="25" align="center"><b>Cód barras</b></td>
 				<td height="25"><b>Produto</b></td>
 				<td width="140" height="25" align="center"><b>Qtd</b></td>
 				<td width="140" height="25" align="center"><b>Valor</b></td>
@@ -136,7 +136,7 @@ if (isset ( $cliente_compraram )) {
 				onclick="javascript:document.getElementById('produto_<?=$rows ['idproduto'] . $rand;?>').style.display = ((document.getElementById('produto_<?=$rows ['idproduto'] . $rand;?>').style.display=='none')?'block':'none');">
 				<td width="110"><a href="javascript:;"
 					onclick="javascript:carrega_dadosproduto('?refer=listagem&id=<?=$rows ['idproduto'];?>');">[
-				hist�rico produto ]</a></td>
+				histórico produto ]</a></td>
 				<td width="90" height="25" align="center"><?=$row_mvdata ['data_venda'];?></td>
 				<td width="110" height="25" align="center"><?=$rows ['cod_barra'];?></td>
 				<td height="25"><?=ucwords ( strtolower ( $rows ['nome'] ) );?></td>
@@ -204,7 +204,7 @@ if (isset ( $cliente_compraram )) {
 		}
 	}
 } else {
-	echo exibe_errohtml ( 'Nenhum produto estornado neste per�odo' );
+	echo exibe_errohtml ( 'Nenhum produto estornado neste período' );
 }
 
 ?>

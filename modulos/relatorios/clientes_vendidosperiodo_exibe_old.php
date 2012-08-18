@@ -146,7 +146,7 @@ if ($db->num_rows ( $rs_clientes_produtos )) {
 <?
 } else {
 	
-	echo exibe_errohtml ( 'Nenhum produto vendido para o cliente neste per�odo' );
+	echo exibe_errohtml ( 'Nenhum produto vendido para o cliente neste período' );
 
 }
 ?>

@@ -95,7 +95,7 @@ if (isset ( $cliente_compraram )) {
 			<tr>
 				<td width="110"></td>
 				<td width="90" height="25" align="center"><b>Data</b></td>
-				<td width="110" height="25" align="center"><b>C�d barras</b></td>
+				<td width="110" height="25" align="center"><b>Cód barras</b></td>
 				<td height="25"><b>Produto</b></td>
 				<td width="140" height="25" align="center"><b>Qtd</b></td>
 				<td width="140" height="25" align="center"><b>Valor</b></td>
@@ -195,6 +195,6 @@ if (isset ( $cliente_compraram )) {
 	}
 
 } else {
-	echo exibe_errohtml ( 'Nenhuma venda encontrada neste per�odo' );
+	echo exibe_errohtml ( 'Nenhuma venda encontrada neste período' );
 }
 ?>

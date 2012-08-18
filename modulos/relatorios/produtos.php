@@ -35,7 +35,7 @@ $db->connect ();
 <div class="linha_separador">
 <table width="100%">
 	<tr>
-		<td><b>Relat�rio Produtos: </b></td>
+		<td><b>Relatório Produtos: </b></td>
 		<td width="5"></td>
 		<td><select id="produtos_criterio" style="width: 110px;"
 			onchange="javascript:pesquisar_produtoperiodo();">
@@ -48,7 +48,7 @@ $db->connect ();
 				<td>
 				<table>
 					<tr>
-						<td><b>Crit�rio : </b></td>
+						<td><b>Critério : </b></td>
 						<td width="5"></td>
 						<td><select id="vendidos_criterio" style="width: 200px;"
 							onchange="javascript:pesquisar_produtoperiodo();">
@@ -57,7 +57,7 @@ $db->connect ();
 							<option value="2">&nbsp;&nbsp;&nbsp;Agrupados por cliente</option>
 							<option value="3">&nbsp;&nbsp;&nbsp;Agrupados por categoria</option>
 							<option value="4">&nbsp;&nbsp;&nbsp;Agrupados por fornecedor</option>
-							<option value="5">&nbsp;&nbsp;&nbsp;Agrupados por cole��o</option>
+							<option value="5">&nbsp;&nbsp;&nbsp;Agrupados por coleção</option>
 						</select></td>
 					</tr>
 				</table>
@@ -104,7 +104,7 @@ $db->connect ();
 														?>
 														<select id="ano1">
 															<?
-															for($i = 2005; $i < 2012; $i ++) {
+															for($i = 2010; $i < (date('Y')+1); $i ++) {
 																?>
 															<option value="<?=$i?>" <?=(($ano == $i) ? 'selected' : '');?>>&nbsp;<?=$i?>&nbsp;</option>
 															<?
@@ -114,7 +114,7 @@ $db->connect ();
 							</tr>
 						</table>
 						</td>
-						<td>&nbsp;<b>at�</b>&nbsp;</td>
+						<td>&nbsp;<b>até</b>&nbsp;</td>
 						<td>
 						<table>
 							<tr>
@@ -140,7 +140,7 @@ $db->connect ();
 														</select></td>
 								<td><select id="ano2">
 															<?
-															for($i = 2005; $i < 2012; $i ++) {
+															for($i = 2010; $i < (date('Y')+1); $i ++) {
 																?>
 															<option value="<?=$i?>"
 										<?=((date ( 'Y' ) == $i) ? 'selected' : '');?>>&nbsp;<?=$i?>&nbsp;</option>
@@ -174,7 +174,7 @@ $db->connect ();
 		<table width="100%" cellpadding="0" cellspacing="0">
 			<tr>
 				<td width="120">&nbsp;</td>
-				<td width="100" height="25" align="center"><strong>C�d. Barras</strong></td>
+				<td width="100" height="25" align="center"><strong>Cód. Barras</strong></td>
 				<td height="25"><strong>Produto</strong></td>
 				<td width="140" height="25" align="center"><strong>Qdt</strong></td>
 				<td width="140" height="25" align="center"><strong>Valor</strong></td>
@@ -203,7 +203,7 @@ $db->connect ();
 				<td align="right">
 				<table>
 					<tr>
-						<td><b style="color: gray;">Op��es do relat�rio</b></td>
+						<td><b style="color: gray;">Opçães do relatório</b></td>
 						<td width="5"></td>
 						<td>
 						<table>

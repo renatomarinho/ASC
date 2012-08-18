@@ -95,7 +95,7 @@ $db->connect ();
 														?>
 														<select id="ano1">
 															<?
-															for($i = 2005; $i < 2012; $i ++) {
+															for($i = 2010; $i < (date('Y')+1); $i ++) {
 																?>
 															<option value="<?=$i?>" <?=(($ano == $i) ? 'selected' : '');?>>&nbsp;<?=$i?>&nbsp;</option>
 															<?
@@ -105,7 +105,7 @@ $db->connect ();
 							</tr>
 						</table>
 						</td>
-						<td>&nbsp;<b>at�</b>&nbsp;</td>
+						<td>&nbsp;<b>até</b>&nbsp;</td>
 						<td>
 						<table>
 							<tr>
@@ -131,7 +131,7 @@ $db->connect ();
 														</select></td>
 								<td><select id="ano2">
 															<?
-															for($i = 2005; $i < 2012; $i ++) {
+															for($i = 2010; $i < (date('Y')+1); $i ++) {
 																?>
 															<option value="<?=$i?>"
 										<?=((date ( 'Y' ) == $i) ? 'selected' : '');?>>&nbsp;<?=$i?>&nbsp;</option>

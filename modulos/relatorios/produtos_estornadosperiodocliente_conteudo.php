@@ -1,7 +1,7 @@
 <?
 /*
 
-Não criada parte de otimizacao da pagina produtos_vendidosperiodocliente_exibe.php
+Nï¿½o criada parte de otimizacao da pagina produtos_vendidosperiodocliente_exibe.php
 
 */
 if (! isset ( $_CONF ['PATH'] )) {
@@ -20,7 +20,7 @@ $db->connect ();
 	</tr>
 	<tr>
 		<td width="90" height="25" align="center"><b>Data</b></td>
-		<td width="120" height="25" align="center"><b>Cód barras</b></td>
+		<td width="120" height="25" align="center"><b>CÃ³d barras</b></td>
 		<td height="25"><b>Produto</b></td>
 		<td width="140" height="25" align="center"><b>Quantidade</b></td>
 		<td width="140" height="25" align="center"><b>Valor R$</b></td>

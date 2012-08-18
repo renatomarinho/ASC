@@ -178,7 +178,7 @@ GROUP BY g.id";
 <?
 } else {
 	
-	echo exibe_errohtml ( 'N�o existem dados para o fornecedor neste per�odo' );
+	echo exibe_errohtml ( 'Não existem dados para o fornecedor neste período' );
 
 }
 ?>

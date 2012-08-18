@@ -256,7 +256,7 @@ if ($db->num_rows ( $query_mvvendas )) {
 			<tr>
 				<td height="25"><b>Total de vendas : </b><?=$quantidade_total_vendas;?></td>
 				<td width="10"></td>
-				<td><b>M�dia de itens por venda : </b><?=number_format ( $media_venda_itens, 2 );?></td>
+				<td><b>Média de itens por venda : </b><?=number_format ( $media_venda_itens, 2 );?></td>
 				<td width="10"></td>
 				<td><b>Custo : </b>R$ <?=number_format ( $valor_total_custo, 2, ',', '.' );?></td>
 				<td width="10"></td>
@@ -278,7 +278,7 @@ if ($db->num_rows ( $query_mvvendas )) {
 	?>
 <table width="100%" cellpadding="0" cellspacing="0" border="0">
 	<tr>
-		<td align=center><BR><BR><BR><BR><img src="<?=$_CONF ['PATH_VIRTUAL'];?>imgs/aviso.png"> <b style="color: red"> <BR> [ Nenhum dado dispon�vel para este per�odo ]<BR></b></td>
+		<td align=center><BR><BR><BR><BR><img src="<?=$_CONF ['PATH_VIRTUAL'];?>imgs/aviso.png"> <b style="color: red"> <BR> [ Nenhum dado disponível para este período ]<BR></b></td>
 	</tr>
 <table>
 <?

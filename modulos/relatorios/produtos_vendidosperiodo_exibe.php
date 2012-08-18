@@ -129,7 +129,7 @@ if ($db->num_rows ( $querymv )) {
 <?
 } else {
 	
-	echo exibe_errohtml ( 'Nenhum produto vendido neste per�odo' );
+	echo exibe_errohtml ( 'Nenhum produto vendido neste período' );
 
 }
 ?>

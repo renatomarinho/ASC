@@ -66,7 +66,7 @@ while ( $rowcategoria = $db->fetch_assoc ( $querycategoria ) ) {
 			<tr>
 				<td><b>Categoria :</b> <a href="javascript:;"
 					onclick="javascript:document.getElementById('produtocat_<?=$rowcategoria ['idprodutotipo'];?>').style.display = ((document.getElementById('produtocat_<?=$rowcategoria ['idprodutotipo'];?>').style.display=='none')?'block':'none');"><b><?=ucwords ( strtolower ( $rowcategoria ['txtnome'] ) );?></b></a></td>
-				<td align="right">[ hist�rico categoria ]</td>
+				<td align="right">[ histórico categoria ]</td>
 			</tr>
 		</table>
 		</td>
@@ -81,7 +81,7 @@ while ( $rowcategoria = $db->fetch_assoc ( $querycategoria ) ) {
 			</tr>
 			<tr>
 				<td width="110"></td>
-				<td width="110" height="25" align="center"><b>C�d barras</b></td>
+				<td width="110" height="25" align="center"><b>Cód barras</b></td>
 				<td height="25"><b>Produto</b></td>
 				<td width="140" height="25" align="center"><b>Qtd</b></td>
 				<td width="140" height="25" align="center"><b>Valor</b></td>
@@ -113,7 +113,7 @@ while ( $rowcategoria = $db->fetch_assoc ( $querycategoria ) ) {
 				onclick="javascript:document.getElementById('produto_<?=$rows ['idproduto'] . $rand;?>').style.display = ((document.getElementById('produto_<?=$rows ['idproduto'] . $rand;?>').style.display=='none')?'block':'none');">
 				<td width="110"><a href="javascript:;"
 					onclick="javascript:carrega_dadosproduto('?refer=listagem&id=<?=$rows ['idproduto'];?>');">[
-				hist�rico produto ]</a></td>
+				histórico produto ]</a></td>
 				<td width="110" height="25" align="center"><?=$rows ['cod_barra'];?></td>
 				<td height="25"><?=ucwords ( strtolower ( $rows ['nome'] ) );?></td>
 				<td width="140" height="25" align="center"><?=( int ) $result ['vendidos'];?></td>

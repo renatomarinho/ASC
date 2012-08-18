@@ -145,7 +145,7 @@ if ($db->num_rows ( $query_mvvendas )) {
 	?>
 <table width="100%" cellpadding="0" cellspacing="0" border="0">
 	<tr>
-		<td align=center><BR> <BR> <BR> <BR> <img src="<?=$_CONF ['PATH_VIRTUAL'];?>imgs/aviso.png"> <b style="color: red"> <BR> [ Nenhum dado dispon�vel para este per�odo ]</b><BR></td>
+		<td align=center><BR> <BR> <BR> <BR> <img src="<?=$_CONF ['PATH_VIRTUAL'];?>imgs/aviso.png"> <b style="color: red"> <BR> [ Nenhum dado disponível para este período ]</b><BR></td>
 	</tr>
 <table>
 <?

@@ -86,7 +86,7 @@ if ($venda) {
 												?>
 												<select id="ano1">
 													<?
-													for($i = 2005; $i < 2012; $i ++) {
+													for($i = 2010; $i < (date('Y')+1); $i ++) {
 														?>
 													<option value="<?=$i?>" <?=(($ano == $i) ? 'selected' : '');?>>&nbsp;<?=$i?>&nbsp;</option>
 													<?
@@ -122,7 +122,7 @@ if ($venda) {
 												</select></td>
 						<td><select id="ano2">
 													<?
-													for($i = 2005; $i < 2012; $i ++) {
+													for($i = 2010; $i < (date('Y')+1); $i ++) {
 														?>
 													<option value="<?=$i?>"
 								<?=((date ( 'Y' ) == $i) ? 'selected' : '');?>>&nbsp;<?=$i?>&nbsp;</option>
@@ -195,7 +195,7 @@ if ($venda) {
 												?>
 												<select id="ano1_2">
 													<?
-													for($i = 2005; $i < 2012; $i ++) {
+													for($i = 2010; $i < (date('Y')+1); $i ++) {
 														?>
 													<option value="<?=$i?>" <?=(($ano == $i) ? 'selected' : '');?>>&nbsp;<?=$i?>&nbsp;</option>
 													<?
@@ -231,7 +231,7 @@ if ($venda) {
 												</select></td>
 						<td><select id="ano2_2">
 													<?
-													for($i = 2005; $i < 2012; $i ++) {
+													for($i = 2010; $i < (date('Y')+1); $i ++) {
 														?>
 													<option value="<?=$i?>"
 								<?=((date ( 'Y' ) == $i) ? 'selected' : '');?>>&nbsp;<?=$i?>&nbsp;</option>

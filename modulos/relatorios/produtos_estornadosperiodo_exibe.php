@@ -83,7 +83,7 @@ if ($db->num_rows ( $querymv )) {
 		onclick="javascript:document.getElementById('produto_<?=$rows ['idproduto'];?>').style.display = ((document.getElementById('produto_<?=$rows ['idproduto'];?>').style.display=='none')?'block':'none');">
 		<td width="120" align="center"><a href="javascript:;"
 			onclick="javascript:carrega_dadosproduto('?refer=listagem&id=<?=$rows ['idproduto'];?>');">[
-		hist�rico ]</a></td>
+		histórico ]</a></td>
 		<td width="100" height="25" align="center"><?=$rows ['cod_barra'];?></td>
 		<td height="25"><?=ucwords ( strtolower ( ($rows ['nome']) ) );?></td>
 		<td width="140" height="25" align="center"><?=( int ) $result ['vendidos'];?></td>
@@ -133,7 +133,7 @@ if ($db->num_rows ( $querymv )) {
 <?
 } else {
 	
-	echo exibe_errohtml ( 'Nenhum produto estornado neste per�odo' );
+	echo exibe_errohtml ( 'Nenhum produto estornado neste período' );
 
 }
 ?>

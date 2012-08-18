@@ -66,7 +66,7 @@ while ( $rowfornecedor = $db->fetch_assoc ( $queryfornecedor ) ) {
 			<tr>
 				<td><b>Fornecedor :</b> <a href="javascript:;"
 					onclick="javascript:document.getElementById('produtofor_<?=$rowfornecedor ['idfornecedor'];?>').style.display = ((document.getElementById('produtofor_<?=$rowfornecedor ['idfornecedor'];?>').style.display=='none')?'block':'none');"><b><?=ucwords ( strtolower ( $rowfornecedor ['nome'] ) );?></b></a></td>
-				<td align="right">[ hist�rico fornecedor ]</td>
+				<td align="right">[ histórico fornecedor ]</td>
 			</tr>
 		</table>
 		</td>
@@ -81,7 +81,7 @@ while ( $rowfornecedor = $db->fetch_assoc ( $queryfornecedor ) ) {
 			</tr>
 			<tr>
 				<td width="110"></td>
-				<td width="110" height="25" align="center"><b>C�d barras</b></td>
+				<td width="110" height="25" align="center"><b>Cód barras</b></td>
 				<td height="25"><b>Produto</b></td>
 				<td width="140" height="25" align="center"><b>Qtd</b></td>
 				<td width="140" height="25" align="center"><b>Valor</b></td>
@@ -113,7 +113,7 @@ while ( $rowfornecedor = $db->fetch_assoc ( $queryfornecedor ) ) {
 				onclick="javascript:document.getElementById('produto_<?=$rows ['idproduto'] . $rand;?>').style.display = ((document.getElementById('produto_<?=$rows ['idproduto'] . $rand;?>').style.display=='none')?'block':'none');">
 				<td width="110"><a href="javascript:;"
 					onclick="javascript:carrega_dadosproduto('?refer=listagem&id=<?=$rows ['idproduto'];?>');">[
-				hist�rico produto ]</a></td>
+				histórico produto ]</a></td>
 				<td width="110" height="25" align="center"><?=$rows ['cod_barra'];?></td>
 				<td height="25"><?=ucwords ( strtolower ( $rows ['nome'] ) );?></td>
 				<td width="140" height="25" align="center"><?=( int ) $result ['vendidos'];?></td>
@@ -174,7 +174,7 @@ while ( $rowfornecedor = $db->fetch_assoc ( $queryfornecedor ) ) {
 	<table>
 <?
 	} else {
-		echo exibe_errohtml ( 'Nenhum produto estornado neste per�odo' );
+		echo exibe_errohtml ( 'Nenhum produto estornado neste período' );
 		break;
 	}
 

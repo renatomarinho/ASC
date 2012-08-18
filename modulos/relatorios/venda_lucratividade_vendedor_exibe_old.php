@@ -179,7 +179,7 @@ if ($db->num_rows ( $query_mvvendas )) {
 			<tr>
 				<td height="25"><b>Total de vendas : </b><?=$quantidade_total_vendas;?></td>
 				<td width="10"></td>
-				<td><b>M�dia de itens por venda : </b><?=number_format ( $media_venda_itens, 2 );?></td>
+				<td><b>Média de itens por venda : </b><?=number_format ( $media_venda_itens, 2 );?></td>
 				<td width="10"></td>
 				<td><b>Custo : </b>R$ <?=number_format ( $valor_total_custo, 2, ',', '.' );?></td>
 				<td width="10"></td>
@@ -197,7 +197,7 @@ if ($db->num_rows ( $query_mvvendas )) {
 <?
 } else {
 	
-	echo exibe_errohtml ( 'Nenhuma venda realizada pelo vendedor no per�odo selecionado' );
+	echo exibe_errohtml ( 'Nenhuma venda realizada pelo vendedor no período selecionado' );
 
 }
 ?>

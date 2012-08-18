@@ -80,7 +80,7 @@ if ($db->num_rows ( $querycolecao )) {
 				<td colspan="8" bgcolor="#f0f0f0">
 				<table width="100%" cellpadding="0" cellspacing="0">
 					<tr>
-						<td width="120" height="25" align="center"><b>C�d. Barras</b></td>
+						<td width="120" height="25" align="center"><b>Cód. Barras</b></td>
 						<td><b>Produto</b></td>
 						<td width="90" height="25" align="center"><b>Qtd</b></td>
 						<td width="90" height="25" align="right"><b>Custo</b></td>
@@ -132,7 +132,7 @@ if ($db->num_rows ( $querycolecao )) {
 									<td width="100" align="center">
 						<table>
 							<tr>
-								<td>Vl �nico dif.</td>
+								<td>Vl único dif.</td>
 								<td><?=number_format ( $rowgrade ['vlprodgrade'], 2, ',', '.' );?></td>
 							</tr>
 						</table>
@@ -176,7 +176,7 @@ if ($db->num_rows ( $querycolecao )) {
 		<table width="100%">
 			<tr>
 				<td height="40" width="20"></td>
-				<td width="320"><b>Total dos produtos da cole��o em estoque :</b> <?=$total_itens;?> itens</td>
+				<td width="320"><b>Total dos produtos da coleção em estoque :</b> <?=$total_itens;?> itens</td>
 				<td width="120"><b>Custo :</b> R$ <?=number_format ( $total_custo, 2, ',', '.' );?></td>
 				<td width="150"><b>P. Entrega :</b> R$ <?=number_format ( $total_prontaentrega, 2, ',', '.' );?></td>
 				<td width="140"><b>Atacado :</b> R$ <?=number_format ( $total_atacado, 2, ',', '.' );?></td>
@@ -198,7 +198,7 @@ if ($db->num_rows ( $querycolecao )) {
 		<td colspan="9" style="border-top: 2px solid black"></td>
 	</tr>
 	<tr>
-		<td align=center><b style="color: red"> [ Essa cole��o n�o possui
+		<td align=center><b style="color: red"> [ Essa coleção não possui
 		nenhum produto ] </b></td>
 	</tr>
 	<tr>
@@ -220,7 +220,7 @@ if ($db->num_rows ( $querycolecao )) {
 <?
 } else {
 	
-	echo exibe_errohtml ( 'Nenhuma cole��o sem produto em estoque' );
+	echo exibe_errohtml ( 'Nenhuma coleção sem produto em estoque' );
 
 }
 ?>
